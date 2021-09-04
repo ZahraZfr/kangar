@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  font-family: 'Arial', 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', 'sans-serif';
+  line-height: 1.43;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+  z-index: 1000;
+}
+
+header .scrolling-active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  max-width: 1365px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header .container .nav {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: height .5s ease;
+  transition: height .5s ease;
+  padding: 0 40px;
+}
+
+header .container .nav a {
+  color: aliceblue;
+}
+
+header .container .nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .nav .nav-list li {
+  padding: 0 10px;
+  list-style-type: none;
+}
+
+header .container .nav .nav-list li a {
+  color: aliceblue;
+}
+
+header .container .nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .nav .nav-right .explor-icon {
+  width: 40px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 19px;
+}
+
+header .container .nav .nav-right .user-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 42px;
+  width: 77px;
+  border: 1px solid #717171;
+}
+
+header .container .nav .nav-right .user-menu-container .user-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+header .container .nav .nav-right .user-menu-container .user-menu {
+  width: 16px;
+  height: 16px;
+}
+
+.scrolly-active {
+  display: none;
+}
+
+.scrolly-nav {
+  z-index: 10;
+  max-width: 848px;
+  height: 66px;
+  border: 1px solid #DDDDDD !important;
+  border-radius: 32px !important;
+  color: #222222 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative !important;
+  top: 80px !important;
+  -webkit-box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033 !important;
+          box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033 !important;
+  --big-search-form-background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  margin: 0 auto;
+}
+
+.scrolly-nav .scrolly-active.scrolly-nav {
+  z-index: -11 !important;
+}
+
+.scrolly-nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrolly-nav div div:hover {
+  background-color: #d8d8d8;
+}
+
+.scrolly-nav div .scrolly-sec {
+  width: auto;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  text-align: left !important;
+  background-color: #fff;
+}
+
+.scrolly-nav div .scrolly-sec p {
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: left;
+      align-self: left;
+}
+
+.scrolly-nav div .scrolly-sec input {
+  border: none;
+}
+
+.scrolly-nav div .scrolly-sec input input::-webkit-input-placeholder {
+  display: block !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  color: #222222 !important;
+  text-overflow: ellipsis !important;
+}
+
+.scrolly-nav div .scrolly-sec input input:-ms-input-placeholder {
+  display: block !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  color: #222222 !important;
+  text-overflow: ellipsis !important;
+}
+
+.scrolly-nav div .scrolly-sec input input::-ms-input-placeholder {
+  display: block !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  color: #222222 !important;
+  text-overflow: ellipsis !important;
+}
+
+.scrolly-nav div .scrolly-sec input input::placeholder {
+  display: block !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  color: #222222 !important;
+  text-overflow: ellipsis !important;
+}
+
+.scrolly-nav .location {
+  width: 27%;
+}
+
+.scrolly-nav .checkin {
+  width: 23%;
+  border-left: 1px solid #bbbbbb;
+}
+
+.scrolly-nav .checkout {
+  width: 23%;
+  border-left: 1px solid #bbbbbb;
+}
+
+.scrolly-nav .guestse {
+  width: 27%;
+  border-left: 1px solid #bbbbbb;
+}
+
+.scrolly-nav .guestse .scrolly-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrolly-nav .guestse .scrolly-sec .guests-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: left !important;
+      align-content: left !important;
+}
+
+.scrolly-nav .guestse .serach-icon {
+  width: 48px !important;
+  height: 48px !important;
+  background-color: #FF385C;
+  border-radius: 50%;
+}
+
+.hero-img-holder {
+  width: 100%;
+  min-height: 620px;
+  z-index: 0;
+}
+
+.hero-img-holder .hero-img {
+  background-image: url("../img/hero-950.webp");
+  width: 100%;
+  height: 100vh;
+  margin-top: -17vh;
+  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-img-holder .hero-img .hero-txt {
+  margin-top: 10%;
+  max-width: 500px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero-img-holder .hero-img .hero-txt h3 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.hero-img-holder .hero-img .hero-txt .hero-btn {
+  -webkit-box-shadow: 0px 6px 16px #00000021 !important;
+          box-shadow: 0px 6px 16px #00000021 !important;
+  transition: box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out, transform 0.2s ease-out !important;
+  cursor: pointer;
+  margin: 16px auto 0;
+  max-width: 500px;
+  height: 64px;
+  width: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 54px;
+}
+
+.hero-img-holder .hero-img .hero-txt .hero-btn p {
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-gradient(linear, left top, right top, from(#6F019C), color-stop(135.12%, #C6017E)) !important;
+  background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%) !important;
+  -webkit-background-clip: text !important;
+}
+
+.hero-img-holder .hero-img .hero-txt .hero-btn:active {
+  -webkit-transform: scale(0.96) !important;
+          transform: scale(0.96) !important;
+}
+
+main {
+  width: 100%;
+  height: 1000px;
+  background-color: #717171;
+}
+/*# sourceMappingURL=style.css.map */
