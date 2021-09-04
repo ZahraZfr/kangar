@@ -1,0 +1,344 @@
+$superLargeDevice:1700px;
+$extraLargDevice:1440px;
+$largDevice:950px;
+$minimumDevice:744px;
+$smallDevice:320px;
+
+
+
+@mixin superLargeDevice {
+    @media (min-width: #{$superLargeDevice}) {
+        @content;
+    }
+}
+
+@mixin extraLargDevice {
+    @media (min-width: #{$extraLargDevice}) {
+        @content;
+    }
+}
+
+@mixin largDevice {
+    @media (min-width: #{$largDevice}) {
+        @content;
+    }
+}
+
+@mixin minimumDevice {
+    @media (min-width: #{$minimumDevice}) {
+        @content;
+    }
+}
+
+@mixin smallDevice {
+    @media (min-width: #{$smallDevice}) {
+        @content;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    font-family: 'Arial', 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', 'sans-serif';
+    line-height: 1.43;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+
+    .scrolling-active {
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    }
+
+    .container {
+        max-width: 1365px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        .nav {
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: height .5s ease;
+            padding: 0 40px;
+
+            a {
+                color: aliceblue;
+
+            }
+
+            .nav-list {
+                display: flex;
+                justify-content: space-between;
+
+
+                li {
+                    padding: 0 10px;
+                    list-style-type: none;
+
+                    a {
+                        color: aliceblue;
+                    }
+                }
+            }
+
+            .nav-right {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .explor-icon {
+                    width: 40px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 19px;
+                }
+
+                .user-menu-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 10px;
+                    background-color: #fff;
+                    border-radius: 30px;
+                    height: 42px;
+                    width: 77px;
+                    border: 1px solid #717171;
+
+                    .user-icon {
+                        width: 30px !important;
+                        height: 30px !important;
+
+                    }
+
+                    .user-menu {
+                        width: 16px;
+                        height: 16px;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// -------------scrolly nav-------
+.scrolly-active {
+    display: none;
+}
+
+.scrolly-nav {
+    z-index: 10;
+    max-width: 848px;
+    height: 66px;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 32px !important;
+    color: #222222 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    position: relative !important;
+    top: 80px !important;
+    box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033 !important;
+    --big-search-form-background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    margin: 0 auto;
+
+    .scrolly-active.scrolly-nav {
+        z-index: -11 !important;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    div:hover{
+        background-color: rgb(216, 216, 216);
+    }
+
+        .scrolly-sec {
+            width: auto;
+            height: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left !important;
+            align-items: left !important;
+            text-align: left !important;
+            background-color: #fff;
+            
+            p {
+                text-align: left !important;
+                display: flex;
+                align-self: left;
+
+            }
+
+            input {
+                border: none;
+
+                input::placeholder {
+                    display: block !important;
+                    width: 100% !important;
+                    font-size: 14px !important;
+                    line-height: 18px !important;
+                    font-weight: 600 !important;
+                    color: #222222 !important;
+                    text-overflow: ellipsis !important
+                }
+            }
+
+        }
+
+
+    }
+
+    .location {
+        width: 27%;
+
+    }
+
+    .checkin {
+        width: 23%;
+        border-left: 1px solid rgb(187, 187, 187);
+    }
+
+    .checkout {
+        width: 23%;
+        border-left: 1px solid rgb(187, 187, 187);
+
+    }
+
+    .guestse {
+        width: 27%;
+        border-left: 1px solid rgb(187, 187, 187);
+
+        .scrolly-sec {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            width: 70%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .guests-txt{
+                display: flex;
+                flex-direction: column;
+                align-content: left !important;
+            }
+        }
+
+        .serach-icon {
+            width: 48px !important;
+            height: 48px !important;
+            background-color: #FF385C;
+            border-radius: 50%;
+        }
+
+    }
+}
+
+// -------------------hero img --------------------------
+.hero-img-holder {
+    width: 100%;
+    min-height: 620px;
+    z-index: 0;
+
+    .hero-img {
+        background-image: url("../img/hero-950.webp");
+        width: 100%;
+        height: 100vh;
+        margin-top: -17vh;
+        background-position: center;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hero-txt {
+            margin-top: 10%;
+            max-width: 500px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            h3 {
+                color: #222222;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+            }
+
+            .hero-btn {
+                box-shadow: 0px 6px 16px #00000021 !important;
+                transition: box-shadow 0.2s ease-out, -ms-transform 0.2s ease-out, -webkit-transform 0.2s ease-out, transform 0.2s ease-out !important;
+                cursor: pointer;
+                margin: 16px auto 0;
+                max-width: 500px;
+                height: 64px;
+                width: 205px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 54px;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                    -webkit-text-fill-color: transparent !important;
+                    background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%) !important;
+                    -webkit-background-clip: text !important;
+                }
+
+            }
+
+            .hero-btn:active {
+                transform: scale(0.96) !important;
+            }
+        }
+    }
+
+
+}
+
+// --------------main-----------------------------
+main {
+    width: 100%;
+    height: 1000px;
+    background-color: #717171;
+}
