@@ -429,6 +429,7 @@ header .container .nav .nav-right .user-menu-container .user-menu {
     margin-top: 1rem;
   }
   .slidershow {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     padding: 2rem;
