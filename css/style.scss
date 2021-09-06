@@ -324,62 +324,49 @@ header {
 }
 
 // --------------main-----------------------------
-// .container__main {
-//   max-width: 1760px;
-//   margin: 0 auto;
-//   padding: 0 80px;
-// }
+.container__main {
+  max-width: 1760px;
+  margin: 0 auto;
+}
+
 //slider on mobile
+.slider__title{
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
 
-@media (max-width: $minimumDevice) {
-  .container__main {
-    min-height: 100vh;
-    width: 100vw;
-  }
+.slider__container{
+  /* line them up horizontally */
+  display: flex;
 
-  .slider__title {
-    font-size: 32px;
-  }
-  .slider__container {
-    height: 100vh;
-    display: inline-flex;
-    overflow: hidden;
-    transform: translateX(0);
-    transition: 0.3s ease-out;
-    cursor: grab;
-    margin-top: 1rem;
-  }
-  .slidershow {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    padding: 2rem;
-    // background-color:blue;
-  }
-  .slide {
-    //   background-color: #6f019c;
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    //   align-items: center;
-    //   justify-content:center;
-    //   padding: 1rem;
-    user-select: none;
-  }
-  .slide img {
-    border-radius: 1rem;
-    max-width: 100%;
-    max-height: 60%;
-    transition: 0.3s ease-in-out;
-    margin: 1rem;
-  }
-  .grabbing {
-    cursor: grabbing;
-  }
-  .grabbing img {
-    transform: scale (0.9);
-  }
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slider-first{
+  margin-left: 20px;
+}
+.slider__container > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 200px;
+  height: 100%;
+  // line-height: 10px;
+  // text-align: center;
+  // content: '';
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.slider__container img {
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  width: 200px;
+  max-width: 100%;
 }
 
 // --------------/main-----------------------------
