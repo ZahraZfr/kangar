@@ -1,344 +1,699 @@
-$superLargeDevice:1700px;
-$extraLargDevice:1440px;
-$largDevice:950px;
-$minimumDevice:744px;
-$smallDevice:320px;
-
-
+$superLargeDevice: 1700px;
+$extraLargDevice: 1440px;
+$largDevice: 950px;
+$minimumDevice: 744px;
+$smallDevice: 320px;
 
 @mixin superLargeDevice {
-    @media (min-width: #{$superLargeDevice}) {
-        @content;
-    }
+  @media (min-width: #{$superLargeDevice}) {
+    @content;
+  }
 }
 
 @mixin extraLargDevice {
-    @media (min-width: #{$extraLargDevice}) {
-        @content;
-    }
+  @media (min-width: #{$extraLargDevice}) {
+    @content;
+  }
 }
 
 @mixin largDevice {
-    @media (min-width: #{$largDevice}) {
-        @content;
-    }
+  @media (min-width: #{$largDevice}) {
+    @content;
+  }
 }
 
 @mixin minimumDevice {
-    @media (min-width: #{$minimumDevice}) {
-        @content;
-    }
+  @media (min-width: #{$minimumDevice}) {
+    @content;
+  }
 }
 
 @mixin smallDevice {
-    @media (min-width: #{$smallDevice}) {
-        @content;
-    }
+  @media (min-width: #{$smallDevice}) {
+    @content;
+  }
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 15px;
 }
 
 body {
-    width: 100%;
-    font-family: 'Arial', 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', 'sans-serif';
-    line-height: 1.43;
+  width: 100%;
+  font-family: "Arial", "Circular", "-apple-system", "BlinkMacSystemFont",
+    "Roboto", "Helvetica Neue", "sans-serif";
+  line-height: 1.43;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: background-color .5s ease;
-    z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.5s ease;
+  z-index: 1000;
 
-    .scrolling-active {
-        background-color: #fff;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-    }
+  .scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  }
 
-    .container {
-        max-width: 1365px;
-        margin: 0 auto;
-        padding: 0 1.5rem;
+  .container {
+    max-width: 1365px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 
-        .nav {
-            width: 100%;
-            height: 6rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: height .5s ease;
-            padding: 0 40px;
+    .nav {
+      width: 100%;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: height 0.5s ease;
+      padding: 0 40px;
 
-            a {
-                color: aliceblue;
+      a {
+        color: aliceblue;
+      }
 
-            }
+      .nav-list {
+        display: flex;
+        justify-content: space-between;
 
-            .nav-list {
-                display: flex;
-                justify-content: space-between;
+        li {
+          padding: 0 10px;
+          list-style-type: none;
 
+          a {
+            color: aliceblue;
+          }
+        }
+      }
 
-                li {
-                    padding: 0 10px;
-                    list-style-type: none;
+      .nav-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-                    a {
-                        color: aliceblue;
-                    }
-                }
-            }
-
-            .nav-right {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .explor-icon {
-                    width: 40px;
-                    height: 42px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 19px;
-                }
-
-                .user-menu-container {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 0 10px;
-                    background-color: #fff;
-                    border-radius: 30px;
-                    height: 42px;
-                    width: 77px;
-                    border: 1px solid #717171;
-
-                    .user-icon {
-                        width: 30px !important;
-                        height: 30px !important;
-
-                    }
-
-                    .user-menu {
-                        width: 16px;
-                        height: 16px;
-
-                    }
-                }
-
-            }
+        .explor-icon {
+          width: 40px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 19px;
         }
 
+        .user-menu-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px;
+          background-color: #fff;
+          border-radius: 30px;
+          height: 42px;
+          width: 77px;
+          border: 1px solid #717171;
+
+          .user-icon {
+            width: 30px !important;
+            height: 30px !important;
+          }
+
+          .user-menu {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
     }
+  }
 }
 
 // -------------scrolly nav-------
 .scrolly-active {
-    display: none;
+  display: none;
 }
 
 .scrolly-nav {
-    z-index: 10;
-    max-width: 848px;
-    height: 66px;
-    border: 1px solid #DDDDDD !important;
-    border-radius: 32px !important;
-    color: #222222 !important;
-    display: flex !important;
-    align-items: center;
+  z-index: 10;
+  max-width: 848px;
+  height: 66px;
+  border: 1px solid #dddddd !important;
+  border-radius: 32px !important;
+  color: #222222 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  position: relative !important;
+  top: 80px !important;
+  box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033 !important;
+  --big-search-form-background: #ffffff !important;
+  background-color: #ffffff !important;
+  margin: 0 auto;
+
+  .scrolly-active.scrolly-nav {
+    z-index: -11 !important;
+  }
+
+  div {
+    display: flex;
     justify-content: center;
-    flex-basis: 100%;
-    position: relative !important;
-    top: 80px !important;
-    box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033 !important;
-    --big-search-form-background: #FFFFFF !important;
-    background-color: #FFFFFF !important;
-    margin: 0 auto;
-
-    .scrolly-active.scrolly-nav {
-        z-index: -11 !important;
+    align-items: center;
+    div:hover {
+      background-color: rgb(216, 216, 216);
     }
 
-    div {
+    .scrolly-sec {
+      width: auto;
+      height: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left !important;
+      align-items: left !important;
+      text-align: left !important;
+      background-color: #fff;
+
+      p {
+        text-align: left !important;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    div:hover{
-        background-color: rgb(216, 216, 216);
-    }
+        align-self: left;
+      }
 
-        .scrolly-sec {
-            width: auto;
-            height: 36px;
-            display: flex;
-            flex-direction: column;
-            justify-content: left !important;
-            align-items: left !important;
-            text-align: left !important;
-            background-color: #fff;
-            
-            p {
-                text-align: left !important;
-                display: flex;
-                align-self: left;
+      input {
+        border: none;
 
-            }
-
-            input {
-                border: none;
-
-                input::placeholder {
-                    display: block !important;
-                    width: 100% !important;
-                    font-size: 14px !important;
-                    line-height: 18px !important;
-                    font-weight: 600 !important;
-                    color: #222222 !important;
-                    text-overflow: ellipsis !important
-                }
-            }
-
+        input::placeholder {
+          display: block !important;
+          width: 100% !important;
+          font-size: 14px !important;
+          line-height: 18px !important;
+          font-weight: 600 !important;
+          color: #222222 !important;
+          text-overflow: ellipsis !important;
         }
+      }
+    }
+  }
 
+  .location {
+    width: 27%;
+  }
 
+  .checkin {
+    width: 23%;
+    border-left: 1px solid rgb(187, 187, 187);
+  }
+
+  .checkout {
+    width: 23%;
+    border-left: 1px solid rgb(187, 187, 187);
+  }
+
+  .guestse {
+    width: 27%;
+    border-left: 1px solid rgb(187, 187, 187);
+
+    .scrolly-sec {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      width: 70%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .guests-txt {
+        display: flex;
+        flex-direction: column;
+        align-content: left !important;
+      }
     }
 
-    .location {
-        width: 27%;
-
+    .serach-icon {
+      width: 48px !important;
+      height: 48px !important;
+      background-color: #ff385c;
+      border-radius: 50%;
     }
-
-    .checkin {
-        width: 23%;
-        border-left: 1px solid rgb(187, 187, 187);
-    }
-
-    .checkout {
-        width: 23%;
-        border-left: 1px solid rgb(187, 187, 187);
-
-    }
-
-    .guestse {
-        width: 27%;
-        border-left: 1px solid rgb(187, 187, 187);
-
-        .scrolly-sec {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-content: center;
-            width: 70%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            .guests-txt{
-                display: flex;
-                flex-direction: column;
-                align-content: left !important;
-            }
-        }
-
-        .serach-icon {
-            width: 48px !important;
-            height: 48px !important;
-            background-color: #FF385C;
-            border-radius: 50%;
-        }
-
-    }
+  }
 }
 
 // -------------------hero img --------------------------
 .hero-img-holder {
+  width: 100%;
+  min-height: 620px;
+  z-index: 0;
+
+  .hero-img {
+    background-image: url("../img/hero-950.webp");
     width: 100%;
-    min-height: 620px;
+    height: 100vh;
+    margin-top: -17vh;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
     z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .hero-img {
-        background-image: url("../img/hero-950.webp");
-        width: 100%;
-        height: 100vh;
-        margin-top: -17vh;
-        background-position: center;
-        background-size: cover !important;
-        background-repeat: no-repeat;
-        z-index: 0;
+    .hero-txt {
+      margin-top: 10%;
+      max-width: 500px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h3 {
+        color: #222222;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+      }
+
+      .hero-btn {
+        box-shadow: 0px 6px 16px #00000021 !important;
+        transition: box-shadow 0.2s ease-out, -ms-transform 0.2s ease-out,
+          -webkit-transform 0.2s ease-out, transform 0.2s ease-out !important;
+        cursor: pointer;
+        margin: 16px auto 0;
+        max-width: 500px;
+        height: 64px;
+        width: 205px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 54px;
 
-        .hero-txt {
-            margin-top: 10%;
-            max-width: 500px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            h3 {
-                color: #222222;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 22px;
-            }
-
-            .hero-btn {
-                box-shadow: 0px 6px 16px #00000021 !important;
-                transition: box-shadow 0.2s ease-out, -ms-transform 0.2s ease-out, -webkit-transform 0.2s ease-out, transform 0.2s ease-out !important;
-                cursor: pointer;
-                margin: 16px auto 0;
-                max-width: 500px;
-                height: 64px;
-                width: 205px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #fff;
-                border-radius: 54px;
-
-                p {
-                    font-size: 18px;
-                    font-weight: 600;
-                    -webkit-text-fill-color: transparent !important;
-                    background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%) !important;
-                    -webkit-background-clip: text !important;
-                }
-
-            }
-
-            .hero-btn:active {
-                transform: scale(0.96) !important;
-            }
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          -webkit-text-fill-color: transparent !important;
+          background: linear-gradient(
+            90deg,
+            #6f019c 0%,
+            #c6017e 135.12%
+          ) !important;
+          -webkit-background-clip: text !important;
         }
+      }
+
+      .hero-btn:active {
+        transform: scale(0.96) !important;
+      }
     }
-
-
+  }
 }
 
 // --------------main-----------------------------
-main {
+.container__main {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+//slider on mobile --- $smallDevice: 320px;----
+
+.slider__title {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.slider__container {
+  /* line them up horizontally */
+  display: flex;
+  justify-content: space-between;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  scroll-snap-type: x mandatory;
+}
+
+.slider__container > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  height: 100%;
+}
+.slider__container img {
+  border-radius: 16px;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+}
+
+//slider on mobile --- $minimumDevice :744
+@media (max-width: $extraLargDevice) {
+  .container__main {
+    padding: 0 !important;
+  }
+  .slider__container {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .slider__container > div {
+    margin-right: 14px;
+  }
+}
+// .slider__container > div {
+//   width:23% !important;
+// }
+.slider-r {
+  display: none;
+}
+@media screen and (min-width: $minimumDevice) and (max-width: 769px) {
+  .slider-main {
+    display: none;
+  }
+  .slider-r {
+    display: block;
+  }
+  .main-card {
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+  }
+  //---------
+  .slider-arrow {
     width: 100%;
-    height: 1000px;
-    background-color: #717171;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    position: relative;
+  }
+  .slider-arrow .main-card {
+    display: flex;
+    transition: 1s;
+  }
+  .go-left {
+    margin-left: calc(-100% / 3) !important;
+  }
+  .card {
+    margin: 0 12px;
+  }
+  .slider-arrow .main-card .cards {
+    width: calc(100% / 2 - 10px);
+    display: flex;
+  }
+  .slider-arrow .cards .card {
+    // width: calc(100% / 3 - 10px);
+    transition: all 0.4s ease;
+  }
+  .cards .card .img {
+    width: 230px;
+  }
+  .arrow {
+    position: absolute;
+    z-index: 2;
+  }
+  .arrow-l {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .arrow button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    touch-action: manipulation !important;
+    // box-shadow: 0px 1px 1px 1px  rgb(0 ,0, 0,14%);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: $extraLargDevice) {
+  .slider__title {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  .slider__footer {
+    font-size: 18px !important;
+    line-height: 22px !important;
+    font-weight: 600;
+  }
+}
+
+// --------------/main-----------------------------
+
+
+
+//--------------fonts----------------------------//
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: 600;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: 800;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Airmoji_Standalone;
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Airglyphs;
+  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff")
+      format("woff"),
+    url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
