@@ -48,8 +48,6 @@ html {
 
 body {
   width: 100%;
-  font-family: "Arial", "Circular", "-apple-system", "BlinkMacSystemFont",
-    "Roboto", "Helvetica Neue", "sans-serif";
   line-height: 1.43;
 }
 
@@ -334,14 +332,9 @@ header {
 //slider on mobile --- $smallDevice: 320px;----
 
 .slider__title {
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-weight: 800;
-  font-style: normal;
+    font-size:26px ;
+    font-weight: 700;
+    line-height: 50px;
 }
 
 .slider__container {
@@ -388,14 +381,28 @@ header {
   .slider__container > div {
     margin-right: 14px;
   }
+  .slider__title{
+    padding-left: 20px;
+  }
 }
 // .slider__container > div {
 //   width:23% !important;
 // }
 .slider-r {
+  position: relative;
+  width: 46rem;
+  margin: 0 auto;
   display: none;
 }
 @media screen and (min-width: $minimumDevice) and (max-width: 769px) {
+  // .slider__title{
+  //   font-size:26px ;
+  //   font-weight: 700;
+  //   line-height: 50px;
+  // }
+  .slider__section .slider__title{
+    display: none;
+  }
   .slider-main {
     display: none;
   }
@@ -436,7 +443,7 @@ header {
     transition: all 0.4s ease;
   }
   .cards .card .img {
-    width: 230px;
+    width: 203px;
   }
   .arrow {
     position: absolute;
@@ -463,7 +470,7 @@ header {
   .card .img img {
     height: 100%;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 }
 
@@ -472,16 +479,15 @@ header {
     font-size: 32px;
     margin-bottom: 2rem;
   }
-  .slider__footer {
-    font-size: 18px !important;
-    line-height: 22px !important;
-    font-weight: 600;
-  }
+}
+
+.slider__footer {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-weight: 600;
 }
 
 // --------------/main-----------------------------
-
-
 
 //--------------fonts----------------------------//
 @font-face {
