@@ -21,10 +21,14 @@ function userMenuDropdown() {
 const locationn = document.querySelector(".locationDD");
 const locationBTN = document.querySelector(".location");
 const checkinn = document.querySelector(".checkin");
+const checkoutt = document.querySelector(".checkout");
+const guestss = document.querySelector(".guests")
 function showfunction() {
   locationn.classList.toggle("showLocation");
   locationBTN.classList.toggle("showLocationBTN");
-  checkinn.classList.toggle("checkinBRD")
+  checkinn.classList.toggle("checkinSEC");
+  checkoutt.classList.toggle("checkoutSEC");
+  guestss.classList.toggle("guestsSEC");
   console.log("open dropdown for location");
 }
 

@@ -297,7 +297,7 @@ header {
   --big-search-form-background: #FFFFFF;
   background-color: #FFFFFF;
   margin: 0 auto;
-  transition: width 0.4s ease;
+  transition: all 0.2s ease;
 
 
   div {
@@ -309,7 +309,7 @@ header {
 
 
     .scrolly-sec {
-      width: auto;
+      width: 100%;
       height: 36px;
       display: flex;
       flex-direction: column;
@@ -317,6 +317,8 @@ header {
       align-items: self-start;
       text-align: left !important;
       background-color: transparent;
+      padding-left: 20px;
+      transition: all 0.2s ease;
 
       p {
         text-align: left !important;
@@ -353,7 +355,7 @@ header {
 
   .location {
     width: 27%;
-    padding-left: 15px;
+    padding-left: 5px;
 
 
   }
@@ -377,12 +379,23 @@ header {
 
   .checkin {
     width: 23%;
-    border-left: 1px solid rgb(187, 187, 187);
+
+    .scrolly-sec {
+      border-left: 1px solid #e2e2e2;
+      border-right: 1px solid #e2e2e2;
+    }
   }
 
   // ----for script
-  .checkinBRD {
+
+  .checkinSEC {
+    margin-right: 30px;
+  }
+
+  .checkinSEC .scrolly-sec {
     border-left: none !important;
+
+
   }
 
   .checkin:hover {
@@ -393,8 +406,15 @@ header {
 
   .checkout {
     width: 23%;
-    border-left: 1px solid rgb(187, 187, 187);
 
+    .scrolly-sec {
+      border-right: 1px solid #e2e2e2;
+    }
+
+  }
+
+  .checkoutSEC {
+    margin-right: 30px;
   }
 
   .checkout:hover {
@@ -405,7 +425,6 @@ header {
 
   .guests {
     width: 27%;
-    border-left: 1px solid rgb(187, 187, 187);
 
     .scrolly-sec {
       display: flex;
@@ -428,6 +447,19 @@ header {
         height: 100%;
         align-items: start;
         justify-content: center;
+      }
+    }
+
+    .guestsSEC {
+      margin-right: 30px !important;
+
+      .scrolly-sec {
+        .serach-icon {
+          width: 111.75px !important;
+          transition: opacity 1.25s ease 0s !important;
+          border-radius: 25px;
+          background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
+        }
       }
     }
 
