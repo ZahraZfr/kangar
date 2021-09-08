@@ -562,6 +562,138 @@ header .container .nav-right .show {
   border-radius: 32px !important;
 }
 
+.scrolly-nav .guestsDD {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 394px;
+  height: 243px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 6px 16px #00000021 !important;
+          box-shadow: 0px 6px 16px #00000021 !important;
+  position: absolute;
+  top: 78px !important;
+  right: 2px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer {
+  width: 330px;
+  height: 213px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  height: 71px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt h3 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt span {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+  color: #717171 !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon {
+  width: 104px !important;
+  height: 32px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button {
+  width: 32px !important;
+  height: 32px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-color: #b0b0b0 !important;
+  color: #717171 !important;
+  font-family: inherit !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button:hover {
+  color: #222222 !important;
+  border-color: #222222 !important;
+  background: white !important;
+  cursor: pointer;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .num {
+  max-width: 16px;
+  height: 32px;
+  margin: 0 5px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .adultSec {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .childrenSec {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.scrolly-nav .guedtsDDshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .scrolly-nav .locationDD {
   display: none;
   -webkit-box-orient: vertical;
