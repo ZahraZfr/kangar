@@ -295,9 +295,10 @@ header {
   top: 80px !important;
   box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033;
   --big-search-form-background: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: #f7f7f7;
   margin: 0 auto;
   transition: all 0.2s ease;
+  overflow: hidden;
 
 
   div {
@@ -387,15 +388,12 @@ header {
   }
 
   // ----for script
-
+   .guestsSEC .guests-appear , .checkinSEC , .checkoutSEC{
+    margin-right: 30px;
+  }
   .checkinSEC .scrolly-sec {
     border-left: none !important;
-    margin-right: 30px;
-
-    .checkinSEC:hover {
-      margin-right: 30px;
-    }
-
+    
   }
 
   .checkin:hover {
@@ -413,10 +411,6 @@ header {
 
   }
 
-  // **script
-  .checkoutSEC .scrolly-sec {
-    margin-right: 30px;
-  }
 
   .checkout:hover {
     background-color: rgb(226, 226, 226);
@@ -452,10 +446,6 @@ header {
     }
 
     // **script
-    .guestsSEC {
-      margin-right: 30px;
-      width: 29%;
-    }
 
     .guestsSEC .scrolly-sec {
       margin-right: 30px;
@@ -472,24 +462,26 @@ header {
       display: none;
     }
   }
+.checkinG , .checkoutG , .locationG{
+  margin-right: 30px;
+}
+// **script
+.serachShow , .serachShowG{
+  width: 111.75px !important;
+  transition: opacity 1.25s ease 0s !important;
+  border-radius: 25px !important;
+  padding: 0 20px !important;
+  margin-right: 10px !important;
+  background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
 
-  // **script
-  .serachShow {
-    width: 111.75px !important;
-    transition: opacity 1.25s ease 0s !important;
-    border-radius: 25px !important;
-    padding: 0 20px !important;
-    margin-right: 10px !important;
-    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
+  .disapear {
+    display: block;
+    color: #fff;
+    padding-left: 10px;
+    line-height: 48px;
 
-    .disapear {
-      display: block;
-      color: #fff;
-      padding-left: 10px;
-      line-height: 48px;
-
-    }
   }
+}
 
   // **guests open script
   .showGuestBTN {
@@ -601,12 +593,11 @@ header {
         border-bottom: 1px solid rgb(230, 230, 230);
       }
 
-      .InfantsSec {
-
-      }
     }
   }
-
+  .checkoutSECBRD .scrolly-sec{
+    border-right: none;
+  }
   .guedtsDDshow {
     display: flex;
   }

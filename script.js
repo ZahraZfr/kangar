@@ -39,8 +39,12 @@ function showLocationF() {
 // ---------------------guests dropdown
 function showGuestsF() {
   guestsBTN.classList.toggle("showGuestBTN");
-  pinkSearch.classList.toggle("serachShow");
+  pinkSearch.classList.toggle("serachShowG");
   guedtsDD.classList.toggle("guedtsDDshow");
+  checkoutt.classList.toggle("checkoutSECBRD");
+  checkinn.classList.toggle("checkinG");
+  checkoutt.classList.toggle("checkoutG");
+  locationBTN.classList.toggle("locationG");
   console.log("open dropdown for guests");
 }
 
@@ -63,8 +67,12 @@ $(document).click(function (event) {
   // for guests
   if ((!$(event.target).closest(guestsBTN).length) && (!$(event.target).closest(guestsBTN).length)) {
     guestsBTN.classList.remove("showGuestBTN");
-    pinkSearch.classList.remove("serachShow");
+    pinkSearch.classList.remove("serachShowG");
     guedtsDD.classList.remove("guedtsDDshow");
+    checkoutt.classList.remove("checkoutSECBRD");
+    checkinn.classList.remove("checkinG");
+    checkoutt.classList.remove("checkoutG");
+    locationBTN.classList.remove("locationG");
     console.log("close drop down guests");
   }
 });
