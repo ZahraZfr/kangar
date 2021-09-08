@@ -575,6 +575,141 @@ header .container .nav .nav-right .user-menu-container .user-menu {
   font-weight: 600;
 }
 
+@media (min-width: 744px) {
+  .adv-woman-responsive {
+    display: none;
+  }
+}
+
+@media (max-width: 744px) {
+  .adv-woman {
+    display: none;
+  }
+  .adv-woman-responsive {
+    padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .adv-woman-responsive img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+  }
+  .adv-woman-responsive .content1 {
+    padding: 32px;
+    text-align: center;
+    width: auto !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+    -webkit-box-align: start !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+    height: 100% !important;
+    position: absolute;
+    color: white;
+  }
+  .adv-woman-responsive .content1 h2 {
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+  .adv-woman-responsive .content1 div {
+    margin-top: 10px;
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .adv-woman-responsive .content1 button {
+    margin-top: 10px;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 500;
+    padding: 9px 16px !important;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+}
+
+.adv-woman {
+  margin-top: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.adv-woman img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.adv-woman .content {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+  width: 544px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center !important;
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+      align-items: flex-start !important;
+  height: 100% !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  color: white;
+}
+
+.adv-woman .content h2 {
+  font-size: 3rem;
+}
+
+.adv-woman .content div {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  line-break: strict;
+  display: block;
+  white-space: pre-line !important;
+}
+
+.adv-woman .content div span {
+  white-space: pre-line !important;
+}
+
+.adv-woman .content button {
+  margin-top: 40px;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 400;
+  padding: 14px 24px !important;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
 @font-face {
   font-family: Circular;
   unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
