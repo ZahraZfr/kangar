@@ -427,12 +427,13 @@ header .container .nav-right .show {
   border-right: 1px solid #e2e2e2;
 }
 
-.scrolly-nav .checkinSEC {
+.scrolly-nav .checkinSEC .scrolly-sec {
+  border-left: none !important;
   margin-right: 30px;
 }
 
-.scrolly-nav .checkinSEC .scrolly-sec {
-  border-left: none !important;
+.scrolly-nav .checkinSEC .scrolly-sec .checkinSEC:hover {
+  margin-right: 30px;
 }
 
 .scrolly-nav .checkin:hover {
@@ -449,7 +450,7 @@ header .container .nav-right .show {
   border-right: 1px solid #e2e2e2;
 }
 
-.scrolly-nav .checkoutSEC {
+.scrolly-nav .checkoutSEC .scrolly-sec {
   margin-right: 30px;
 }
 
@@ -505,15 +506,12 @@ header .container .nav-right .show {
 }
 
 .scrolly-nav .guests .guestsSEC {
-  margin-right: 30px !important;
+  margin-right: 30px;
+  width: 29%;
 }
 
-.scrolly-nav .guests .guestsSEC .scrolly-sec .serach-icon {
-  width: 111.75px !important;
-  -webkit-transition: opacity 1.25s ease 0s !important;
-  transition: opacity 1.25s ease 0s !important;
-  border-radius: 25px;
-  background-image: radial-gradient(circle at center center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%) !important;
+.scrolly-nav .guests .guestsSEC .scrolly-sec {
+  margin-right: 30px;
 }
 
 .scrolly-nav .guests .serach-icon {
@@ -521,6 +519,41 @@ header .container .nav-right .show {
   height: 48px;
   background-color: #FF385C;
   border-radius: 50%;
+}
+
+.scrolly-nav .guests .disapear {
+  display: none;
+}
+
+.scrolly-nav .serachShow {
+  width: 111.75px !important;
+  -webkit-transition: opacity 1.25s ease 0s !important;
+  transition: opacity 1.25s ease 0s !important;
+  border-radius: 25px !important;
+  padding: 0 20px !important;
+  margin-right: 10px !important;
+  background-image: radial-gradient(circle at center center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%) !important;
+}
+
+.scrolly-nav .serachShow .disapear {
+  display: block;
+  color: #fff;
+  padding-left: 10px;
+  line-height: 48px;
+}
+
+.scrolly-nav .showGuestBTN {
+  border-radius: 30px !important;
+  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+  z-index: 15 !important;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  cursor: pointer;
+}
+
+.scrolly-nav .showGuestBTN:hover {
+  background-color: #FFFFFF !important;
 }
 
 .scrolly-nav .guests:hover {

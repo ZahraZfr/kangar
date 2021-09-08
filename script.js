@@ -17,53 +17,55 @@ function userMenuDropdown() {
 }
 
 
-// --------------------location dropdown
+// ----------- scrolly const
 const locationn = document.querySelector(".locationDD");
 const locationBTN = document.querySelector(".location");
 const checkinn = document.querySelector(".checkin");
 const checkoutt = document.querySelector(".checkout");
-const guestss = document.querySelector(".guests")
-function showfunction() {
+const guestss = document.querySelector(".guests");
+const guestsBTN = document.querySelector(".guests");
+const pinkSearch = document.querySelector(".serach-icon")
+// --------------------location dropdown
+function showLocationF() {
   locationn.classList.toggle("showLocation");
   locationBTN.classList.toggle("showLocationBTN");
   checkinn.classList.toggle("checkinSEC");
   checkoutt.classList.toggle("checkoutSEC");
   guestss.classList.toggle("guestsSEC");
+  pinkSearch.classList.toggle("serachShow");
   console.log("open dropdown for location");
 }
 
-// ------for Close the dropdown if the user clicks outside of it
-// document.onclick = function (e) {
-//   console.log("outer close dropdown if");
-//   if (e.target.id !== 'userdd' && e.target.id !== 'userddBTN') {
-//     userdd.classList.remove("show");
-//     console.log("inner close dropdown if");
-//   }
-// }
 
-// $(document).click(function (event) {
-//   if (!$(event.target).closest(userdd).length) {
-//     userdd.style.display = "none";
-//     console.log("aaaaaaa");
-//   }
-// });
-
-
+// --------closer dropdown of signin btn
+$(document).click(function (event) {
+  if ((!$(event.target).closest(userdd).length) && (!$(event.target).closest(userddBTN).length)) {
+    userdd.classList.remove("show")
+    console.log("close drop down");
+  }
+  if ((!$(event.target).closest(locationn).length) && (!$(event.target).closest(locationBTN).length)) {
+    locationn.classList.remove("showLocation");
+    locationBTN.classList.remove("showLocationBTN");
+    checkinn.classList.remove("checkinSEC");
+    pinkSearch.classList.remove("serachShow");
+    console.log("close drop down location");
+  }
+});
 
 //tablet slider
 
-const arrowRight =document.querySelector('.arrow-r')
-const arrowLeft =document.querySelector('.arrow-l')
-const mainCard =document.querySelector('.main-card')
-arrowRight.addEventListener("click", ()=>{
-mainCard.classList.add("go-left")
-arrowLeft.classList.add("active")
-arrowRight.classList.add("hide")
+const arrowRight = document.querySelector('.arrow-r')
+const arrowLeft = document.querySelector('.arrow-l')
+const mainCard = document.querySelector('.main-card')
+arrowRight.addEventListener("click", () => {
+  mainCard.classList.add("go-left")
+  arrowLeft.classList.add("active")
+  arrowRight.classList.add("hide")
 
 })
 
-arrowLeft.addEventListener("click" , () => {
-    mainCard.classList.remove("go-left")
-    arrowLeft.classList.remove("active")
-    arrowRight.classList.remove("hide")
+arrowLeft.addEventListener("click", () => {
+  mainCard.classList.remove("go-left")
+  arrowLeft.classList.remove("active")
+  arrowRight.classList.remove("hide")
 })

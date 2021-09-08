@@ -388,13 +388,13 @@ header {
 
   // ----for script
 
-  .checkinSEC {
-    margin-right: 30px;
-  }
-
   .checkinSEC .scrolly-sec {
     border-left: none !important;
+    margin-right: 30px;
 
+    .checkinSEC:hover {
+      margin-right: 30px;
+    }
 
   }
 
@@ -413,7 +413,8 @@ header {
 
   }
 
-  .checkoutSEC {
+  // **script
+  .checkoutSEC .scrolly-sec {
     margin-right: 30px;
   }
 
@@ -450,17 +451,14 @@ header {
       }
     }
 
+    // **script
     .guestsSEC {
-      margin-right: 30px !important;
+      margin-right: 30px;
+      width: 29%;
+    }
 
-      .scrolly-sec {
-        .serach-icon {
-          width: 111.75px !important;
-          transition: opacity 1.25s ease 0s !important;
-          border-radius: 25px;
-          background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
-        }
-      }
+    .guestsSEC .scrolly-sec {
+      margin-right: 30px;
     }
 
     .serach-icon {
@@ -470,6 +468,39 @@ header {
       border-radius: 50%;
     }
 
+    .disapear {
+      display: none;
+    }
+  }
+
+  // **script
+  .serachShow {
+    width: 111.75px !important;
+    transition: opacity 1.25s ease 0s !important;
+    border-radius: 25px !important;
+    padding: 0 20px !important;
+    margin-right: 10px !important;
+    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
+
+    .disapear {
+      display: block;
+      color: #fff;
+      padding-left: 10px;
+      line-height: 48px;
+    }
+  }
+
+  // **guests open script
+  .showGuestBTN {
+    border-radius: 30px !important;
+    box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+    z-index: 15 !important;
+    margin-inline-end: auto;
+    cursor: pointer;
+  }
+
+  .showGuestBTN:hover {
+    background-color: #FFFFFF !important;
   }
 
   .guests:hover {
