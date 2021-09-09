@@ -230,7 +230,7 @@ header .container .nav-right .user-dropdown .user-dropdown-last:hover {
 }
 
 header .container .nav-right .user-dropdown div:hover {
-  background-color: #c2c2c2;
+  background-color: #f3f3f3;
 }
 
 header .container .nav-right .show {
@@ -295,7 +295,6 @@ header .container .nav-right .show {
   margin: 0 auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  overflow: hidden;
 }
 
 .scrolly-nav div {
@@ -428,7 +427,9 @@ header .container .nav-right .show {
   border-right: 1px solid #e2e2e2;
 }
 
-.scrolly-nav .guestsSEC .guests-appear, .scrolly-nav .checkinSEC, .scrolly-nav .checkoutSEC {
+.scrolly-nav .guestsSEC .guests-appear,
+.scrolly-nav .checkinSEC,
+.scrolly-nav .checkoutSEC {
   margin-right: 30px;
 }
 
@@ -516,11 +517,14 @@ header .container .nav-right .show {
   display: none;
 }
 
-.scrolly-nav .checkinG, .scrolly-nav .checkoutG, .scrolly-nav .locationG {
+.scrolly-nav .checkinG,
+.scrolly-nav .checkoutG,
+.scrolly-nav .locationG {
   margin-right: 30px;
 }
 
-.scrolly-nav .serachShow, .scrolly-nav .serachShowG {
+.scrolly-nav .serachShow,
+.scrolly-nav .serachShowG {
   width: 111.75px !important;
   -webkit-transition: opacity 1.25s ease 0s !important;
   transition: opacity 1.25s ease 0s !important;
@@ -530,7 +534,8 @@ header .container .nav-right .show {
   background-image: radial-gradient(circle at center center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%) !important;
 }
 
-.scrolly-nav .serachShow .disapear, .scrolly-nav .serachShowG .disapear {
+.scrolly-nav .serachShow .disapear,
+.scrolly-nav .serachShowG .disapear {
   display: block;
   color: #fff;
   padding-left: 10px;
@@ -662,10 +667,24 @@ header .container .nav-right .show {
   font-family: inherit !important;
 }
 
-.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button:hover {
-  color: #222222 !important;
-  border-color: #222222 !important;
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .forbiddenIcon {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
   background: white !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .forbiddenIcon:hover {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: white !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button:hover {
+  color: #222222;
+  border-color: #222222;
+  background: white;
   cursor: pointer;
 }
 
@@ -700,8 +719,7 @@ header .container .nav-right .show {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white !important;
-  z-index: 12 !important;
-  z-index: 12 !important;
+  z-index: 15 !important;
   width: 500px !important;
   height: 160px !important;
   position: absolute !important;

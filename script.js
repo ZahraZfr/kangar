@@ -28,23 +28,23 @@ const guedtsDD = document.querySelector(".guestsDD");
 const pinkSearch = document.querySelector(".serach-icon");
 // --------------------location dropdown
 function showLocationF() {
-  locationn.classList.toggle("showLocation");
-  locationBTN.classList.toggle("showLocationBTN");
-  checkinn.classList.toggle("checkinSEC");
-  checkoutt.classList.toggle("checkoutSEC");
-  guestss.classList.toggle("guestsSEC");
-  pinkSearch.classList.toggle("serachShow");
+  locationn.classList.add("showLocation");
+  locationBTN.classList.add("showLocationBTN");
+  checkinn.classList.add("checkinSEC");
+  checkoutt.classList.add("checkoutSEC");
+  guestss.classList.add("guestsSEC");
+  pinkSearch.classList.add("serachShow");
   console.log("open dropdown for location");
 }
 // ---------------------guests dropdown
 function showGuestsF() {
-  guestsBTN.classList.toggle("showGuestBTN");
-  pinkSearch.classList.toggle("serachShowG");
-  guedtsDD.classList.toggle("guedtsDDshow");
-  checkoutt.classList.toggle("checkoutSECBRD");
-  checkinn.classList.toggle("checkinG");
-  checkoutt.classList.toggle("checkoutG");
-  locationBTN.classList.toggle("locationG");
+  guestsBTN.classList.add("showGuestBTN");
+  pinkSearch.classList.add("serachShowG");
+  guedtsDD.classList.add("guedtsDDshow");
+  checkoutt.classList.add("checkoutSECBRD");
+  checkinn.classList.add("checkinG");
+  checkoutt.classList.add("checkoutG");
+  locationBTN.classList.add("locationG");
   console.log("open dropdown for guests");
 }
 
@@ -65,7 +65,7 @@ $(document).click(function (event) {
     console.log("close drop down location");
   }
   // for guests
-  if ((!$(event.target).closest(guestsBTN).length) && (!$(event.target).closest(guestsBTN).length)) {
+  if ((!$(event.target).closest(guedtsDD).length) && (!$(event.target).closest(guestsBTN).length)) {
     guestsBTN.classList.remove("showGuestBTN");
     pinkSearch.classList.remove("serachShowG");
     guedtsDD.classList.remove("guedtsDDshow");
@@ -76,6 +76,101 @@ $(document).click(function (event) {
     console.log("close drop down guests");
   }
 });
+
+
+
+
+// ------------- child counter --------------------------
+const childCoun = document.querySelector(".childrenNum");
+const decChild = document.querySelector(".decBtnChild");
+const incChild = document.querySelector(".IncBtnChild");
+let countervalueC = 0;
+// ----for increase
+incChild.addEventListener('click', function (event) {
+  if (countervalueC < 5) {
+    countervalueC += 1;
+    childCoun.innerHTML = countervalueC;
+    console.log("increase");
+    incChild.classList.remove("forbiddenIcon");
+  }else{
+    incChild.classList.add("forbiddenIcon");
+  }
+});
+//-----for decrease
+decChild.addEventListener('click', function (event) {
+  if (countervalueC > 0) {
+    countervalueC -= 1;
+    childCoun.innerHTML = countervalueC;
+    decChild.classList.remove("forbiddenIcon");
+    console.log("decrease");
+  }else{
+    decChild.classList.add("forbiddenIcon");
+  }
+});
+
+
+// ------------- Infants counter --------------------------
+const InfantsNum = document.querySelector(".InfantsNum");
+const decInfants = document.querySelector(".decBtnInfants");
+const incInfants = document.querySelector(".IncBtnInfants");
+let countervalueI = 0;
+// ----for increase
+incInfants.addEventListener('click', function (event) {
+  console.log("------------------------------")
+  if (countervalueI < 5) {
+    countervalueI += 1;
+    InfantsNum.innerHTML = countervalueI;
+    console.log("increase Infants");
+    incInfants.classList.remove("forbiddenIcon");
+  }else{
+    incInfants.classList.add("forbiddenIcon");
+  }
+});
+//-----for decrease
+decInfants.addEventListener('click', function (event) {
+  if (countervalueI > 0) {
+    countervalueI -= 1;
+    InfantsNum.innerHTML = countervalueI;
+    decInfants.classList.remove("forbiddenIcon");
+    console.log("decrease Infants");
+  }else{
+    decInfants.classList.add("forbiddenIcon");
+  }
+});
+
+
+
+// ------------- Adult counter ----------------------------------
+const adualtCoun = document.querySelector(".adultNum");
+const decAdualt = document.querySelector(".decBtnAdults");
+const incAdualt = document.querySelector(".IncBtnAdults");
+let countervalueA = 0;
+// ----for increase
+incAdualt.addEventListener('click', function (event) {
+  if (countervalueA < 15) {
+    countervalueA += 1;
+    adualtCoun.innerHTML = countervalueA;
+    console.log("increase");
+    incAdualt.classList.remove("forbiddenIcon");
+  }else{
+    incAdualt.classList.add("forbiddenIcon");
+  }
+});
+//-----for decrease
+decAdualt.addEventListener('click', function (event) {
+  if (countervalueA > 0) {
+    countervalueA -= 1;
+    adualtCoun.innerHTML = countervalueA;
+    decAdualt.classList.remove("forbiddenIcon");
+    console.log("decrease");
+  }else{
+    decAdualt.classList.add("forbiddenIcon");
+  }
+});
+
+
+
+
 
 //tablet slider
 

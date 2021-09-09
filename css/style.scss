@@ -234,7 +234,7 @@ header {
         }
 
         div:hover {
-          background-color: #c2c2c2;
+          background-color: #f3f3f3;
         }
       }
 
@@ -298,7 +298,7 @@ header {
   background-color: #f7f7f7;
   margin: 0 auto;
   transition: all 0.2s ease;
-  overflow: hidden;
+  // overflow: hidden;
 
 
   div {
@@ -388,12 +388,15 @@ header {
   }
 
   // ----for script
-   .guestsSEC .guests-appear , .checkinSEC , .checkoutSEC{
+  .guestsSEC .guests-appear,
+  .checkinSEC,
+  .checkoutSEC {
     margin-right: 30px;
   }
+
   .checkinSEC .scrolly-sec {
     border-left: none !important;
-    
+
   }
 
   .checkin:hover {
@@ -462,26 +465,31 @@ header {
       display: none;
     }
   }
-.checkinG , .checkoutG , .locationG{
-  margin-right: 30px;
-}
-// **script
-.serachShow , .serachShowG{
-  width: 111.75px !important;
-  transition: opacity 1.25s ease 0s !important;
-  border-radius: 25px !important;
-  padding: 0 20px !important;
-  margin-right: 10px !important;
-  background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
 
-  .disapear {
-    display: block;
-    color: #fff;
-    padding-left: 10px;
-    line-height: 48px;
-
+  .checkinG,
+  .checkoutG,
+  .locationG {
+    margin-right: 30px;
   }
-}
+
+  // **script
+  .serachShow,
+  .serachShowG {
+    width: 111.75px !important;
+    transition: opacity 1.25s ease 0s !important;
+    border-radius: 25px !important;
+    padding: 0 20px !important;
+    margin-right: 10px !important;
+    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
+
+    .disapear {
+      display: block;
+      color: #fff;
+      padding-left: 10px;
+      line-height: 48px;
+
+    }
+  }
 
   // **guests open script
   .showGuestBTN {
@@ -569,10 +577,23 @@ header {
             font-family: inherit !important;
           }
 
-          button:hover {
-            color: rgb(34, 34, 34) !important;
-            border-color: rgb(34, 34, 34) !important;
+          .forbiddenIcon {
+            cursor: not-allowed !important;
+            color: rgb(235, 235, 235) !important;
+            border-color: rgb(235, 235, 235) !important;
             background: rgb(255, 255, 255) !important;
+          }
+          .forbiddenIcon:hover {
+            cursor: not-allowed !important;
+            color: rgb(235, 235, 235) !important;
+            border-color: rgb(235, 235, 235) !important;
+            background: rgb(255, 255, 255) !important;
+          }
+
+          button:hover {
+            color: rgb(34, 34, 34) ;
+            border-color: rgb(34, 34, 34) ;
+            background: rgb(255, 255, 255) ;
             cursor: pointer;
           }
 
@@ -595,9 +616,11 @@ header {
 
     }
   }
-  .checkoutSECBRD .scrolly-sec{
+
+  .checkoutSECBRD .scrolly-sec {
     border-right: none;
   }
+
   .guedtsDDshow {
     display: flex;
   }
@@ -607,8 +630,7 @@ header {
     display: none;
     flex-direction: column;
     background-color: white !important;
-    z-index: 12 !important;
-    z-index: 12 !important;
+    z-index: 15 !important;
     width: 500px !important;
     height: 160px !important;
     position: absolute !important;
