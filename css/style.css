@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-size: 15px;
 }
 
@@ -230,7 +230,7 @@ header .container .nav-right .user-dropdown .user-dropdown-last:hover {
 }
 
 header .container .nav-right .user-dropdown div:hover {
-  background-color: #c2c2c2;
+  background-color: #f3f3f3;
 }
 
 header .container .nav-right .show {
@@ -291,7 +291,7 @@ header .container .nav-right .show {
   -webkit-box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033;
           box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033;
   --big-search-form-background: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: #f7f7f7;
   margin: 0 auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -427,13 +427,14 @@ header .container .nav-right .show {
   border-right: 1px solid #e2e2e2;
 }
 
-.scrolly-nav .checkinSEC .scrolly-sec {
-  border-left: none !important;
+.scrolly-nav .guestsSEC .guests-appear,
+.scrolly-nav .checkinSEC,
+.scrolly-nav .checkoutSEC {
   margin-right: 30px;
 }
 
-.scrolly-nav .checkinSEC .scrolly-sec .checkinSEC:hover {
-  margin-right: 30px;
+.scrolly-nav .checkinSEC .scrolly-sec {
+  border-left: none !important;
 }
 
 .scrolly-nav .checkin:hover {
@@ -448,10 +449,6 @@ header .container .nav-right .show {
 
 .scrolly-nav .checkout .scrolly-sec {
   border-right: 1px solid #e2e2e2;
-}
-
-.scrolly-nav .checkoutSEC .scrolly-sec {
-  margin-right: 30px;
 }
 
 .scrolly-nav .checkout:hover {
@@ -505,11 +502,6 @@ header .container .nav-right .show {
           justify-content: center;
 }
 
-.scrolly-nav .guests .guestsSEC {
-  margin-right: 30px;
-  width: 29%;
-}
-
 .scrolly-nav .guests .guestsSEC .scrolly-sec {
   margin-right: 30px;
 }
@@ -525,7 +517,14 @@ header .container .nav-right .show {
   display: none;
 }
 
-.scrolly-nav .serachShow {
+.scrolly-nav .checkinG,
+.scrolly-nav .checkoutG,
+.scrolly-nav .locationG {
+  margin-right: 30px;
+}
+
+.scrolly-nav .serachShow,
+.scrolly-nav .serachShowG {
   width: 111.75px !important;
   -webkit-transition: opacity 1.25s ease 0s !important;
   transition: opacity 1.25s ease 0s !important;
@@ -535,7 +534,8 @@ header .container .nav-right .show {
   background-image: radial-gradient(circle at center center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%) !important;
 }
 
-.scrolly-nav .serachShow .disapear {
+.scrolly-nav .serachShow .disapear,
+.scrolly-nav .serachShowG .disapear {
   display: block;
   color: #fff;
   padding-left: 10px;
@@ -562,6 +562,156 @@ header .container .nav-right .show {
   border-radius: 32px !important;
 }
 
+.scrolly-nav .guestsDD {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 394px;
+  height: 243px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 6px 16px #00000021 !important;
+          box-shadow: 0px 6px 16px #00000021 !important;
+  position: absolute;
+  top: 78px !important;
+  right: 2px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer {
+  width: 330px;
+  height: 213px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  height: 71px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt h3 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsDDtxt span {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+  color: #717171 !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon {
+  width: 104px !important;
+  height: 32px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button {
+  width: 32px !important;
+  height: 32px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-color: #b0b0b0 !important;
+  color: #717171 !important;
+  font-family: inherit !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .forbiddenIcon {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: white !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .forbiddenIcon:hover {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: white !important;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon button:hover {
+  color: #222222;
+  border-color: #222222;
+  background: white;
+  cursor: pointer;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .gustsAllSEC .guestsCon .num {
+  max-width: 16px;
+  height: 32px;
+  margin: 0 5px;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .adultSec {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.scrolly-nav .guestsDD .guestsDDcountainer .childrenSec {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.scrolly-nav .checkoutSECBRD .scrolly-sec {
+  border-right: none;
+}
+
+.scrolly-nav .guedtsDDshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .scrolly-nav .locationDD {
   display: none;
   -webkit-box-orient: vertical;
@@ -569,8 +719,7 @@ header .container .nav-right .show {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white !important;
-  z-index: 12 !important;
-  z-index: 12 !important;
+  z-index: 15 !important;
   width: 500px !important;
   height: 160px !important;
   position: absolute !important;
@@ -1041,7 +1190,7 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -1108,7 +1257,7 @@ header .container .nav-right .show {
   font-size: 16px !important;
   line-height: 18px !important;
   letter-spacing: normal !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 400;
   padding: 14px 24px !important;
   border-radius: 10px;
@@ -1118,7 +1267,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: normal;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
@@ -1127,7 +1276,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 600;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
@@ -1136,7 +1285,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
   src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
