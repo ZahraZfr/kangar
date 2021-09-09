@@ -834,14 +834,9 @@ header {
 //slider on mobile --- $smallDevice: 320px;----
 
 .slider__title {
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-weight: 800;
-  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 .slider__container {
@@ -891,16 +886,30 @@ header {
   .slider__container>div {
     margin-right: 14px;
   }
+  .slider__title {
+    padding-left: 20px;
+  }
 }
 
 // .slider__container > div {
 //   width:23% !important;
 // }
 .slider-r {
+  position: relative;
+  width: 46rem;
+  margin: 0 auto;
   display: none;
 }
 
 @media screen and (min-width: $minimumDevice) and (max-width: 769px) {
+  // .slider__title{
+  //   font-size:26px ;
+  //   font-weight: 700;
+  //   line-height: 50px;
+  // }
+  .slider__section .slider__title {
+    display: none;
+  }
   .slider-main {
     display: none;
   }
@@ -950,7 +959,7 @@ header {
   }
 
   .cards .card .img {
-    width: 230px;
+    width: 203px;
   }
 
   .arrow {
@@ -982,7 +991,7 @@ header {
   .card .img img {
     height: 100%;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 }
 
@@ -991,17 +1000,139 @@ header {
     font-size: 32px;
     margin-bottom: 2rem;
   }
+}
 
-  .slider__footer {
-    font-size: 18px !important;
-    line-height: 22px !important;
-    font-weight: 600;
+.slider__footer {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-weight: 600;
+}
+//--------add-woman------------///
+@media (min-width: $minimumDevice) {
+  .adv-woman-responsive{
+    display: none;
+  }
+}
+@media (max-width: $minimumDevice) {
+  .adv-woman {
+    display: none;
+  }
+
+  .adv-woman-responsive {
+    padding: 0 24px;
+    display:flex;
+    justify-content: center;
+  
+    img {
+      width: 100%;
+      height: 100%;
+  border-radius: 16px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    .content1 {
+      padding: 32px;
+
+      text-align: center;
+      width: auto !important;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center !important;
+      -webkit-box-align: start !important;
+      align-items: center !important;
+      height: 100% !important;
+
+
+      position: absolute;
+      color: white;
+
+      h2 {
+        
+        font-size: 30px !important;
+        line-height: 36px !important;
+      }
+      div {
+        margin-top: 10px;
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+
+      button {
+        margin-top: 10px;
+        font-size: 14px !important;
+        line-height: 18px !important;
+        letter-spacing: normal !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+          "Helvetica Neue", sans-serif !important;
+        font-weight: 500;
+        padding: 9px 16px !important;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+
+.adv-woman{
+  margin-top: 3rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 16px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .content {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    width: 544px !important;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center !important;
+    -webkit-box-align: start !important;
+    align-items: flex-start !important;
+    height: 100% !important;
+    justify-content: center;
+
+    position: absolute;
+    color: white;
+
+    h2 {
+      font-size: 3rem;
+    }
+    div {
+      font-size: 18px !important;
+      line-height: 24px !important;
+      line-break: strict;
+      display: block;
+      white-space: pre-line !important;
+    }
+    div span {
+      white-space: pre-line !important;
+    }
+    button {
+      margin-top: 40px;
+      font-size: 16px !important;
+      line-height: 18px !important;
+      letter-spacing: normal !important;
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+        "Helvetica Neue", sans-serif !important;
+      font-weight: 400;
+      padding: 14px 24px !important;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+    }
   }
 }
 
 // --------------/main-----------------------------
-
-
 
 //--------------fonts----------------------------//
 @font-face {
