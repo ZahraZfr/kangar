@@ -878,7 +878,7 @@ header .container .nav-right .show {
 }
 
 .hero-img-holder .hero-img {
-  background-image: url("../img/hero-950.webp");
+  background-image: url("../img/hero-min950.webp");
   width: 100%;
   height: 100vh;
   margin-top: -26vh;
@@ -958,6 +958,36 @@ header .container .nav-right .show {
 .hero-img-holder .hero-img .hero-txt .hero-btn:active {
   -webkit-transform: scale(0.96) !important;
           transform: scale(0.96) !important;
+}
+
+@media (min-width: 320px) {
+  .hero-img-holder .hero-img {
+    background-image: url(../img/hero-max744.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+  }
+}
+
+@media (min-width: 744px) {
+  .hero-img-holder .hero-img {
+    background-image: url("../img/hero-min-744.webp");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100vw !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero-img-holder .hero-img {
+    background-image: url("../img/hero-min950.webp");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .container__main {
