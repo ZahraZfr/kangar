@@ -829,7 +829,37 @@ header {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+
+
+  .explore-nearby{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+
+
+    .explore-content{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4 , 1fr);
+      grid-template-rows: repeat(2 , 1fr);
+      gap: 20px 50px;
+
+      .explor-item{
+        display: flex;
+
+        img{
+          border-radius: 25px;
+          width: 80px;
+          height: 80px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 }
+
 
 //slider on mobile --- $smallDevice: 320px;----
 

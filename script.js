@@ -5,6 +5,10 @@ window.addEventListener('scroll', function () {
   let windowPosition = window.scrollY > 0;
   header.classList.toggle('scrolling-active', windowPosition);
   scrollSec.classList.toggle('scrolly-short', windowPosition);
+  guestsBTN.classList.remove("showGuestBTN" , windowPosition);
+  pinkSearch.classList.remove("serachShowG", windowPosition);
+  guedtsDD.classList.remove("guedtsDDshow" , windowPosition);
+  pinkSearch.classList.remove("serachShow", windowPosition);
 });
 
 // ----------------for opening dropdowns

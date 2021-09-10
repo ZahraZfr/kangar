@@ -966,6 +966,43 @@ header .container .nav-right .show {
   padding: 0 40px;
 }
 
+.container__main .explore-nearby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+.container__main .explore-nearby .explore-content {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 20px 50px;
+}
+
+.container__main .explore-nearby .explore-content .explor-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__main .explore-nearby .explore-content .explor-item img {
+  border-radius: 25px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
 .slider__title {
   font-size: 26px;
   font-weight: 700;
