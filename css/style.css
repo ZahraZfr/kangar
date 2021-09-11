@@ -12,6 +12,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px !important;
   line-height: 1.43;
 }
 
@@ -1044,16 +1045,22 @@ header .container .nav-right .show {
   margin-right: 20px;
 }
 
-@media (max-width: 1128px) and (min-width: 743px) {
-  .explore-content {
+@media (max-width: 1127px) {
+  .container__main .explore-nearby .explore-content .explore-item4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1127px) {
+  .container__main .explore-nearby .explore-content .explore-item6 {
+    display: none;
+  }
+}
+
+@media (max-width: 1127px) {
+  .container__main .explore-nearby .explore-content {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-  }
-  .explore-item4 {
-    display: none;
-  }
-  .explore-item8 {
-    display: none;
   }
 }
 

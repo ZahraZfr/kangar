@@ -19,8 +19,9 @@ $smallDevice:320px;
   }
 }
 
+// max
 @mixin mediumLargeDevice {
-  @media (min-width: #{$mediumLargeDevice}) {
+  @media (max-width: #{$mediumLargeDevice}) {
     @content;
   }
 }
@@ -35,6 +36,11 @@ $smallDevice:320px;
   @media (min-width: #{$minimumDevice}) {
     @content;
   }
+}
+
+// max
+@mixin smallMinimumDevice {
+  @media (max-width : #{$minimumDevice}) {}
 }
 
 @mixin smallDevice {
@@ -58,6 +64,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px !important;
   line-height: 1.43;
 }
 
@@ -833,7 +840,7 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover !important;
-      
+
     }
 
     @include minimumDevice() {
@@ -846,11 +853,11 @@ header {
 
     @include largDevice() {
       background-image: url("../img/hero-min950.webp");
-      background-position: center bottom!important;
+      background-position: center bottom !important;
       background-size: cover !important;
       background-repeat: no-repeat;
       // height: max(550px, min(85vh, calc(var(626px, 9) / var(1128px, 16) * 100vw))) !important;
-      height: Max(550px , Min(85vh,(0.55 * 100vw))) !important;
+      height: Max(550px, Min(85vh, (0.55 * 100vw))) !important;
     }
 
 
@@ -883,17 +890,39 @@ header {
 
       .explor-item {
         display: flex;
-      
+
         h3 {
           font-size: 16px !important;
           line-height: 20px !important;
           color: rgb(34, 34, 34) !important;
+
+          // @include smallMinimumDevice() {
+          //   position: absolute;
+          //   top: 50%;
+          //   transform: translateY(-50%);
+          //   text-align: center;
+          //   color: white;
+          //   width: 100%;
+          //   left: 0;
+          //   font-size: calc(1rem + 3vw);
+          // }
         }
 
         p {
           text-overflow: ellipsis !important;
           overflow: hidden !important;
           white-space: nowrap !important;
+
+          // @include smallMinimumDevice() {
+          //   position: absolute;
+          //   top: 50%;
+          //   transform: translateY(-50%);
+          //   text-align: center;
+          //   color: white;
+          //   width: 100%;
+          //   left: 0;
+          //   font-size: calc(1rem + 3vw);
+          // }
         }
 
         img {
@@ -902,20 +931,40 @@ header {
           height: 64px;
           margin-right: 20px;
         }
-      }
-    }
-  }
-}
 
-@media (max-width:1128px ) and (min-width:743px) {
-  .explore-content{
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .explore-item4{
-    display: none;
-  }
-  .explore-item8{
-    display: none;
+        // @include smallMinimumDevice() {
+        //   padding: 1rem;
+        //   min-width: 100vw;
+        //   height: 100vh;
+        //   scroll-snap-align: start;
+        //   // text-align: center;
+        //   position: relative;
+        // }
+      }
+
+      .explore-item4 {
+        @include mediumLargeDevice() {
+          display: none;
+        }
+      }
+
+      .explore-item6 {
+        @include mediumLargeDevice() {
+          display: none;
+        }
+      }
+
+      @include mediumLargeDevice() {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      // @include smallMinimumDevice() {
+      //   scroll-snap-type: x mandatory;
+      //   display: flex;
+      //   -webkit-overflow-scrolling: touch;
+      //   overflow-x: scroll;
+      // }
+    }
   }
 }
 
