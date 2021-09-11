@@ -5,46 +5,44 @@ $largDevice:950px;
 $minimumDevice:744px;
 $smallDevice:320px;
 
-
-
-@mixin superLargeDevice {
-  @media (min-width: #{$superLargeDevice}) {
+// upper than 320px
+@mixin smallDevice {
+  @media (min-width: #{$smallDevice}) {
     @content;
   }
 }
 
-@mixin extraLargDevice {
-  @media (min-width: #{$extraLargDevice}) {
-    @content;
-  }
-}
-
-// max
-@mixin mediumLargeDevice {
-  @media (max-width: #{$mediumLargeDevice}) {
-    @content;
-  }
-}
-
-@mixin largDevice {
-  @media (min-width: #{$largDevice}) {
-    @content;
-  }
-}
-
+// upper than 744xp
 @mixin minimumDevice {
   @media (min-width: #{$minimumDevice}) {
     @content;
   }
 }
 
-// max
-@mixin smallMinimumDevice {
-  @media (max-width : #{$minimumDevice}) {}
+// upper than 950px
+@mixin largDevice {
+  @media (min-width: #{$largDevice}) {
+    @content;
+  }
 }
 
-@mixin smallDevice {
-  @media (min-width: #{$smallDevice}) {
+// upper than 1127px
+@mixin mediumLargeDevice {
+  @media (min-width: #{$mediumLargeDevice}) {
+    @content;
+  }
+}
+
+// upper than 1440px
+@mixin extraLargDevice {
+  @media (min-width: #{$extraLargDevice}) {
+    @content;
+  }
+}
+
+// upper than 1845px
+@mixin superLargeDevice {
+  @media (min-width: #{$superLargeDevice}) {
     @content;
   }
 }
@@ -60,6 +58,7 @@ html {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
   font-size: 15px;
+  min-width: 320px !important;
 }
 
 body {
@@ -882,11 +881,11 @@ header {
 
 
     .explore-content {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 20px 50px;
+      margin-top: 50px !important;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      grid-template-rows: repeat(2, 1fr) !important;
+      gap: 20px 50px !important;
 
       .explor-item {
         display: flex;
@@ -895,34 +894,12 @@ header {
           font-size: 16px !important;
           line-height: 20px !important;
           color: rgb(34, 34, 34) !important;
-
-          // @include smallMinimumDevice() {
-          //   position: absolute;
-          //   top: 50%;
-          //   transform: translateY(-50%);
-          //   text-align: center;
-          //   color: white;
-          //   width: 100%;
-          //   left: 0;
-          //   font-size: calc(1rem + 3vw);
-          // }
         }
 
         p {
           text-overflow: ellipsis !important;
           overflow: hidden !important;
           white-space: nowrap !important;
-
-          // @include smallMinimumDevice() {
-          //   position: absolute;
-          //   top: 50%;
-          //   transform: translateY(-50%);
-          //   text-align: center;
-          //   color: white;
-          //   width: 100%;
-          //   left: 0;
-          //   font-size: calc(1rem + 3vw);
-          // }
         }
 
         img {
@@ -932,43 +909,67 @@ header {
           margin-right: 20px;
         }
 
-        // @include smallMinimumDevice() {
-        //   padding: 1rem;
-        //   min-width: 100vw;
-        //   height: 100vh;
-        //   scroll-snap-align: start;
-        //   // text-align: center;
-        //   position: relative;
-        // }
+        @include smallDevice() {
+          padding: 1rem;
+          min-width: 100vw;
+          scroll-snap-align: start;
+          position: relative;
+        }
       }
 
       .explore-item4 {
-        @include mediumLargeDevice() {
+        @include smallDevice() {
+          display: flex;
+        }
+
+        @include minimumDevice() {
           display: none;
         }
       }
 
       .explore-item6 {
-        @include mediumLargeDevice() {
+        @include smallDevice() {
+          display: flex;
+        }
+
+        @include minimumDevice() {
           display: none;
         }
       }
 
-      @include mediumLargeDevice() {
-        grid-template-columns: repeat(3, 1fr);
+
+      @include smallDevice() {
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        overflow-x: auto !important;
+        display: grid !important;
+        gap: 12px !important;
+        grid-template-rows: repeat(2, auto) !important;
+        grid-template-columns: repeat(calc(3), calc(100% - 108px)) 100% !important;
+        grid-auto-flow: column !important;
+        scroll-snap-type: x mandatory !important;
       }
 
-      // @include smallMinimumDevice() {
-      //   scroll-snap-type: x mandatory;
-      //   display: flex;
-      //   -webkit-overflow-scrolling: touch;
-      //   overflow-x: scroll;
-      // }
+      @include minimumDevice() {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+
+      @include mediumLargeDevice() {
+        margin-top: 50px !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        gap: 20px 50px !important;
+      }
+
+
     }
   }
 }
 
-
+// ----------------------------live anywhere
 //slider on mobile --- $smallDevice: 320px;----
 
 .slider__title {
