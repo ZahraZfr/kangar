@@ -1,5 +1,6 @@
-$superLargeDevice:1700px;
+$superLargeDevice:1845px;
 $extraLargDevice:1440px;
+$mediumLargeDevice:1127px;
 $largDevice:950px;
 $minimumDevice:744px;
 $smallDevice:320px;
@@ -14,6 +15,12 @@ $smallDevice:320px;
 
 @mixin extraLargDevice {
   @media (min-width: #{$extraLargDevice}) {
+    @content;
+  }
+}
+
+@mixin mediumLargeDevice {
+  @media (min-width: #{$mediumLargeDevice}) {
     @content;
   }
 }
@@ -583,6 +590,7 @@ header {
             border-color: rgb(235, 235, 235) !important;
             background: rgb(255, 255, 255) !important;
           }
+
           .forbiddenIcon:hover {
             cursor: not-allowed !important;
             color: rgb(235, 235, 235) !important;
@@ -591,9 +599,9 @@ header {
           }
 
           button:hover {
-            color: rgb(34, 34, 34) ;
-            border-color: rgb(34, 34, 34) ;
-            background: rgb(255, 255, 255) ;
+            color: rgb(34, 34, 34);
+            border-color: rgb(34, 34, 34);
+            background: rgb(255, 255, 255);
             cursor: pointer;
           }
 
@@ -762,10 +770,9 @@ header {
   z-index: 0;
 
   .hero-img {
-    background-image: url("../img/hero-950.webp");
-    width: 100%;
-    height: 100vh;
-    margin-top: -26vh;
+    background-image: url("../img/hero-min950.webp");
+    width: 100vw;
+    height: 130vw;
     background-position: center;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -773,6 +780,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -90px;
 
     .hero-txt {
       margin-top: 40vh;
@@ -819,6 +827,33 @@ header {
         transform: scale(0.96) !important;
       }
     }
+
+    @include smallDevice() {
+      background-image: url(../img/hero-max744.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover !important;
+      
+    }
+
+    @include minimumDevice() {
+      background-image: url("../img/hero-min-744.webp");
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 80vw;
+    }
+
+    @include largDevice() {
+      background-image: url("../img/hero-min950.webp");
+      background-position: center bottom!important;
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      // height: max(550px, min(85vh, calc(var(626px, 9) / var(1128px, 16) * 100vw))) !important;
+      height: Max(550px , Min(85vh,(0.55 * 100vw))) !important;
+    }
+
+
   }
 
 
@@ -829,7 +864,61 @@ header {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+
+
+  .explore-nearby {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+
+
+    .explore-content {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px 50px;
+
+      .explor-item {
+        display: flex;
+      
+        h3 {
+          font-size: 16px !important;
+          line-height: 20px !important;
+          color: rgb(34, 34, 34) !important;
+        }
+
+        p {
+          text-overflow: ellipsis !important;
+          overflow: hidden !important;
+          white-space: nowrap !important;
+        }
+
+        img {
+          border-radius: 12px;
+          width: 64px;
+          height: 64px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 }
+
+@media (max-width:1128px ) and (min-width:743px) {
+  .explore-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .explore-item4{
+    display: none;
+  }
+  .explore-item8{
+    display: none;
+  }
+}
+
 
 //slider on mobile --- $smallDevice: 320px;----
 
@@ -886,6 +975,7 @@ header {
   .slider__container>div {
     margin-right: 14px;
   }
+
   .slider__title {
     padding-left: 20px;
   }
@@ -902,6 +992,7 @@ header {
 }
 
 @media screen and (min-width: $minimumDevice) and (max-width: 769px) {
+
   // .slider__title{
   //   font-size:26px ;
   //   font-weight: 700;
@@ -910,6 +1001,7 @@ header {
   .slider__section .slider__title {
     display: none;
   }
+
   .slider-main {
     display: none;
   }
@@ -1007,12 +1099,14 @@ header {
   line-height: 22px !important;
   font-weight: 600;
 }
+
 //--------add-woman------------///
 @media (min-width: $minimumDevice) {
-  .adv-woman-responsive{
+  .adv-woman-responsive {
     display: none;
   }
 }
+
 @media (max-width: $minimumDevice) {
   .adv-woman {
     display: none;
@@ -1020,17 +1114,17 @@ header {
 
   .adv-woman-responsive {
     padding: 0 24px;
-    display:flex;
+    display: flex;
     justify-content: center;
-  
+
     img {
       width: 100%;
       height: 100%;
-  border-radius: 16px;
+      border-radius: 16px;
       object-fit: cover;
       overflow: hidden;
     }
-  
+
     .content1 {
       padding: 32px;
 
@@ -1048,10 +1142,11 @@ header {
       color: white;
 
       h2 {
-        
+
         font-size: 30px !important;
         line-height: 36px !important;
       }
+
       div {
         margin-top: 10px;
         font-size: 16px !important;
@@ -1075,7 +1170,7 @@ header {
   }
 }
 
-.adv-woman{
+.adv-woman {
   margin-top: 3rem;
   overflow: hidden;
   position: relative;
@@ -1088,6 +1183,7 @@ header {
     object-fit: cover;
     overflow: hidden;
   }
+
   .content {
     padding-left: 80px !important;
     padding-right: 80px !important;
@@ -1106,6 +1202,7 @@ header {
     h2 {
       font-size: 3rem;
     }
+
     div {
       font-size: 18px !important;
       line-height: 24px !important;
@@ -1113,9 +1210,11 @@ header {
       display: block;
       white-space: pre-line !important;
     }
+
     div span {
       white-space: pre-line !important;
     }
+
     button {
       margin-top: 40px;
       font-size: 16px !important;
