@@ -1,5 +1,6 @@
-$superLargeDevice:1700px;
+$superLargeDevice:1845px;
 $extraLargDevice:1440px;
+$mediumLargeDevice:1127px;
 $largDevice:950px;
 $minimumDevice:744px;
 $smallDevice:320px;
@@ -14,6 +15,12 @@ $smallDevice:320px;
 
 @mixin extraLargDevice {
   @media (min-width: #{$extraLargDevice}) {
+    @content;
+  }
+}
+
+@mixin mediumLargeDevice {
+  @media (min-width: #{$mediumLargeDevice}) {
     @content;
   }
 }
@@ -764,9 +771,8 @@ header {
 
   .hero-img {
     background-image: url("../img/hero-min950.webp");
-    width: 100%;
-    height: 100vh;
-    margin-top: -26vh;
+    width: 100vw;
+    height: 130vw;
     background-position: center;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -774,6 +780,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -90px;
 
     .hero-txt {
       margin-top: 40vh;
@@ -826,28 +833,26 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover !important;
+      
     }
 
     @include minimumDevice() {
       background-image: url("../img/hero-min-744.webp");
-      // background-position: center !important;
       background-size: cover !important;
       background-repeat: no-repeat;
       background-position: center;
-      max-width: 100vw !important;
-
-
+      height: 80vw;
     }
 
     @include largDevice() {
       background-image: url("../img/hero-min950.webp");
-      // background-position: center !important;
+      background-position: center bottom!important;
       background-size: cover !important;
       background-repeat: no-repeat;
-      background-position: center;
-      width: 100vw;
-      height: 100vh;
+      // height: max(550px, min(85vh, calc(var(626px, 9) / var(1128px, 16) * 100vw))) !important;
+      height: Max(550px , Min(85vh,(0.55 * 100vw))) !important;
     }
+
 
   }
 
@@ -878,15 +883,39 @@ header {
 
       .explor-item {
         display: flex;
+      
+        h3 {
+          font-size: 16px !important;
+          line-height: 20px !important;
+          color: rgb(34, 34, 34) !important;
+        }
+
+        p {
+          text-overflow: ellipsis !important;
+          overflow: hidden !important;
+          white-space: nowrap !important;
+        }
 
         img {
-          border-radius: 25px;
-          width: 80px;
-          height: 80px;
+          border-radius: 12px;
+          width: 64px;
+          height: 64px;
           margin-right: 20px;
         }
       }
     }
+  }
+}
+
+@media (max-width:1128px ) and (min-width:743px) {
+  .explore-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .explore-item4{
+    display: none;
+  }
+  .explore-item8{
+    display: none;
   }
 }
 

@@ -879,9 +879,8 @@ header .container .nav-right .show {
 
 .hero-img-holder .hero-img {
   background-image: url("../img/hero-min950.webp");
-  width: 100%;
-  height: 100vh;
-  margin-top: -26vh;
+  width: 100vw;
+  height: 130vw;
   background-position: center;
   background-size: cover !important;
   background-repeat: no-repeat;
@@ -895,6 +894,7 @@ header .container .nav-right .show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -90px;
 }
 
 .hero-img-holder .hero-img .hero-txt {
@@ -975,18 +975,17 @@ header .container .nav-right .show {
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 100vw !important;
+    height: 80vw;
   }
 }
 
 @media (min-width: 950px) {
   .hero-img-holder .hero-img {
     background-image: url("../img/hero-min950.webp");
+    background-position: center bottom !important;
     background-size: cover !important;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
+    height: Max(550px, Min(85vh, 55vw)) !important;
   }
 }
 
@@ -1026,11 +1025,36 @@ header .container .nav-right .show {
   display: flex;
 }
 
+.container__main .explore-nearby .explore-content .explor-item h3 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #222222 !important;
+}
+
+.container__main .explore-nearby .explore-content .explor-item p {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
 .container__main .explore-nearby .explore-content .explor-item img {
-  border-radius: 25px;
-  width: 80px;
-  height: 80px;
+  border-radius: 12px;
+  width: 64px;
+  height: 64px;
   margin-right: 20px;
+}
+
+@media (max-width: 1128px) and (min-width: 743px) {
+  .explore-content {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .explore-item4 {
+    display: none;
+  }
+  .explore-item8 {
+    display: none;
+  }
 }
 
 .slider__title {
