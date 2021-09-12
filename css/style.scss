@@ -59,6 +59,7 @@ html {
     Helvetica Neue, sans-serif;
   font-size: 15px;
   min-width: 320px !important;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -771,7 +772,7 @@ header {
 
 // -------------------hero img --------------------------
 .hero-img-holder {
-  width: 100%;
+  width: 100;
   min-height: 620px;
   z-index: 0;
 
@@ -786,7 +787,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -90px;
+    margin-top: -66px;
+    overflow-x: hidden;
+    
 
     .hero-txt {
       margin-top: 40vh;
@@ -868,6 +871,7 @@ header {
 // --------------main-----------------------------
 .container__main {
   max-width: 1360px;
+  margin-top: 2rem !important;
   margin: 0 auto;
   padding: 0 40px;
 
@@ -881,11 +885,11 @@ header {
 
 
     .explore-content {
-      margin-top: 50px !important;
-      display: grid !important;
-      grid-template-columns: repeat(4, 1fr) !important;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr) !important;
-      gap: 20px 50px !important;
+      gap: 15px 40px;
 
       .explor-item {
         display: flex;
@@ -903,69 +907,64 @@ header {
         }
 
         img {
-          border-radius: 12px;
+          border-radius: 10px;
           width: 64px;
           height: 64px;
           margin-right: 20px;
         }
-
-        @include smallDevice() {
-          padding: 1rem;
-          min-width: 100vw;
-          scroll-snap-align: start;
-          position: relative;
-        }
       }
-
-      .explore-item4 {
-        @include smallDevice() {
-          display: flex;
-        }
-
-        @include minimumDevice() {
-          display: none;
-        }
-      }
-
-      .explore-item6 {
-        @include smallDevice() {
-          display: flex;
-        }
-
-        @include minimumDevice() {
-          display: none;
-        }
-      }
-
-
-      @include smallDevice() {
-        scroll-snap-type: x mandatory;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: scroll;
-        overflow-x: auto !important;
-        display: grid !important;
-        gap: 12px !important;
-        grid-template-rows: repeat(2, auto) !important;
-        grid-template-columns: repeat(calc(3), calc(100% - 108px)) 100% !important;
-        grid-auto-flow: column !important;
-        scroll-snap-type: x mandatory !important;
-      }
-
-      @include minimumDevice() {
-        grid-template-columns: repeat(3, 1fr) !important;
-      }
-
-      @include mediumLargeDevice() {
-        margin-top: 50px !important;
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        grid-template-rows: repeat(2, 1fr) !important;
-        gap: 20px 50px !important;
-      }
-
-
     }
+  }
+}
+
+@media only screen and (min-width: 744px) and (max-width: 1127px) {
+  .explore-content {
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin: 0 30px;
+  }
+
+  .explore-item4 {
+    display: none !important;
+  }
+
+  .explore-item6 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  .explore-content {
+    margin-top: 20px !important;
+    scroll-snap-type: x mandatory !important;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll !important;
+    overflow-x: auto !important;
+    display: grid !important;
+    gap: 12px !important;
+    grid-template-columns: repeat(calc(3), calc(100% - 108px)) 100% !important;
+    grid-auto-flow: column !important;
+    scroll-snap-type: x mandatory !important;
+    grid-template-rows: repeat(2, auto) !important;
+  }
+
+  .explor-item {
+    // min-width: 80vw !important;
+    min-width: 0px !important;
+    height: 100% !important;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 0 15px;
+    width: 150px !important;
+  }
+
+  .explore-item4 {
+    display: flex !important;
+  }
+
+  .explore-item6 {
+    display: flex !important;
+    padding-bottom: 10px;
   }
 }
 
