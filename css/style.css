@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-size: 15px;
   min-width: 320px !important;
   overflow-x: hidden !important;
@@ -27,8 +27,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: background-color .2s ease;
-  transition: background-color .2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   z-index: 11;
 }
 
@@ -51,8 +51,8 @@ header .container .nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: height .5s ease;
-  transition: height .5s ease;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
   padding: 0 40px;
 }
 
@@ -61,8 +61,8 @@ header .container .nav a {
 }
 
 header .container .nav a svg.scrolling-active .airbnb {
-  fill: #FF385C !important;
-  stroke: #FF385C !important;
+  fill: #ff385c !important;
+  stroke: #ff385c !important;
 }
 
 header .container .nav .nav-list {
@@ -251,7 +251,7 @@ header .container .nav-right .show {
 }
 
 .scrolling-active .airbnbIcon {
-  fill: #FF385C;
+  fill: #ff385c;
 }
 
 .scrolling-active .ExplorIcon {
@@ -275,7 +275,7 @@ header .container .nav-right .show {
   z-index: 10;
   max-width: 848px;
   height: 66px;
-  border: 1px solid #DDDDDD !important;
+  border: 1px solid #dddddd !important;
   border-radius: 32px !important;
   color: #222222 !important;
   display: -webkit-box !important;
@@ -293,7 +293,7 @@ header .container .nav-right .show {
   top: 80px !important;
   -webkit-box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033;
           box-shadow: 0px 16px 32px #00000033, 0px 3px 8px #00000033;
-  --big-search-form-background: #FFFFFF;
+  --big-search-form-background: #ffffff;
   background-color: #f7f7f7;
   margin: 0 auto;
   -webkit-transition: all 0.2s ease;
@@ -418,7 +418,7 @@ header .container .nav-right .show {
 }
 
 .scrolly-nav .showLocationBTN:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 
 .scrolly-nav .checkin {
@@ -512,7 +512,7 @@ header .container .nav-right .show {
 .scrolly-nav .guests .serach-icon {
   width: 48px;
   height: 48px;
-  background-color: #FF385C;
+  background-color: #ff385c;
   border-radius: 50%;
 }
 
@@ -556,7 +556,7 @@ header .container .nav-right .show {
 }
 
 .scrolly-nav .showGuestBTN:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 
 .scrolly-nav .guests:hover {
@@ -777,8 +777,8 @@ header .container .nav-right .show {
   display: -webkit-box !important;
   -webkit-line-clamp: 6 !important;
   -webkit-text-fill-color: transparent !important;
-  background: -webkit-gradient(linear, left top, right top, from(#6F019C), color-stop(135.12%, #C6017E)) !important;
-  background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#6f019c), color-stop(135.12%, #c6017e)) !important;
+  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
   -webkit-background-clip: text !important;
 }
 
@@ -954,8 +954,8 @@ header .container .nav-right .show {
   font-size: 18px;
   font-weight: 600;
   -webkit-text-fill-color: transparent !important;
-  background: -webkit-gradient(linear, left top, right top, from(#6F019C), color-stop(135.12%, #C6017E)) !important;
-  background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#6f019c), color-stop(135.12%, #c6017e)) !important;
+  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
   -webkit-background-clip: text !important;
 }
 
@@ -1112,24 +1112,12 @@ header .container .nav-right .show {
 }
 
 .slider__container {
-  /* line them up horizontally */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* allow for scrolling */
-  overflow-x: auto;
-  /* make it smooth on iOS */
-  -webkit-overflow-scrolling: touch;
-  -ms-scroll-snap-points-x: repeat(300px);
-      scroll-snap-points-x: repeat(300px);
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
-  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
 }
 
 .slider__container > div {
@@ -1151,9 +1139,6 @@ header .container .nav-right .show {
 }
 
 @media (max-width: 1440px) {
-  .container__main {
-    padding: 0 !important;
-  }
   .slider__container {
     padding-left: 20px;
     padding-right: 10px;
@@ -1161,85 +1146,16 @@ header .container .nav-right .show {
   .slider__container > div {
     margin-right: 14px;
   }
-  .slider__title {
-    padding-left: 20px;
+  .live-anywhere.mobile .slider__title {
+    padding-left: 24px;
   }
 }
 
-.slider-r {
+.slider__5 {
   position: relative;
-  width: 46rem;
-  margin: 0 auto;
-  display: none;
 }
 
-@media screen and (min-width: 744px) and (max-width: 769px) {
-  .slider__section .slider__title {
-    display: none;
-  }
-  .slider-main {
-    display: none;
-  }
-  .slider-r {
-    display: block;
-  }
-  .main-card {
-    /* make it smooth on iOS */
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-points-x: repeat(300px);
-        scroll-snap-points-x: repeat(300px);
-    -ms-scroll-snap-type: mandatory;
-        scroll-snap-type: mandatory;
-  }
-  .slider-arrow {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-points-x: repeat(300px);
-        scroll-snap-points-x: repeat(300px);
-    -ms-scroll-snap-type: mandatory;
-        scroll-snap-type: mandatory;
-    position: relative;
-  }
-  .slider-arrow .main-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .go-left {
-    margin-left: calc(-100% / 3) !important;
-  }
-  .card {
-    margin: 0 12px;
-  }
-  .slider-arrow .main-card .cards {
-    width: calc(100% / 2 - 10px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .slider-arrow .cards .card {
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  .cards .card .img {
-    width: 203px;
-  }
-  .arrow {
-    position: absolute;
-    z-index: 2;
-  }
-  .arrow-l {
-    display: none;
-  }
-  .hide {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
+@media screen and (min-width: 744px) and (max-width: 1128px) {
   .arrow button {
     background-color: white;
     border: none;
@@ -1249,10 +1165,82 @@ header .container .nav-right .show {
     -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
   }
-  .card .img img {
-    height: 100%;
+  .cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cols p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .tablet {
+    position: relative;
+    margin: 0;
+  }
+  .swiper {
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    border-radius: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider-arrow .main-card .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider-arrow .cards .card {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: none !important;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: none !important;
+  }
+  .hide {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 744px) and (max-width: 769px) {
+  .live-anywhere .slider__1 {
+    display: none;
+  }
+  .slider__2 {
+    display: block;
   }
 }
 
@@ -1269,24 +1257,99 @@ header .container .nav-right .show {
   font-weight: 600;
 }
 
-@media (min-width: 744px) {
-  .adv-woman-responsive {
-    display: none;
+.slider__3 {
+  display: -webkit-box;
+}
+
+.slider__3 img {
+  border-radius: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+@media (min-width: 1128px) {
+  .live-anywhere .slider__3 > div {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
   }
 }
 
+@media (max-width: 1128px) {
+  .live-anywhere.desktop .slider__title {
+    display: none !important;
+  }
+}
+
+.tablet {
+  display: none;
+}
+
+@media screen and (min-width: 744px) and (max-width: 1128px) {
+  .tablet {
+    display: block !important;
+  }
+  .live-anywhere .slider__3-desktop {
+    display: none;
+  }
+  .live-anywhere .slider__3 > div {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 744px) {
+  .live-anywhere.mobile .slider__title {
+    display: none !important;
+  }
+  .slider__3-mobile {
+    display: none !important;
+  }
+  .slider__3 > div {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+  .adv-woman-responsive {
+    display: none;
+  }
+  .slider__3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.horizental-scroll {
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
 @media (max-width: 744px) {
+  .slider__3-desktop {
+    display: none;
+  }
+  .slider__3 > div {
+    width: 272px;
+    margin-right: 12px;
+  }
+  .slider__3 {
+    padding: 4px 24px 8px;
+  }
   .adv-woman {
     display: none;
   }
   .adv-woman-responsive {
-    padding: 0 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: relative;
   }
   .adv-woman-responsive img {
     width: 100%;
@@ -1297,22 +1360,11 @@ header .container .nav-right .show {
     overflow: hidden;
   }
   .adv-woman-responsive .content1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
     padding: 32px;
     text-align: center;
-    width: auto !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center !important;
-    -webkit-box-align: start !important;
-    -ms-flex-align: center !important;
-        align-items: center !important;
-    height: 100% !important;
-    position: absolute;
     color: white;
   }
   .adv-woman-responsive .content1 h2 {
@@ -1329,7 +1381,43 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 500;
+    padding: 9px 16px !important;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+}
+
+@media (max-width: 1231px) {
+  .adv-woman img {
+    height: 480px !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .adv-woman img {
+    height: 320px !important;
+  }
+}
+
+@media (max-width: 1111px) {
+  .adv-woman .content h2 {
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+  .adv-woman .content div {
+    margin-top: 10px;
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .adv-woman .content button {
+    margin-top: 10px;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -1346,7 +1434,7 @@ header .container .nav-right .show {
 
 .adv-woman img {
   width: 100%;
-  height: 100%;
+  height: 420px;
   border-radius: 16px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1396,7 +1484,7 @@ header .container .nav-right .show {
   font-size: 16px !important;
   line-height: 18px !important;
   letter-spacing: normal !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 400;
   padding: 14px 24px !important;
   border-radius: 10px;
@@ -1406,7 +1494,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: normal;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
@@ -1415,7 +1503,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 600;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
@@ -1424,7 +1512,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
   src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");

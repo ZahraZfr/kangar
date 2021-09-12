@@ -172,28 +172,25 @@ decAdualt.addEventListener('click', function (event) {
   }
 });
 
+
+
+//tablet slider
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+
+});
+
+
 // -------------exolore nearby section
 const init = function(){
 	let items = document.querySelectorAll('.explor-item');
 	cssScrollSnapPolyfill()
 }
 init();
-
-
-//tablet slider
-
-const arrowRight = document.querySelector('.arrow-r')
-const arrowLeft = document.querySelector('.arrow-l')
-const mainCard = document.querySelector('.main-card')
-arrowRight.addEventListener("click", () => {
-  mainCard.classList.add("go-left")
-  arrowLeft.classList.add("active")
-  arrowRight.classList.add("hide")
-
-})
-
-arrowLeft.addEventListener("click", () => {
-  mainCard.classList.remove("go-left")
-  arrowLeft.classList.remove("active")
-  arrowRight.classList.remove("hide")
-})
