@@ -172,12 +172,6 @@ decAdualt.addEventListener('click', function (event) {
   }
 });
 
-// -------------exolore nearby section
-const init = function(){
-	let items = document.querySelectorAll('.explor-item');
-	cssScrollSnapPolyfill()
-}
-init();
 
 
 //tablet slider
@@ -192,3 +186,11 @@ var swiper = new Swiper(".mySwiper", {
   }
 
 });
+
+
+// -------------exolore nearby section
+const init = function(){
+	let items = document.querySelectorAll('.explor-item');
+	cssScrollSnapPolyfill()
+}
+init();

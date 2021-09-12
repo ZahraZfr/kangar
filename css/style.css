@@ -994,12 +994,8 @@ header .container .nav-right .show {
 }
 
 .container__main {
-<<<<<<< HEAD
-  max-width: 1550px;
-=======
   max-width: 1360px;
   margin-top: 2rem !important;
->>>>>>> master
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1160,6 +1156,15 @@ header .container .nav-right .show {
 }
 
 @media screen and (min-width: 744px) and (max-width: 1128px) {
+  .arrow button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    -ms-touch-action: manipulation !important;
+        touch-action: manipulation !important;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
   .cols {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1203,48 +1208,6 @@ header .container .nav-right .show {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .main-card {
-    /* make it smooth on iOS */
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-points-x: repeat(300px);
-        scroll-snap-points-x: repeat(300px);
-    -ms-scroll-snap-type: mandatory;
-        scroll-snap-type: mandatory;
-  }
-  .slider-arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-points-x: repeat(300px);
-        scroll-snap-points-x: repeat(300px);
-    -ms-scroll-snap-type: mandatory;
-        scroll-snap-type: mandatory;
-    position: relative;
-  }
-  .slider-arrow .main-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .arrow button {
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    -ms-touch-action: manipulation !important;
-        touch-action: manipulation !important;
-    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  .card .img img {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
   }
   .slider-arrow .main-card .cards {
     display: -webkit-box;

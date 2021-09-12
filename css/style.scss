@@ -1007,74 +1007,6 @@ header {
 //tablet
 @media screen and (min-width: $minimumDevice) and (max-width: 1128px) {
 
- 
-.cols{
-  display: flex;
-  flex-direction: column;
-  p{
-    align-self: flex-start;
-  }
-}
-  .tablet{
-    position: relative;
-    margin: 0;
-  }
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    border-radius: 16px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .main-card {
-    /* make it smooth on iOS */
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-  }
-
-  //---------
- 
-  .slider-arrow {
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-    position: relative;
-  }
-
-  .slider-arrow .main-card {
-    display: flex;
-    transition: 1s;
-  }
   .arrow button {
     background-color: white;
     border: none;
@@ -1082,47 +1014,79 @@ header {
     touch-action: manipulation !important;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
   }
-
-  .card .img img {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-  }
-  .slider-arrow .main-card .cards {
-    // width: calc(100% / 2 - 10px);
+  
+  .cols{
     display: flex;
+    flex-direction: column;
+    p{
+      align-self: flex-start;
+    }
   }
-
-  .slider-arrow .cards .card {
-    transition: all 0.4s ease;
+    .tablet{
+      position: relative;
+      margin: 0;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+      border-radius: 16px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .slider-arrow .main-card .cards {
+      display: flex;
+    }
+  
+    .slider-arrow .cards .card {
+      transition: all 0.4s ease;
+    }
+  
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+      opacity: 0 !important;
+    }
+  
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+      content: none !important;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+      content: none !important;
+    }
+  
+    .hide {
+      display: none;
+    }
+  
+    .active {
+      display: block;
+    }
+  
   }
-
-
-  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 0 !important;
-  }
-
-  // .arrow-l {
-  //   display: none;
-  // }
-
-
-  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    content: none !important;
-  }
-  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    content: none !important;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .active {
-    display: block;
-  }
-
-}
 
 @media screen and (min-width: $minimumDevice) and (max-width: 769px) {
   .live-anywhere .slider__1 {
@@ -1132,7 +1096,6 @@ header {
   .slider__2 {
     display: block;
   }
-
 }
 
 @media (min-width: $extraLargDevice) {
