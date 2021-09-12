@@ -1,6 +1,6 @@
 $superLargeDevice:1845px;
 $extraLargDevice:1440px;
-$mediumLargeDevice:1127px;
+$mediumLargeDevice:1128px;
 $largDevice:950px;
 $minimumDevice:744px;
 $smallDevice:320px;
@@ -99,6 +99,11 @@ header {
 
       a {
         color: aliceblue;
+        background-image: url('');
+
+        .airbnbIcon-tablet {
+          display: none;
+        }
 
         svg.scrolling-active {
           .airbnb {
@@ -144,7 +149,15 @@ header {
         }
       }
     }
-
+    // ---responsive for tablet screen size--------
+    @media only screen and (min-width:$minimumDevice) and (max-width:$mediumLargeDevice){
+      .airbnbIcon-tablet {
+        display: block;
+      }
+      .airbnbIcon{
+        display: none;
+      }
+    }
     .nav-right {
       display: flex;
       justify-content: space-between;
@@ -789,7 +802,7 @@ header {
     align-items: center;
     margin-top: -66px;
     overflow-x: hidden;
-    
+
 
     .hero-txt {
       margin-top: 40vh;
@@ -917,7 +930,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 744px) and (max-width: 1127px) {
+@media only screen and (min-width: 744px) and (max-width: 1128px) {
   .explore-content {
     grid-template-columns: repeat(3, 1fr) !important;
     margin: 0 30px;

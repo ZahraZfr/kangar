@@ -58,6 +58,11 @@ header .container .nav {
 
 header .container .nav a {
   color: aliceblue;
+  background-image: url("");
+}
+
+header .container .nav a .airbnbIcon-tablet {
+  display: none;
 }
 
 header .container .nav a svg.scrolling-active .airbnb {
@@ -109,6 +114,15 @@ header .container .nav .nav-list li:hover .under-txt {
   color: #dee1e6;
   -webkit-transform: scale(0.25, 1);
           transform: scale(0.25, 1);
+}
+
+@media only screen and (min-width: 744px) and (max-width: 1128px) {
+  header .container .airbnbIcon-tablet {
+    display: block;
+  }
+  header .container .airbnbIcon {
+    display: none;
+  }
 }
 
 header .container .nav-right {
@@ -1049,7 +1063,7 @@ header .container .nav-right .show {
   margin-right: 20px;
 }
 
-@media only screen and (min-width: 744px) and (max-width: 1127px) {
+@media only screen and (min-width: 744px) and (max-width: 1128px) {
   .explore-content {
     -ms-grid-columns: (1fr)[3] !important;
         grid-template-columns: repeat(3, 1fr) !important;
