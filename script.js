@@ -10,17 +10,17 @@ window.addEventListener('scroll', function () {
   guedtsDD.classList.remove("guedtsDDshow" , windowPosition);
   pinkSearch.classList.remove("serachShow", windowPosition);
 });
-
+​
 // ----------------for opening dropdowns
 const userdd = document.querySelector("#userDropDown");
 const userddBTN = document.querySelector("#user-menu-right");
-
+​
 function userMenuDropdown() {
   userdd.classList.toggle("show");
   console.log('open dropdown');
 }
-
-
+​
+​
 // ----------- scrolly const
 const locationn = document.querySelector(".locationDD");
 const locationBTN = document.querySelector(".location");
@@ -51,7 +51,7 @@ function showGuestsF() {
   locationBTN.classList.add("locationG");
   console.log("open dropdown for guests");
 }
-
+​
 // --------closer dropdown of signin btn
 $(document).click(function (event) {
   // for signin
@@ -80,10 +80,10 @@ $(document).click(function (event) {
     console.log("close drop down guests");
   }
 });
-
-
-
-
+​
+​
+​
+​
 // ------------- child counter --------------------------
 const childCoun = document.querySelector(".childrenNum");
 const decChild = document.querySelector(".decBtnChild");
@@ -111,8 +111,8 @@ decChild.addEventListener('click', function (event) {
     decChild.classList.add("forbiddenIcon");
   }
 });
-
-
+​
+​
 // ------------- Infants counter --------------------------
 const InfantsNum = document.querySelector(".InfantsNum");
 const decInfants = document.querySelector(".decBtnInfants");
@@ -141,9 +141,9 @@ decInfants.addEventListener('click', function (event) {
     decInfants.classList.add("forbiddenIcon");
   }
 });
-
-
-
+​
+​
+​
 // ------------- Adult counter ----------------------------------
 const adualtCoun = document.querySelector(".adultNum");
 const decAdualt = document.querySelector(".decBtnAdults");
@@ -171,29 +171,26 @@ decAdualt.addEventListener('click', function (event) {
     decAdualt.classList.add("forbiddenIcon");
   }
 });
-
+​
+​
+​
+//tablet slider
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+​
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+​
+});
+​
+​
 // -------------exolore nearby section
 const init = function(){
 	let items = document.querySelectorAll('.explor-item');
 	cssScrollSnapPolyfill()
 }
 init();
-
-
-//tablet slider
-
-const arrowRight = document.querySelector('.arrow-r')
-const arrowLeft = document.querySelector('.arrow-l')
-const mainCard = document.querySelector('.main-card')
-arrowRight.addEventListener("click", () => {
-  mainCard.classList.add("go-left")
-  arrowLeft.classList.add("active")
-  arrowRight.classList.add("hide")
-
-})
-
-arrowLeft.addEventListener("click", () => {
-  mainCard.classList.remove("go-left")
-  arrowLeft.classList.remove("active")
-  arrowRight.classList.remove("hide")
-})
