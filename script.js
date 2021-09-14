@@ -5,9 +5,9 @@ window.addEventListener('scroll', function () {
   let windowPosition = window.scrollY > 0;
   header.classList.toggle('scrolling-active', windowPosition);
   scrollSec.classList.toggle('scrolly-short', windowPosition);
-  guestsBTN.classList.remove("showGuestBTN" , windowPosition);
+  guestsBTN.classList.remove("showGuestBTN", windowPosition);
   pinkSearch.classList.remove("serachShowG", windowPosition);
-  guedtsDD.classList.remove("guedtsDDshow" , windowPosition);
+  guedtsDD.classList.remove("guedtsDDshow", windowPosition);
   pinkSearch.classList.remove("serachShow", windowPosition);
 });
 
@@ -96,7 +96,7 @@ incChild.addEventListener('click', function (event) {
     childCoun.innerHTML = countervalueC;
     console.log("increase");
     incChild.classList.remove("forbiddenIcon");
-  }else{
+  } else {
     incChild.classList.add("forbiddenIcon");
   }
 });
@@ -107,7 +107,7 @@ decChild.addEventListener('click', function (event) {
     childCoun.innerHTML = countervalueC;
     decChild.classList.remove("forbiddenIcon");
     console.log("decrease");
-  }else{
+  } else {
     decChild.classList.add("forbiddenIcon");
   }
 });
@@ -126,7 +126,7 @@ incInfants.addEventListener('click', function (event) {
     InfantsNum.innerHTML = countervalueI;
     console.log("increase Infants");
     incInfants.classList.remove("forbiddenIcon");
-  }else{
+  } else {
     incInfants.classList.add("forbiddenIcon");
   }
 });
@@ -137,7 +137,7 @@ decInfants.addEventListener('click', function (event) {
     InfantsNum.innerHTML = countervalueI;
     decInfants.classList.remove("forbiddenIcon");
     console.log("decrease Infants");
-  }else{
+  } else {
     decInfants.classList.add("forbiddenIcon");
   }
 });
@@ -156,7 +156,7 @@ incAdualt.addEventListener('click', function (event) {
     adualtCoun.innerHTML = countervalueA;
     console.log("increase");
     incAdualt.classList.remove("forbiddenIcon");
-  }else{
+  } else {
     incAdualt.classList.add("forbiddenIcon");
   }
 });
@@ -167,7 +167,7 @@ decAdualt.addEventListener('click', function (event) {
     adualtCoun.innerHTML = countervalueA;
     decAdualt.classList.remove("forbiddenIcon");
     console.log("decrease");
-  }else{
+  } else {
     decAdualt.classList.add("forbiddenIcon");
   }
 });
@@ -207,19 +207,84 @@ var swiper = new Swiper(".my2Swiper", {
 
 
 //top of footer
-btnTab =document.getElementsByClassName("tab-btn")
-function openCity(evt,Cityname){
+btnTab = document.getElementsByClassName("tab-btn")
+
+function openCity(evt, Cityname) {
   var i, tabcontent, tablinks;
-   
+
   tablinks = document.getElementsByClassName("tab-btn");
   tabcontent = document.getElementsByClassName("tab-content");
+
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  
+
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
+
   }
+
   evt.currentTarget.className += " active";
+
   document.getElementById(Cityname).style.display = "flex";
 }
+//calendar
+configObject = {
+  autoClose: false,
+  format: 'YYYY-MM-DD',
+  separator: ' to ',
+  language: 'auto',
+  startOfWeek: 'sunday',// or monday
+  getValue: function () {
+    return $(this).val();
+  },
+  setValue: function (s) {
+    if (!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
+      $(this).val(s);
+    }
+  },
+  startDate: false,
+  endDate: false,
+  time: {
+    enabled: false
+  },
+  minDays: 0,
+  maxDays: 0,
+  showShortcuts: false,
+  shortcuts:
+  {
+    //'prev-days': [1,3,5,7],
+    //'next-days': [3,5,7],
+    //'prev' : ['week','month','year'],
+    //'next' : ['week','month','year']
+  },
+  customShortcuts: [],
+  inline: false,
+  container: 'body',
+  alwaysOpen: false,
+  singleDate: false,
+  lookBehind: false,
+  batchMode: false,
+  duration: 200,
+  stickyMonths: false,
+  dayDivAttrs: [],
+  dayTdAttrs: [],
+  applyBtnClass: '',
+  singleMonth: 'auto',
+  hoveringTooltip: function (days, startTime, hoveringTime) {
+    return days > 1 ? days + ' ' + lang('days') : '';
+  },
+  showTopbar: true,
+  swapTime: false,
+  selectForward: false,
+  selectBackward: false,
+  showWeekNumbers: false,
+  getWeekNumber: function (date) //date will be the first day of a week
+  {
+    return moment(date).format('w');
+  },
+  monthSelect: false,
+  yearSelect: false
+}
+
+
