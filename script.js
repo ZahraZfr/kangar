@@ -10,6 +10,33 @@ window.addEventListener('scroll', function () {
   guedtsDD.classList.remove("guedtsDDshow" , windowPosition);
   pinkSearch.classList.remove("serachShow", windowPosition);
 });
+// underline for navbar item
+const navLi1 = document.querySelector(".nav-list1");
+const navUL = document.querySelector(".nav-list");
+
+// navListItem.forEach((item) => {
+//     item.addEventListener("click", () => {
+//         item.classList.toggle("underline")
+//     })
+// });
+
+function openItem(event){
+
+  tabItem = document.getElementsByClassName("nav-list-i");
+  // let tabUnderline = document.getElementsByClassName("tab-content");
+
+  // for (var i = 0; i < tabcontent.length; i++) {
+  //   tabcontent[i].style.display = "none";
+  // }
+  for (i = 0; i < tabItem.length; i++) {
+    tabItem[i].className = tabItem[i].className.replace(" ShowUnderline", "");
+    
+  }
+
+  event.currentTarget.className += " ShowUnderline";
+
+  // document.getElementById(Cityname).style.display = "flex";
+}
 
 // ----------------for opening dropdowns
 const userdd = document.querySelector("#userDropDown");
@@ -17,7 +44,6 @@ const userddBTN = document.querySelector("#user-menu-right");
 
 function userMenuDropdown() {
   userdd.classList.toggle("show");
-  console.log('open dropdown');
 }
 
 
@@ -38,7 +64,6 @@ function showLocationF() {
   checkoutt.classList.add("checkoutSEC");
   guestss.classList.add("guestsSEC");
   pinkSearch.classList.add("serachShow");
-  console.log("open dropdown for location");
 }
 // ---------------------guests dropdown
 function showGuestsF() {
@@ -49,7 +74,6 @@ function showGuestsF() {
   checkinn.classList.add("checkinG");
   checkoutt.classList.add("checkoutG");
   locationBTN.classList.add("locationG");
-  console.log("open dropdown for guests");
 }
 
 // --------closer dropdown of signin btn
@@ -57,7 +81,6 @@ $(document).click(function (event) {
   // for signin
   if ((!$(event.target).closest(userdd).length) && (!$(event.target).closest(userddBTN).length)) {
     userdd.classList.remove("show")
-    console.log("close drop down");
   }
   // for location
   if ((!$(event.target).closest(locationn).length) && (!$(event.target).closest(locationBTN).length)) {
@@ -66,7 +89,6 @@ $(document).click(function (event) {
     checkinn.classList.remove("checkinSEC");
     checkoutt.classList.remove("checkoutSEC");
     pinkSearch.classList.remove("serachShow");
-    console.log("close drop down location");
   }
   // for guests
   if ((!$(event.target).closest(guedtsDD).length) && (!$(event.target).closest(guestsBTN).length)) {
@@ -77,7 +99,6 @@ $(document).click(function (event) {
     checkinn.classList.remove("checkinG");
     checkoutt.classList.remove("checkoutG");
     locationBTN.classList.remove("locationG");
-    console.log("close drop down guests");
   }
 });
 
@@ -94,7 +115,6 @@ incChild.addEventListener('click', function (event) {
   if (countervalueC < 5) {
     countervalueC += 1;
     childCoun.innerHTML = countervalueC;
-    console.log("increase");
     incChild.classList.remove("forbiddenIcon");
   }else{
     incChild.classList.add("forbiddenIcon");
@@ -106,7 +126,6 @@ decChild.addEventListener('click', function (event) {
     countervalueC -= 1;
     childCoun.innerHTML = countervalueC;
     decChild.classList.remove("forbiddenIcon");
-    console.log("decrease");
   }else{
     decChild.classList.add("forbiddenIcon");
   }
@@ -124,7 +143,6 @@ incInfants.addEventListener('click', function (event) {
   if (countervalueI < 5) {
     countervalueI += 1;
     InfantsNum.innerHTML = countervalueI;
-    console.log("increase Infants");
     incInfants.classList.remove("forbiddenIcon");
   }else{
     incInfants.classList.add("forbiddenIcon");
@@ -136,7 +154,6 @@ decInfants.addEventListener('click', function (event) {
     countervalueI -= 1;
     InfantsNum.innerHTML = countervalueI;
     decInfants.classList.remove("forbiddenIcon");
-    console.log("decrease Infants");
   }else{
     decInfants.classList.add("forbiddenIcon");
   }
@@ -154,7 +171,6 @@ incAdualt.addEventListener('click', function (event) {
   if (countervalueA < 15) {
     countervalueA += 1;
     adualtCoun.innerHTML = countervalueA;
-    console.log("increase");
     incAdualt.classList.remove("forbiddenIcon");
   }else{
     incAdualt.classList.add("forbiddenIcon");
@@ -166,7 +182,6 @@ decAdualt.addEventListener('click', function (event) {
     countervalueA -= 1;
     adualtCoun.innerHTML = countervalueA;
     decAdualt.classList.remove("forbiddenIcon");
-    console.log("decrease");
   }else{
     decAdualt.classList.add("forbiddenIcon");
   }
@@ -187,10 +202,3 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 
-
-// -------------exolore nearby section
-const init = function(){
-	let items = document.querySelectorAll('.explor-item');
-	cssScrollSnapPolyfill()
-}
-init();
