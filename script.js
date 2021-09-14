@@ -174,23 +174,52 @@ decAdualt.addEventListener('click', function (event) {
 
 
 
-//tablet slider
 var swiper = new Swiper(".mySwiper", {
+
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 10,
   freeMode: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-
 });
 
+var swiper = new Swiper(".my2Swiper", {
+
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  freeMode: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
 
 // -------------exolore nearby section
-const init = function(){
-	let items = document.querySelectorAll('.explor-item');
-	cssScrollSnapPolyfill()
+// const init = function(){
+// 	let items = document.querySelectorAll('.explor-item');
+// 	cssScrollSnapPolyfill()
+// }
+// init();
+
+
+//top of footer
+btnTab =document.getElementsByClassName("tab-btn")
+function openCity(evt,Cityname){
+  var i, tabcontent, tablinks;
+   
+  tablinks = document.getElementsByClassName("tab-btn");
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+  document.getElementById(Cityname).style.display = "flex";
 }
-init();
