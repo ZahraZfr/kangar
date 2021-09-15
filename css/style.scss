@@ -5,7 +5,6 @@ $largDevice: 950px;
 $minimumDevice: 744px;
 $smallDevice: 320px;
 
-
 // upper than 320px
 @mixin smallDevice {
   @media (min-width: #{$smallDevice}) {
@@ -82,7 +81,7 @@ button {
   border: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -1378,7 +1377,6 @@ header {
 @media (min-width: $minimumDevice) {
   .container__2_desktop {
     max-width: 1360px;
-    margin-top: 2rem !important;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -1394,8 +1392,8 @@ header {
 .active {
   color: black !important;
 }
-.active:hover{
-    background: rgb(247, 247, 247) !important;
+.active:hover {
+  background: rgb(247, 247, 247) !important;
 }
 .active::after {
   margin-top: 6px;
@@ -1511,40 +1509,97 @@ header {
   display: none;
   flex-wrap: wrap;
 }
-
+//1col
 @media (max-width: 375px) {
   .cites {
     flex-basis: 100%;
   }
 }
-
+//2col
 @media screen and (min-width: 375px) and (max-width: $minimumDevice) {
   .cites {
     flex-basis: 50% !important;
   }
+  .f-cites {
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: $minimumDevice) {
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .social-icon {
+    display: none;
+  }
 }
 
+//3col
 @media screen and (min-width: $minimumDevice) and (max-width: $mediumLargeDevice) {
   .cites {
     flex-basis: 32% !important;
   }
+  .footer {
+    flex-direction: column;
+  }
+  .f-cites ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex-basis: 32%;
+    }
+  }
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom{
+    text-align: center !important;
+  }
+  .footer-right{
+    justify-content: center;
+  }
+  .social-icon{
+    margin-left: 40px;
+  }
 }
-
+//4col
 @media (min-width: $mediumLargeDevice) {
   .cites {
     flex-basis: 25%;
   }
+  .f-cites {
+    flex-basis: 25%;
+    padding: 48px 0;
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .footer-left{
+    display: -webkit-inline-box !important;
+  }
+.social-icon{
+  margin-left: 40px;
 }
+}
+
 .tab-list-wrapper:after {
   margin-left: 5rem;
 }
 // --------------inspiration----------------------
 
 // --------------footer----------------------
-footer{
-  background-color: #F7F7F7;
-  border-top: 1px solid #DDDDDD;
-  .footer{
+footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1552,28 +1607,85 @@ footer{
     flex-grow: 1;
     flex-basis: 32%;
 
-    h3{
+    h3 {
       font-size: 12px;
       font-weight: 700;
+      text-transform: uppercase !important;
     }
-    ul li a{
-    
+    ul li a {
       text-decoration: none !important;
       color: #222222 !important;
       font-size: 14px !important;
       line-height: 18px !important;
-
     }
     ul li {
       margin-top: 16px;
     }
   }
 }
+//footer on buttom
+.footer-buttom{
+padding: 24px 0;
+}
+.footer-right button {
+  display: inline-flex;
+  background-color: inherit;
+}
+.footer-right {
+  display: flex;
+}
+.lang{
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600 ;
+  font-size: 14px ;
+  text-decoration: underline ;
+}
+.money span:last-child{
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600 ;
+  font-size: 14px ;
+  text-decoration: underline ;
+}
+.money span:first-child{
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+margin-right: 8px;
+  font-size: 14px ;
 
+}
+.lang{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  .icon{
+    margin-right: 8px;
+  }
+}
+.footer-links ,.footer-links a{
+  font-size: 14px ;
+  line-height: 18px ;
+  color: #222222 ;
+  display: inline-block ;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.footer-links span{
+  width: 19px;
+  display: inline-block;
+  text-align: center;
+}
+.footer-links a{
+  color: #000;
+}
+.social-icon ul {
+  display: flex;
 
+  li{
+    margin-right: 24px;
+    a{
+      color: #000;
+    }
+  }
+}
 
 // --------------/footer----------------------
-
 
 //--------------fonts----------------------------//
 @font-face {

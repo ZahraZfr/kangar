@@ -1533,7 +1533,6 @@ header .container .nav-right .show {
 @media (min-width: 744px) {
   .container__2_desktop {
     max-width: 1360px;
-    margin-top: 2rem !important;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -1690,12 +1689,62 @@ header .container .nav-right .show {
     -ms-flex-preferred-size: 50% !important;
         flex-basis: 50% !important;
   }
+  .f-cites {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .social-icon {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 744px) and (max-width: 1127px) {
   .cites {
     -ms-flex-preferred-size: 32% !important;
         flex-basis: 32% !important;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .f-cites ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .f-cites ul li {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom {
+    text-align: center !important;
+  }
+  .footer-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-icon {
+    margin-left: 40px;
   }
 }
 
@@ -1704,6 +1753,30 @@ header .container .nav-right .show {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
   }
+  .f-cites {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 48px 0;
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .footer-left {
+    display: -webkit-inline-box !important;
+  }
+  .social-icon {
+    margin-left: 40px;
+  }
 }
 
 .tab-list-wrapper:after {
@@ -1711,8 +1784,8 @@ header .container .nav-right .show {
 }
 
 footer {
-  background-color: #F7F7F7;
-  border-top: 1px solid #DDDDDD;
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
 }
 
 footer .footer {
@@ -1736,6 +1809,7 @@ footer .footer {
 footer .footer h3 {
   font-size: 12px;
   font-weight: 700;
+  text-transform: uppercase !important;
 }
 
 footer .footer ul li a {
@@ -1747,6 +1821,84 @@ footer .footer ul li a {
 
 footer .footer ul li {
   margin-top: 16px;
+}
+
+.footer-buttom {
+  padding: 24px 0;
+}
+
+.footer-right button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: inherit;
+}
+
+.footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lang {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.money span:last-child {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.money span:first-child {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.lang {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.lang .icon {
+  margin-right: 8px;
+}
+
+.footer-links, .footer-links a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #222222;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.footer-links span {
+  width: 19px;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #000;
+}
+
+.social-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-icon ul li {
+  margin-right: 24px;
+}
+
+.social-icon ul li a {
+  color: #000;
 }
 
 @font-face {
