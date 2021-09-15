@@ -135,7 +135,6 @@ header {
           a {
             color: aliceblue;
           }
-
         }
 
         li:hover a {
@@ -148,29 +147,31 @@ header {
         // }
       }
     }
-    .ShowUnderline::after{
+
+    .ShowUnderline::after {
       content: '';
       position: absolute;
       top: 55px;
-      margin-left: -50px!important;
+      margin-left: -50px !important;
       width: 18px;
       height: 2px;
       background-color: aliceblue;
       z-index: 2;
       transition: width 0.3 ease;
     }
-    
-    .nav-list-i:hover ::after{
+
+    .nav-list-i:hover ::after {
       content: '';
       position: absolute;
       top: 55px;
-      margin-left: -50px!important;
+      margin-left: -50px !important;
       width: 5px;
       height: 2px;
       background-color: aliceblue;
       z-index: 2;
       transition: width 0.3 ease;
     }
+
     .nav-right {
       display: flex;
       justify-content: space-between;
@@ -317,6 +318,19 @@ header {
 }
 
 // -------------scrolly nav-------
+// when click places to stay link
+// .placesNav{
+//   .ExperienceTab1 , .ExperienceTab2{
+//     background-color: #6f019c !important;
+//   }
+//   // .location , .checkin , .checkout , .guests{
+//   //   display: flex;
+//   // }
+// }
+// end code for places to stay 
+.showExperience {
+  display: flex;
+}
 
 .scrolly-nav {
   z-index: 10;
@@ -337,6 +351,12 @@ header {
   margin: 0 auto;
   transition: all 0.2s ease;
   // overflow: hidden;
+
+  .ExperienceTab1,
+  .ExperienceTab2,
+  .LocDD {
+    display: none;
+  }
 
   div {
     display: flex;
@@ -490,7 +510,7 @@ header {
       margin-right: 30px;
     }
 
-    .serach-icon {
+    .search-icon {
       width: 48px;
       height: 48px;
       background-color: #ff385c;
@@ -509,8 +529,8 @@ header {
   }
 
   // **script
-  .serachShow,
-  .serachShowG {
+  .searchShow,
+  .searchShowG {
     width: 111.75px !important;
     transition: opacity 1.25s ease 0s !important;
     border-radius: 25px !important;
@@ -730,6 +750,174 @@ header {
   }
 }
 
+// ***for experience tab script
+.LocDD {
+  display: flex;
+  justify-content: start !important;
+  align-items: center;
+  background-color: white !important;
+  z-index: 15 !important;
+  border-radius: 33px;
+  position: absolute;
+  top: 76px;
+  left: 5px;
+  max-width: 500px !important;
+  height: 96px !important;
+  box-shadow: 1px 1px 14px 2px #6464647d;
+
+  .LocHolder {
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+
+    img {
+      justify-self: start;
+      border-radius: 10px;
+      width: 48px !important;
+      height: 48px !important;
+      margin: 0 20px;
+
+    }
+
+    .nearby {
+      justify-self: start;
+      width: 55px;
+      height: 20px;
+
+    }
+  }
+
+  .DateHolder:hover {
+    background-color: #f7f7f7;
+  }
+
+}
+
+.search-DD {
+  width: 48px !important;
+  height: 48px !important;
+  background-color: #ff385c !important;
+  border-radius: 50% !important;
+
+  .disapearDD {
+    display: none;
+  }
+}
+
+.searchShowDD , .searchShowDDD{
+  width: 111.75px !important;
+  transition: opacity 1.25s ease 0s !important;
+  border-radius: 25px !important;
+  padding: 0 20px !important;
+  background-image: radial-gradient(circle at center center,
+      rgb(255, 56, 92) 0%,
+      rgb(230, 30, 77) 27.5%,
+      rgb(227, 28, 95) 40%,
+      rgb(215, 4, 102) 57.5%,
+      rgb(189, 30, 89) 75%,
+      rgb(189, 30, 89) 100%) !important;
+
+  .disapearDD {
+    display: block;
+    color: #fff;
+    padding-left: 10px;
+    line-height: 48px;
+  }
+}
+
+
+.showExperience {
+  display: flex;
+
+  .ExperienceTab1,
+  .ExperienceTab2 {
+    display: flex;
+    border-radius: 35px;
+    flex-basis: 50%;
+
+    p {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.04em !important;
+      padding-bottom: 2px !important;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
+  .activeFlex {
+    display: flex;
+  }
+
+  .ExperienceTab1 {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 25px;
+    position: relative;
+
+
+  }
+
+  .ExperienceTab2 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 11px;
+
+    .Date-txt {
+      margin: 0;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      max-width: 300px;
+      border-left: 1px solid #d8d8d8;
+      padding-left: 25px;
+
+    }
+
+    .search-icon {
+      width: 48px !important;
+      height: 48px !important;
+      background-color: #ff385c !important;
+      border-radius: 50% !important;
+
+    }
+
+  }
+
+  .showDateBTN {
+    border-radius: 30px !important;
+    background-color: #fff !important;
+    box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+    z-index: 15 !important;
+    margin-inline-end: auto;
+  }
+
+  .ExperienceTab1:hover,
+  .ExperienceTab2:hover {
+    background-color: #EBEBEB;
+    border: none;
+  }
+
+
+
+  // enf of experience tab class
+  .location,
+  .checkin,
+  .checkout,
+  .guests {
+    display: none;
+  }
+}
+
 // ***for script
 .scrolly-short {
   width: 300px !important;
@@ -776,7 +964,7 @@ header {
   background-color: #fff;
 }
 
-.scrolly-short .serach-icon {
+.scrolly-short .search-icon {
   width: 32px !important;
   height: 32px !important;
 }
@@ -1013,7 +1201,7 @@ header {
         color: #000;
       }
 
-      .serach-icon {
+      .search-icon {
         padding: 0 5px;
       }
     }
