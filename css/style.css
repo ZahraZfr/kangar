@@ -16,8 +16,6 @@ body {
   width: 100%;
   min-width: 320px !important;
   line-height: 1.43;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -28,6 +26,7 @@ a {
 button {
   outline: none;
   border: none;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 ul {
@@ -1746,9 +1745,16 @@ header .container .nav-right .show {
   .social-icon {
     margin-left: 40px;
   }
+  .footer-left div {
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: 1127px) {
+  .currency .cites {
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
+  }
   .cites {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -1772,7 +1778,16 @@ header .container .nav-right .show {
             flex-direction: row-reverse;
   }
   .footer-left {
-    display: -webkit-inline-box !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .footer-left div {
+    margin-left: 20px;
+  }
+  .footer-left div a:hover {
+    text-decoration: underline;
+    color: gray;
   }
   .social-icon {
     margin-left: 40px;
@@ -1860,6 +1875,16 @@ footer .footer ul li {
   font-size: 14px;
 }
 
+.money:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.lang:hover {
+  color: gray;
+  cursor: pointer;
+}
+
 .lang {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1869,7 +1894,8 @@ footer .footer ul li {
   margin-right: 8px;
 }
 
-.footer-links, .footer-links a {
+.footer-links,
+.footer-links a {
   font-size: 14px;
   line-height: 18px;
   color: #222222;
@@ -1899,6 +1925,97 @@ footer .footer ul li {
 
 .social-icon ul li a {
   color: #000;
+}
+
+.social-icon ul li a:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.modal-money {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.modal-content {
+  max-width: 1032px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 3rem;
+  border: 1px solid #888;
+  width: 80%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.currency ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.currency ul li {
+  border: black 1px solid;
+  border-radius: 1rem;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.currency ul li:hover {
+  background-color: gray;
+}
+
+.currency ul li button {
+  background-color: inherit;
+  text-align: left;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @font-face {

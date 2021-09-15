@@ -211,10 +211,8 @@ btnTab = document.getElementsByClassName("tab-btn")
 
 function openCity(evt, Cityname) {
   var i, tabcontent, tablinks;
-
   tablinks = document.getElementsByClassName("tab-btn");
   tabcontent = document.getElementsByClassName("tab-content");
-
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -223,68 +221,31 @@ function openCity(evt, Cityname) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
 
   }
-
   evt.currentTarget.className += " active";
-
   document.getElementById(Cityname).style.display = "flex";
 }
-//calendar
-configObject = {
-  autoClose: false,
-  format: 'YYYY-MM-DD',
-  separator: ' to ',
-  language: 'auto',
-  startOfWeek: 'sunday',// or monday
-  getValue: function () {
-    return $(this).val();
-  },
-  setValue: function (s) {
-    if (!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
-      $(this).val(s);
-    }
-  },
-  startDate: false,
-  endDate: false,
-  time: {
-    enabled: false
-  },
-  minDays: 0,
-  maxDays: 0,
-  showShortcuts: false,
-  shortcuts:
-  {
-    //'prev-days': [1,3,5,7],
-    //'next-days': [3,5,7],
-    //'prev' : ['week','month','year'],
-    //'next' : ['week','month','year']
-  },
-  customShortcuts: [],
-  inline: false,
-  container: 'body',
-  alwaysOpen: false,
-  singleDate: false,
-  lookBehind: false,
-  batchMode: false,
-  duration: 200,
-  stickyMonths: false,
-  dayDivAttrs: [],
-  dayTdAttrs: [],
-  applyBtnClass: '',
-  singleMonth: 'auto',
-  hoveringTooltip: function (days, startTime, hoveringTime) {
-    return days > 1 ? days + ' ' + lang('days') : '';
-  },
-  showTopbar: true,
-  swapTime: false,
-  selectForward: false,
-  selectBackward: false,
-  showWeekNumbers: false,
-  getWeekNumber: function (date) //date will be the first day of a week
-  {
-    return moment(date).format('w');
-  },
-  monthSelect: false,
-  yearSelect: false
-}
+//modal
+var modalMoneyContent = document.getElementById("modal-money")
+var modalMoneyBtn = document.getElementById("modal-money-btn")
+modalMoneyBtn.addEventListener("click", () => {
+  modalMoneyContent.style.display = "block";
+  // const body = document.querySelector(".body");
+  // body.classList.toggle("pos-fixed");
+})
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modalMoneyContent) {
+//     modalMoneyContent.style.display = "none";
+//   }
+// }
+$(document).click(function (event) {
+  if (event.target == modalMoneyContent) {
+    modalMoneyContent.style.display = "none";
+  }
+})
 

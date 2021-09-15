@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <!-- -------------------------------header------------------------- -->
     <header>
         <div class="container">
@@ -995,30 +995,23 @@
             <section class="footer-buttom">
 
                 <div class="footer-right">
-                    <!-- <div class="lang-money"> -->
+                    <button class="lang">
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
+                                role="presentation" focusable="false">
+                                <path
+                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="">English (US)</span>
+                    </button>
 
-
-                        <button class="lang">
-                            <span class="icon">
-                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                    style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
-                                    role="presentation" focusable="false">
-                                    <path
-                                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span class="">English (US)</span>
-                        </button>
-
-
-
-                    <button type="button" class="money">
+                    <button type="button" id="modal-money-btn" class="money">
                         <span class="">$</span>
                         <span class="">USD</span>
                     </button>
-
-                    <!-- </div> -->
 
                     <div class="social-icon">
                         <ul class="">
@@ -1067,7 +1060,7 @@
 
                         <a href="/sitemaps/v2" class="">Sitemap</a>
                     </div>
-                </div>         
+                </div>
 
             </section>
         </div>
@@ -1076,8 +1069,230 @@
     </footer>
 
 
+    <!-- <div id="modal-lang">
+        <h1>hi</h1>
 
+    </div> -->
 
+    <div>
+        <div id="modal-money" class="modal-money">
+
+            <div class="modal-content">
+                <div class="_fk86kl8">
+                    <section>
+                        <div class="currency">
+                            <div class="_osmab1">
+                                <h2 tabindex="-1" class="_14i3z6h">Choose a currency</h2>
+                            </div>
+                            <ul class="">
+                                <li class="cites"><button class="_uhhvxco" aria-current="true" type="button"
+                                        data-no-client-routing="true">
+                                        <div>United States dollar</div>
+                                        <div class="_a7a5sx">USD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Australian dollar</div>
+                                        <div class="_a7a5sx">AUD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Brazilian real</div>
+                                        <div class="_a7a5sx">BRL - R$</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Bulgarian lev</div>
+                                        <div class="_a7a5sx">BGN - лв.</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Canadian dollar</div>
+                                        <div class="_a7a5sx">CAD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Chilean peso</div>
+                                        <div class="_a7a5sx">CLP - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Chinese yuan</div>
+                                        <div class="_a7a5sx">CNY - ￥</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Colombian peso</div>
+                                        <div class="_a7a5sx">COP - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Costa Rican colon</div>
+                                        <div class="_a7a5sx">CRC - ₡</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Croatian kuna</div>
+                                        <div class="_a7a5sx">HRK - kn</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Czech koruna</div>
+                                        <div class="_a7a5sx">CZK - Kč</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Danish krone</div>
+                                        <div class="_a7a5sx">DKK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Emirati dirham</div>
+                                        <div class="_a7a5sx">AED - ﺩ.ﺇ</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Euro</div>
+                                        <div class="_a7a5sx">EUR - €</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Hong Kong dollar</div>
+                                        <div class="_a7a5sx">HKD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Hungarian forint</div>
+                                        <div class="_a7a5sx">HUF - Ft</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Indian rupee</div>
+                                        <div class="_a7a5sx">INR - ₹</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Israeli new shekel</div>
+                                        <div class="_a7a5sx">ILS - ₪</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Japanese yen</div>
+                                        <div class="_a7a5sx">JPY - ¥</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Malaysian ringgit</div>
+                                        <div class="_a7a5sx">MYR - RM</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Mexican peso</div>
+                                        <div class="_a7a5sx">MXN - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Moroccan dirham</div>
+                                        <div class="_a7a5sx">MAD</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>New Taiwan dollar</div>
+                                        <div class="_a7a5sx">TWD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>New Zealand dollar</div>
+                                        <div class="_a7a5sx">NZD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Norwegian krone</div>
+                                        <div class="_a7a5sx">NOK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Peruvian sol</div>
+                                        <div class="_a7a5sx">PEN - S/</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Philippine peso</div>
+                                        <div class="_a7a5sx">PHP - ₱</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Polish zloty</div>
+                                        <div class="_a7a5sx">PLN - zł</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Pound sterling</div>
+                                        <div class="_a7a5sx">GBP - £</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Romanian leu</div>
+                                        <div class="_a7a5sx">RON - lei</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Russian ruble</div>
+                                        <div class="_a7a5sx">RUB - ₽</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Saudi Arabian riyal</div>
+                                        <div class="_a7a5sx">SAR - SR</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Singapore dollar</div>
+                                        <div class="_a7a5sx">SGD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>South African rand</div>
+                                        <div class="_a7a5sx">ZAR - R</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>South Korean won</div>
+                                        <div class="_a7a5sx">KRW - ₩</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Swedish krona</div>
+                                        <div class="_a7a5sx">SEK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Swiss franc</div>
+                                        <div class="_a7a5sx">CHF</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Thai baht</div>
+                                        <div class="_a7a5sx">THB - ฿</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Turkish lira</div>
+                                        <div class="_a7a5sx">TRY - ₺</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button"
+                                        data-no-client-routing="true">
+                                        <div>Uruguayan peso</div>
+                                        <div class="_a7a5sx">UYU - $U</div>
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
