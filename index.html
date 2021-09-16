@@ -589,15 +589,59 @@
             <div class="swiper my2Swiper">
 
                 <div id="tabLinkscroll" class="swiper-wrapper tab-list-wrapper">
-                    <button class="tab-btn swiper-slide active" onclick="openCity(event,'art')">Destinations for arts &
-                        culture</button>
-                    <button class="tab-btn swiper-slide " onclick="openCity(event,'outdoor')">Destinations for outdoor
-                        adventure</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'mountain')">Mountain cabins</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'beach')">Beach destinations</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'popular')">Popular
-                        destinations</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'unique')">Unique Stays</button>
+                    <ul>
+                        <li>
+                            <button class="tab-btn swiper-slide active" onclick="openCity(event,'art')">
+                                <div>
+                                    Destinations for arts &
+                                    culture
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide " onclick="openCity(event,'outdoor')">
+                                <div>
+                                    Destinations for
+                                    outdoor
+                                    adventure
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'mountain')">
+                                <div>
+                                    Mountain
+                                    cabins
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'beach')">
+                                <div>
+                                    Beach
+                                    destinations
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'popular')">
+                                <div>
+                                    Popular
+                                    destinations
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'unique')">
+                                <div>
+                                    Unique
+                                    Stays
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+
+
                 </div>
 
                 <button type="button" class="swiper-button-prev scrollLeft ">
@@ -1074,15 +1118,31 @@
 
     </div> -->
 
-    <div>
-        <div id="modal-money" class="modal-money">
 
+    <div id="modal__container">
+
+
+
+        <div id="modal-money" class="modal-money overlay">
             <div class="modal-content">
-                <div class="_fk86kl8">
+                <div class="close__container">
+                    <button aria-label="Close" type="button" id="close" class="close">
+                        <span class=""><svg
+                                viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                <path d="m6 6 20 20"></path>
+                                <path d="m26 6-20 20"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content">
                     <section>
                         <div class="currency">
-                            <div class="_osmab1">
-                                <h2 tabindex="-1" class="_14i3z6h">Choose a currency</h2>
+                            <div class="title">
+                                <h2 class="">Choose a currency</h2>
                             </div>
                             <ul class="">
                                 <li class="cites"><button class="_uhhvxco" aria-current="true" type="button"
@@ -1090,198 +1150,159 @@
                                         <div>United States dollar</div>
                                         <div class="_a7a5sx">USD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Australian dollar</div>
                                         <div class="_a7a5sx">AUD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Brazilian real</div>
                                         <div class="_a7a5sx">BRL - R$</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Bulgarian lev</div>
                                         <div class="_a7a5sx">BGN - лв.</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Canadian dollar</div>
                                         <div class="_a7a5sx">CAD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Chilean peso</div>
                                         <div class="_a7a5sx">CLP - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Chinese yuan</div>
                                         <div class="_a7a5sx">CNY - ￥</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Colombian peso</div>
                                         <div class="_a7a5sx">COP - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Costa Rican colon</div>
                                         <div class="_a7a5sx">CRC - ₡</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Croatian kuna</div>
                                         <div class="_a7a5sx">HRK - kn</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Czech koruna</div>
                                         <div class="_a7a5sx">CZK - Kč</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Danish krone</div>
                                         <div class="_a7a5sx">DKK - kr</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Emirati dirham</div>
                                         <div class="_a7a5sx">AED - ﺩ.ﺇ</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Euro</div>
                                         <div class="_a7a5sx">EUR - €</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Hong Kong dollar</div>
                                         <div class="_a7a5sx">HKD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Hungarian forint</div>
                                         <div class="_a7a5sx">HUF - Ft</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Indian rupee</div>
                                         <div class="_a7a5sx">INR - ₹</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Israeli new shekel</div>
                                         <div class="_a7a5sx">ILS - ₪</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Japanese yen</div>
                                         <div class="_a7a5sx">JPY - ¥</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Malaysian ringgit</div>
                                         <div class="_a7a5sx">MYR - RM</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Mexican peso</div>
                                         <div class="_a7a5sx">MXN - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Moroccan dirham</div>
                                         <div class="_a7a5sx">MAD</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>New Taiwan dollar</div>
                                         <div class="_a7a5sx">TWD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>New Zealand dollar</div>
                                         <div class="_a7a5sx">NZD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Norwegian krone</div>
                                         <div class="_a7a5sx">NOK - kr</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Peruvian sol</div>
                                         <div class="_a7a5sx">PEN - S/</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Philippine peso</div>
                                         <div class="_a7a5sx">PHP - ₱</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Polish zloty</div>
                                         <div class="_a7a5sx">PLN - zł</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Pound sterling</div>
                                         <div class="_a7a5sx">GBP - £</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Romanian leu</div>
                                         <div class="_a7a5sx">RON - lei</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Russian ruble</div>
                                         <div class="_a7a5sx">RUB - ₽</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Saudi Arabian riyal</div>
                                         <div class="_a7a5sx">SAR - SR</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Singapore dollar</div>
                                         <div class="_a7a5sx">SGD - $</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>South African rand</div>
                                         <div class="_a7a5sx">ZAR - R</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>South Korean won</div>
                                         <div class="_a7a5sx">KRW - ₩</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Swedish krona</div>
                                         <div class="_a7a5sx">SEK - kr</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Swiss franc</div>
                                         <div class="_a7a5sx">CHF</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Thai baht</div>
                                         <div class="_a7a5sx">THB - ฿</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Turkish lira</div>
                                         <div class="_a7a5sx">TRY - ₺</div>
                                     </button></li>
-                                <li class="cites"><button class="_lwi6c1u" type="button"
-                                        data-no-client-routing="true">
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
                                         <div>Uruguayan peso</div>
                                         <div class="_a7a5sx">UYU - $U</div>
                                     </button></li>
@@ -1290,7 +1311,6 @@
                     </section>
                 </div>
             </div>
-
         </div>
     </div>
 

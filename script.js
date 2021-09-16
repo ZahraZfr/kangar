@@ -219,30 +219,24 @@ function openCity(evt, Cityname) {
 
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-
   }
   evt.currentTarget.className += " active";
   document.getElementById(Cityname).style.display = "flex";
 }
 //modal
-var modalMoneyContent = document.getElementById("modal-money")
+var modalMoneyContent = document.getElementById("modal__container")
 var modalMoneyBtn = document.getElementById("modal-money-btn")
 modalMoneyBtn.addEventListener("click", () => {
   modalMoneyContent.style.display = "block";
   // const body = document.querySelector(".body");
   // body.classList.toggle("pos-fixed");
 })
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+$("#close").click(function(){
+  modalMoneyContent.style.display = "none";
+
+})
 
 // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modalMoneyContent) {
-//     modalMoneyContent.style.display = "none";
-//   }
-// }
 $(document).click(function (event) {
   if (event.target == modalMoneyContent) {
     modalMoneyContent.style.display = "none";
