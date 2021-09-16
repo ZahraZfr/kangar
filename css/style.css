@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   width: 100%;
   min-width: 320px !important;
   line-height: 1.43;
@@ -1292,7 +1292,164 @@ header .container .nav-right .show {
   margin-right: 20px;
 }
 
+.scrollyssss {
+  display: none;
+}
+
 @media only screen and (max-width: 744px) {
+  .scrolly-short,
+  .scrolly-nav {
+    display: none;
+  }
+  .showSmallHeaderDD {
+    overflow-wrap: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 30px 30px 0 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff;
+    z-index: 20;
+  }
+  .showSmallHeaderDD .scrollyssss {
+    position: fixed;
+    top: 20px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    height: 500px;
+  }
+  .showSmallHeaderDD .scrollyssss .first-small-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 80px !important;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .showSmallHeaderDD .scrollyssss .first-small-sec input {
+    margin-left: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: inherit !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    padding-left: 8px !important;
+    height: 100% !important;
+    text-overflow: ellipsis !important;
+  }
+  .showSmallHeaderDD .scrollyssss .second-small-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .showSmallHeaderDD .scrollyssss .second-small-sec .Second-small-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    font-weight: 800 !important;
+  }
+  .showSmallHeaderDD .scrollyssss .second-small-sec .Second-small-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 95%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 15px auto 0 !important;
+    border: 20px;
+    -webkit-box-shadow: 0 1px 14px -2px #c2c2c2 !important;
+            box-shadow: 0 1px 14px -2px #c2c2c2 !important;
+    border-radius: 25px;
+  }
+  .showSmallHeaderDD .scrollyssss .second-small-sec .Second-small-flex .LDD-F-txt {
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-gradient(linear, left top, right top, from(#6f019c), color-stop(135.12%, #c6017e)) !important;
+    background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
+    -webkit-background-clip: text !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    font-weight: 800 !important;
+    color: #222222 !important;
+    max-height: 120px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec {
+    margin-top: 20px;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec h1 {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    font-weight: 800 !important;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explore-content-small {
+    scroll-behavior: smooth;
+    margin-top: 12px;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explor-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explor-item .explore-txt {
+    width: 60%;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explor-item .explore-txt h3 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    color: #222222 !important;
+    max-height: 120px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6 !important;
+    -webkit-box-orient: vertical !important;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explor-item .explore-txt p {
+    width: 200px;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 400 !important;
+    color: #717171 !important;
+  }
+  .showSmallHeaderDD .scrollyssss .third-small-sec .explor-item img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
   .airbnbIcon-tablet,
   .airbnbIcon,
   .nav-list,
@@ -1792,7 +1949,7 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -1828,7 +1985,7 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -1895,7 +2052,7 @@ header .container .nav-right .show {
   font-size: 16px !important;
   line-height: 18px !important;
   letter-spacing: normal !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 400;
   padding: 14px 24px !important;
   border-radius: 10px;
@@ -2087,7 +2244,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: normal;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
@@ -2097,7 +2254,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 600;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
@@ -2107,7 +2264,7 @@ header .container .nav-right .show {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
   src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");

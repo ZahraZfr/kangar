@@ -336,16 +336,7 @@ header {
 }
 
 // -------------scrolly nav-------
-// when click places to stay link
-// .placesNav{
-//   .ExperienceTab1 , .ExperienceTab2{
-//     background-color: #6f019c !important;
-//   }
-//   // .location , .checkin , .checkout , .guests{
-//   //   display: flex;
-//   // }
-// }
-// end code for places to stay 
+
 .showExperience {
   display: flex;
 }
@@ -368,7 +359,6 @@ header {
   background-color: #f7f7f7;
   margin: 0 auto;
   transition: all 0.2s ease;
-  // overflow: hidden;
 
   .ExperienceTab1,
   .ExperienceTab2,
@@ -1070,6 +1060,7 @@ header {
       }
     }
 
+    // ------------responsive hero img
     @include smallDevice() {
       background-image: url(../img/hero-max744.webp);
       background-repeat: no-repeat;
@@ -1143,8 +1134,161 @@ header {
   }
 }
 
+.scrollyssss {
+  display: none;
+}
+
 // navbar responsive
 @media only screen and (max-width: 744px) {
+
+  .scrolly-short,
+  .scrolly-nav {
+    display: none;
+  }
+
+  .showSmallHeaderDD {
+    overflow-wrap: normal;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 0 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff;
+    z-index: 20;
+
+    .scrollyssss {
+      position: fixed;
+      top: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 500px;
+
+      // first
+      .first-small-sec {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80px !important;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        input {
+          margin-left: 20px;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          font-family: inherit !important;
+          font-size: 16px !important;
+          font-weight: 400 !important;
+          line-height: 20px !important;
+          padding-left: 8px !important;
+          height: 100% !important;
+          text-overflow: ellipsis !important;
+
+
+        }
+      }
+
+      // second
+      .second-small-sec {
+        display: flex;
+        flex-direction: column;
+
+        .Second-small-txt {
+          display: flex;
+          font-size: 12px !important;
+          line-height: 12px !important;
+          font-weight: 800 !important;
+        }
+
+        .Second-small-flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+          height: 55px;
+          padding: 0 15px;
+          margin: 15px auto 0 !important;
+          border: 20px;
+          box-shadow: 0 1px 14px -2px #c2c2c2 !important;
+          border-radius: 25px;
+
+          .LDD-F-txt {
+            -webkit-text-fill-color: transparent !important;
+            background: -webkit-gradient(linear, left top, right top, from(#6f019c), color-stop(135.12%, #c6017e)) !important;
+            background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
+            -webkit-background-clip: text !important;
+            font-size: 18px !important;
+            line-height: 20px !important;
+            font-weight: 800 !important;
+            color: rgb(34, 34, 34) !important;
+            max-height: 120px !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+
+          }
+        }
+      }
+
+      // third
+      .third-small-sec {
+        margin-top: 20px;
+
+        h1 {
+          font-size: 12px !important;
+          line-height: 12px !important;
+          font-weight: 800 !important;
+        }
+
+        .explore-content-small {
+          scroll-behavior: smooth;
+          margin-top: 12px;
+        }
+
+        .explor-item {
+          display: flex;
+          width: 100%;
+          margin: 10px 0;
+
+          .explore-txt {
+            width: 60%;
+
+            h3 {
+              font-size: 16px !important;
+              line-height: 20px !important;
+              font-weight: 400 !important;
+              color: rgb(34, 34, 34) !important;
+              max-height: 120px !important;
+              overflow: hidden !important;
+              text-overflow: ellipsis !important;
+              display: -webkit-box !important;
+              -webkit-line-clamp: 6 !important;
+              -webkit-box-orient: vertical !important;
+            }
+
+            p {
+              width: 200px;
+              font-size: 12px !important;
+              line-height: 16px !important;
+              font-weight: 400 !important;
+              color: rgb(113, 113, 113) !important;
+            }
+          }
+
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            margin-right: 15px;
+          }
+        }
+
+      }
+    }
+  }
+
 
   .airbnbIcon-tablet,
   .airbnbIcon,
