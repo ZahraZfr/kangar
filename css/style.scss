@@ -918,7 +918,7 @@ header {
 
 
 
-  // enf of experience tab class
+  // end of experience tab class
   .location,
   .checkin,
   .checkout,
@@ -929,7 +929,7 @@ header {
 
 // ***for script
 .scrolly-short {
-  width: 300px !important;
+  width: 300px;
   height: 48px;
   z-index: 12 !important;
   position: fixed !important;
@@ -978,10 +978,6 @@ header {
   height: 32px !important;
 }
 
-.scrolly-short .guests-txt {
-  display: none !important;
-}
-
 .scrolly-short .guests-appear {
   display: flex !important;
   justify-content: start;
@@ -993,6 +989,57 @@ header {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   overflow: hidden !important;
+}
+
+.scrolly-short .guests-txt {
+  display: none !important;
+}
+
+// class for click on nav in scrolly style for header
+.scrollyClick {
+  height: 170px !important;
+
+  .nav-list {
+    display: flex !important
+  }
+
+  .nav-list-i {
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .scrolly-short {
+    margin-top: 70px !important;
+    width: 700px !important;
+
+  }
+}
+
+// class for click on nav in scrolly style for scrolly nav 
+.scrolly-short-click {
+  // display: none !important;
+  margin: 60px auto 0 !important;
+  width: 500px !important;
+  height: 56px !important;
+  right: 29vw !important;
+  position: relative;
+
+  .location,
+  .checkin,
+  .checkout,
+  .guests-txt {
+    display: flex !important;
+  }
+
+  .disapear,
+  .guests-appear {
+    display: none !important;
+  }
+
+  .hero-txt {
+    display: flex !important;
+  }
 }
 
 // -------------------hero img --------------------------
@@ -1142,7 +1189,7 @@ header {
 @media only screen and (max-width: 744px) {
 
   .scrolly-short,
-  .scrolly-nav {
+  .scrolly-nav .showExperience {
     display: none;
   }
 

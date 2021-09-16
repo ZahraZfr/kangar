@@ -1042,7 +1042,7 @@ header .container .nav-right .show {
 }
 
 .scrolly-short {
-  width: 300px !important;
+  width: 300px;
   height: 48px;
   z-index: 12 !important;
   position: fixed !important;
@@ -1100,10 +1100,6 @@ header .container .nav-right .show {
   height: 32px !important;
 }
 
-.scrolly-short .guests-txt {
-  display: none !important;
-}
-
 .scrolly-short .guests-appear {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1121,6 +1117,57 @@ header .container .nav-right .show {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   overflow: hidden !important;
+}
+
+.scrolly-short .guests-txt {
+  display: none !important;
+}
+
+.scrollyClick {
+  height: 170px !important;
+}
+
+.scrollyClick .nav-list {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.scrollyClick .nav-list-i a {
+  color: #000 !important;
+}
+
+.scrollyClick .scrolly-short {
+  margin-top: 70px !important;
+  width: 700px !important;
+}
+
+.scrolly-short-click {
+  margin: 60px auto 0 !important;
+  width: 500px !important;
+  height: 56px !important;
+  right: 29vw !important;
+  position: relative;
+}
+
+.scrolly-short-click .location,
+.scrolly-short-click .checkin,
+.scrolly-short-click .checkout,
+.scrolly-short-click .guests-txt {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.scrolly-short-click .disapear,
+.scrolly-short-click .guests-appear {
+  display: none !important;
+}
+
+.scrolly-short-click .hero-txt {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .hero-img-holder .hero-img {
@@ -1298,7 +1345,7 @@ header .container .nav-right .show {
 
 @media only screen and (max-width: 744px) {
   .scrolly-short,
-  .scrolly-nav {
+  .scrolly-nav .showExperience {
     display: none;
   }
   .showSmallHeaderDD {

@@ -1,6 +1,6 @@
 // --------------for scrolling verticaly 
 window.addEventListener('scroll', function () {
-    let header = document.querySelector('header');
+    const header = document.querySelector('header');
     let scrollSec = document.getElementsByClassName('scrolly-nav')[0];
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('scrolling-active', windowPosition);
@@ -9,6 +9,14 @@ window.addEventListener('scroll', function () {
     pinkSearch.classList.remove("searchShowG", windowPosition);
     pinkSearch.classList.remove("searchShow", windowPosition);
     guedtsDD.classList.remove("guedtsDDshow", windowPosition);
+    scrollExp.classList.remove("showExperience");
+
+    guestss.addEventListener('click', function () {
+        header.classList.add('scrollyClick');
+        scrollSec.classList.add('scrolly-short-click');
+    });
+    header.classList.remove('scrollyClick');
+    scrollSec.classList.remove('scrolly-short-click');
 });
 // close small nav
 
