@@ -248,7 +248,7 @@ decAdualt.addEventListener('click', function (event) {
 });
 
 
-
+//swiper slider
 var swiper = new Swiper(".mySwiper", {
 
     slidesPerView: 3,
@@ -277,21 +277,66 @@ var swiper = new Swiper(".my2Swiper", {
 
 
 
-//top of footer
-btnTab = document.getElementsByClassName("tab-btn")
-function openCity(evt, Cityname) {
-    var i, tabcontent, tablinks;
 
-    tablinks = document.getElementsByClassName("tab-btn");
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+//modal
+var modalMoneyContent = document.getElementById("modal__container-money")
+var modalLangContent = document.getElementById("modal__container-lang")
+var overlayclose= document.getElementById('overlay')
+var overlaycloseLan= document.getElementById('overlay-lang')
+var modalMoneyBtn = document.getElementById("modal-money-btn")
 
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    evt.currentTarget.className += " active";
-    document.getElementById(Cityname).style.display = "flex";
+modalMoneyBtn.addEventListener("click", () => {
+  modalMoneyContent.style.display = "block";
+})
+
+$("#close-money").click(function(){
+  modalMoneyContent.style.display = "none";
+})
+$("#close-lang").click(function(){
+  modalLangContent.style.display = "none";
+})
+$('#modal-lang-btn').click(function(){
+  modalLangContent.style.display = "block";
+
+})
+
+// When the user clicks anywhere outside of the modal, close it
+$(document).click(function (event) {
+  
+  if (event.target == overlayclose || event.target == overlaycloseLan) {
+    modalMoneyContent.style.display = "none"; 
+    modalLangContent.style.display = "none"; 
+  }
+})
+
+
+//hide nav footer
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  if(window.pageYOffset > 3000){
+    document.getElementById("navbar").style.bottom = "-100px";
+  }
+  else{
+        document.getElementById("navbar").style.bottom = "0";
+  }
 }
 
+
+
+//top of footer
+btnTab = document.getElementsByClassName("tab-btn")
+
+function openCity(evt, Cityname) {
+  var i, tabcontent, tablinks;
+  tablinks = document.getElementsByClassName("tab-btn");
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+  document.getElementById(Cityname).style.display = "flex";
+}

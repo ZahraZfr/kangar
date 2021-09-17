@@ -8,11 +8,13 @@
     <title>Airbnb</title>
     <link rel="icon" sizes="32x32" href="./img/favicon.svg">
     <link rel="stylesheet" href="./css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
 </head>
 
-<body>
+<body class="body">
     <!-- -------------------------------header------------------------- -->
     <header onclick="openNavS()">
 
@@ -739,11 +741,8 @@
         </div>
 
     </main>
-
-
-
-
-    <section style="margin-bottom: 20rem;">
+    <!-----------------------------------inspiration------------------------------->
+    <section style="margin-bottom: 64px;margin-top: 2rem;">
         <div class="container__2 container__2_desktop">
 
 
@@ -753,15 +752,59 @@
             <div class="swiper my2Swiper">
 
                 <div id="tabLinkscroll" class="swiper-wrapper tab-list-wrapper">
-                    <button class="tab-btn swiper-slide " onclick="openCity(event,'art')">Destinations for arts &
-                        culture</button>
-                    <button class="tab-btn swiper-slide " onclick="openCity(event,'outdoor')">Destinations for outdoor
-                        adventure</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'mountain')">Mountain cabins</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'beach')">Beach destinations</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'popular')">Popular
-                        destinations</button>
-                    <button class="tab-btn swiper-slide" onclick="openCity(event,'unique')">Unique Stays</button>
+                    <ul>
+                        <li>
+                            <button class="tab-btn swiper-slide active" onclick="openCity(event,'art')">
+                                <div>
+                                    Destinations for arts &
+                                    culture
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide " onclick="openCity(event,'outdoor')">
+                                <div>
+                                    Destinations for
+                                    outdoor
+                                    adventure
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'mountain')">
+                                <div>
+                                    Mountain
+                                    cabins
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'beach')">
+                                <div>
+                                    Beach
+                                    destinations
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'popular')">
+                                <div>
+                                    Popular
+                                    destinations
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab-btn swiper-slide" onclick="openCity(event,'unique')">
+                                <div>
+                                    Unique
+                                    Stays
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+
+
                 </div>
 
                 <button type="button" class="swiper-button-prev scrollLeft ">
@@ -778,8 +821,8 @@
 
                 <button type="button" class="swiper-button-next scrollRight ">
                     <div style="background-color: white;">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="scroll tabs forward"
-                            role="img" focusable="false"
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="scroll tabs forward" role="img" focusable="false"
                             style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                             <g fill="none">
                                 <path
@@ -1071,7 +1114,6 @@
                 <div class="df cites"><a href="">Treehouses</a><a href="">AUnited States</a></div>
                 <div class="df cites"><a href="">Glamping</a><a href="">United States</a></div>
                 <div class="df cites"><a href="">Tiny Houses</a><a href="">United States</a></div>
-
                 <div class="df cites"><a href="">Beach Houses</a><a href="">United States</a></div>
                 <div class="df cites"><a href="">Campers and RVs</a><a href="">United States</a></div>
                 <div class="df cites"><a href="">Lakehouses</a><a href="">United States</a></div>
@@ -1084,11 +1126,899 @@
 
     <!-- --------------------------------footer-------------------------- -->
     <footer>
+        <div class="container__2 container__2_desktop footer">
 
+            <section class="f-cites">
+                <div>
+                    <h3>About</h3>
+                </div>
+                <ul class="">
+                    <li class="_wmuyow"><a href="" class="_o06542u">How Airbnb works</a></li>
+                    <li class="_wmuyow"><a href="/press/news" class="_o06542u">Newsroom</a></li>
+                    <li class="_wmuyow"><a href="/2021" class="_o06542u">Airbnb 2021</a></li>
+                    <li class="_wmuyow"><a href="https://investors.airbnb.com" class="_o06542u">Investors</a></li>
+                    <li class="_wmuyow"><a href="/plus" class="_o06542u">Airbnb Plus</a></li>
+                    <li class="_wmuyow"><a href="/luxury" class="_o06542u">Airbnb Luxe</a></li>
+                    <li class="_wmuyow"><a rel="noopener noreferrer" target="_blank" href=""
+                            class="_o06542u">HotelTonight</a></li>
+                    <li class="_wmuyow"><a href="/work?s=footer" class="_o06542u">Airbnb for Work</a></li>
+                    <li class="_wmuyow"><a href="https://m.youtube.com/airbnb" class="_o06542u"
+                            rel="noopener noreferrer" target="_blank">Made possible by Hosts</a></li>
+                    <li class="_wmuyow"><a href="/careers" class="_o06542u">Careers</a></li>
+                    <li class="_wmuyow"><a href="https://news.airbnb.com/what-makes-airbnb-airbnb"
+                            class="_o06542u">Founders' Letter</a></li>
+                </ul>
+            </section>
+
+            <section class="f-cites">
+                <div class="_3na96d">
+                    <h3 class="_otc65q">Community</h3>
+                </div>
+                <ul class="">
+                    <li class="_wmuyow"><a href="/diversity" class="_o06542u">Diversity &amp; Belonging</a></li>
+                    <li class="_wmuyow"><a href="/against-discrimination" class="_o06542u">Against Discrimination</a>
+                    </li>
+                    <li class="_wmuyow"><a href="/accessibility" class="_o06542u">Accessibility</a></li>
+                    <li class="_wmuyow"><a href="/associates?from=footer" class="_o06542u">Airbnb Associates</a></li>
+                    <li class="_wmuyow"><a rel="noopener noreferrer" target="_blank"
+                            href="https://www.airbnb.org/refugees" class="_o06542u">Host Afghan refugees</a></li>
+                    <li class="_wmuyow"><a href="/invite?r=6" class="_o06542u">Guest Referrals</a></li>
+                    <li class="_wmuyow"><a href="/gift-cards" class="_o06542u">Gift cards</a></li>
+                    <li class="_wmuyow"><a href="https://www.airbnb.org?locale=en" class="_o06542u">Airbnb.org</a></li>
+                </ul>
+            </section>
+
+            <section class="f-cites">
+                <div class="_3na96d">
+                    <h3 class="_otc65q">Host</h3>
+                </div>
+                <ul class="_yuolfv">
+                    <li class="_wmuyow"><a href="/host/homes?from_footer=1" class="_o06542u">Host your home</a></li>
+                    <li class="_wmuyow"><a href="/d/onlinehost" class="_o06542u">Host an Online Experience</a></li>
+                    <li class="_wmuyow"><a href="/host/experiences" class="_o06542u">Host an Experience</a></li>
+                    <li class="_wmuyow"><a href="/help/responsible-hosting" class="_o06542u">Responsible hosting</a>
+                    </li>
+                    <li class="_wmuyow"><a href="/resources" class="_o06542u">Resource Center</a></li>
+                    <li class="_wmuyow"><a href="/help/community?s=footer" class="_o06542u">Community Center</a></li>
+                </ul>
+            </section>
+
+            <section class="f-cites">
+                <div class="_3na96d">
+                    <h3 class="_otc65q">Support</h3>
+                </div>
+                <ul class="_yuolfv">
+                    <li class="_wmuyow"><a href="/d/covidsafety" class="_o06542u">Our COVID-19 Response</a></li>
+                    <li class="_wmuyow"><a href="/help/home?from=footer" class="_o06542u">Help Center</a></li>
+                    <li class="_wmuyow"><a
+                            href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
+                            class="_o06542u">Cancellation options</a></li>
+                    <li class="_wmuyow"><a href="/neighbors" class="_o06542u">Neighborhood Support</a></li>
+                    <li class="_wmuyow"><a href="/trust" class="_o06542u">Trust &amp; Safety</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="container__2 container__2_desktop">
+            <section class="footer-buttom">
+
+                <div class="footer-right">
+                    <button class="lang" id="modal-lang-btn">
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
+                                role="presentation" focusable="false">
+                                <path
+                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="">English (US)</span>
+                    </button>
+
+                    <button type="button" id="modal-money-btn" class="money">
+                        <span class="">$</span>
+                        <span >USD</span>
+                    </button>
+
+                    <div class="social-icon">
+                        <ul class="">
+                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
+                                    href="https://www.facebook.com/airbnb" class="_s7cvp1u"><svg viewBox="0 0 32 32"
+                                        role="img" aria-hidden="false" aria-label="Navigate to Facebook"
+                                        focusable="false"
+                                        style="height:18px;width:18px;display:block;fill:currentColor">
+                                        <path
+                                            d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
+                                            fill-rule="evenodd"></path>
+                                    </svg></a></li>
+                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
+                                    href="https://twitter.com/airbnb" class="_s7cvp1u"><svg viewBox="0 0 32 32"
+                                        role="img" aria-hidden="false" aria-label="Navigate to Twitter"
+                                        focusable="false"
+                                        style="height:18px;width:18px;display:block;fill:currentColor">
+                                        <path
+                                            d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
+                                            fill-rule="evenodd"></path>
+                                    </svg></a></li>
+                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
+                                    href="https://instagram.com/airbnb" class="_s7cvp1u"><svg viewBox="0 0 24 24"
+                                        role="img" aria-hidden="false" aria-label="Navigate to Instagram"
+                                        focusable="false"
+                                        style="height:18px;width:18px;display:block;fill:currentColor">
+                                        <path
+                                            d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
+                                            fill-rule="evenodd"></path>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-left footer-links">
+                    <p class="">© 2021 Airbnb, Inc.</p>
+
+                    <div class="">
+                        <a href="/terms/privacy_policy" class="">Privacy</a>
+
+                        <span class="" aria-hidden="true">·</span>
+
+                        <a href="/terms" class="">Terms</a>
+
+                        <span class="" aria-hidden="true">·</span>
+
+                        <a href="/sitemaps/v2" class="">Sitemap</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
 
 
     </footer>
 
+    <!-- modal language -->
+    <div id="modal__container-lang">
+        <div id="overlay-lang" class="modal-money ">
+            <div class="modal-content">
+                <div class="close__container">
+                    <button type="button" id="close-lang" class="close">
+                        <span class=""><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                <path d="m6 6 20 20"></path>
+                                <path d="m26 6-20 20"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content">
+                    <section>
+                        <div class="currency">
+                            <div class="title">
+                                <h2 class="">Choose a language and region</h2>
+                            </div>
+                            <ul class="">
+                                <li class="cites">
+                                    <button class="_uhhvxco" aria-current="true"
+                                        href="/?locale=en&amp;country_override=US" data-no-client-routing="true"
+                                        lang="en-US">
+                                        <div>English</div>
+                                        <div class="">United States</div>
+                                    </button>
+                                </li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=az&amp;country_override=AZ"
+                                        data-no-client-routing="true" lang="az-AZ">
+                                        <div>Azərbaycan dili</div>
+                                        <div class="_a7a5sx">Azərbaycan</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=id&amp;country_override=ID"
+                                        data-no-client-routing="true" lang="id-ID">
+                                        <div>Bahasa Indonesia</div>
+                                        <div class="_a7a5sx">Indonesia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=bs&amp;country_override=BA"
+                                        data-no-client-routing="true" lang="bs-BA">
+                                        <div>Bosanski</div>
+                                        <div class="_a7a5sx">Bosna i Hercegovina</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ca&amp;country_override=ES"
+                                        data-no-client-routing="true" lang="ca-ES">
+                                        <div>Català</div>
+                                        <div class="_a7a5sx">Espanya</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=cs&amp;country_override=CZ"
+                                        data-no-client-routing="true" lang="cs-CZ">
+                                        <div>Čeština</div>
+                                        <div class="_a7a5sx">Česká republika</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sr-ME&amp;country_override=ME"
+                                        data-no-client-routing="true" lang="sr-ME">
+                                        <div>Crnogorski</div>
+                                        <div class="_a7a5sx">Crna Gora</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=da&amp;country_override=DK"
+                                        data-no-client-routing="true" lang="da-DK">
+                                        <div>Dansk</div>
+                                        <div class="_a7a5sx">Danmark</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=de&amp;country_override=DE"
+                                        data-no-client-routing="true" lang="de-DE">
+                                        <div>Deutsch</div>
+                                        <div class="_a7a5sx">Deutschland</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=de-AT&amp;country_override=AT"
+                                        data-no-client-routing="true" lang="de-AT">
+                                        <div>Deutsch</div>
+                                        <div class="_a7a5sx">Österreich</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=de-CH&amp;country_override=CH"
+                                        data-no-client-routing="true" lang="de-CH">
+                                        <div>Deutsch</div>
+                                        <div class="_a7a5sx">Schweiz</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=et&amp;country_override=EE"
+                                        data-no-client-routing="true" lang="et-EE">
+                                        <div>Eesti</div>
+                                        <div class="">Eesti</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-AU&amp;country_override=AU"
+                                        data-no-client-routing="true" lang="en-AU">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">Australia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-CA&amp;country_override=CA"
+                                        data-no-client-routing="true" lang="en-CA">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">Canada</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en&amp;country_override=GY"
+                                        data-no-client-routing="true" lang="en-GY">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">Guyana</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-IN&amp;country_override=IN"
+                                        data-no-client-routing="true" lang="en-IN">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">India</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-IE&amp;country_override=IE"
+                                        data-no-client-routing="true" lang="en-IE">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">Ireland</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-NZ&amp;country_override=NZ"
+                                        data-no-client-routing="true" lang="en-NZ">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">New Zealand</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-SG&amp;country_override=SG"
+                                        data-no-client-routing="true" lang="en-SG">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">Singapore</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en&amp;country_override=AE"
+                                        data-no-client-routing="true" lang="en-AE">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">United Arab Emirates</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=en-GB&amp;country_override=GB"
+                                        data-no-client-routing="true" lang="en-GB">
+                                        <div>English</div>
+                                        <div class="_a7a5sx">United Kingdom</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-AR&amp;country_override=AR"
+                                        data-no-client-routing="true" lang="es-AR">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Argentina</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=BZ"
+                                        data-no-client-routing="true" lang="es-BZ">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Belice</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=BO"
+                                        data-no-client-routing="true" lang="es-BO">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Bolivia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=CL"
+                                        data-no-client-routing="true" lang="es-CL">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Chile</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=CO"
+                                        data-no-client-routing="true" lang="es-CO">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Colombia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=CR"
+                                        data-no-client-routing="true" lang="es-CR">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Costa Rica</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=EC"
+                                        data-no-client-routing="true" lang="es-EC">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Ecuador</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=SV"
+                                        data-no-client-routing="true" lang="es-SV">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">El Salvador</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es&amp;country_override=ES"
+                                        data-no-client-routing="true" lang="es-ES">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">España</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u"
+                                        href="/?locale=es-419&amp;country_override=US" data-no-client-routing="true"
+                                        lang="es-US">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Estados Unidos</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=GT"
+                                        data-no-client-routing="true" lang="es-GT">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Guatemala</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=HN"
+                                        data-no-client-routing="true" lang="es-HN">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Honduras</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=CO"
+                                        data-no-client-routing="true" lang="es-419">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Latinoamérica</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u"
+                                        href="/?locale=es-419&amp;country_override=MX" data-no-client-routing="true"
+                                        lang="es-MX">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">México</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=NI"
+                                        data-no-client-routing="true" lang="es-NI">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Nicaragua</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=PA"
+                                        data-no-client-routing="true" lang="es-PA">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Panamá</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=PY"
+                                        data-no-client-routing="true" lang="es-PY">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Paraguay</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=PE"
+                                        data-no-client-routing="true" lang="es-PE">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Perú</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=es-XL&amp;country_override=VE"
+                                        data-no-client-routing="true" lang="es-VE">
+                                        <div>Español</div>
+                                        <div class="_a7a5sx">Venezuela</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=fr-BE&amp;country_override=BE"
+                                        data-no-client-routing="true" lang="fr-BE">
+                                        <div>Français</div>
+                                        <div class="_a7a5sx">Belgique</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=fr-CA&amp;country_override=CA"
+                                        data-no-client-routing="true" lang="fr-CA">
+                                        <div>Français</div>
+                                        <div class="_a7a5sx">Canada</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=fr&amp;country_override=FR"
+                                        data-no-client-routing="true" lang="fr-FR">
+                                        <div>Français</div>
+                                        <div class="_a7a5sx">France</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=fr-CH&amp;country_override=CH"
+                                        data-no-client-routing="true" lang="fr-CH">
+                                        <div>Français</div>
+                                        <div class="_a7a5sx">Suisse</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ga&amp;country_override=IE"
+                                        data-no-client-routing="true" lang="ga-IE">
+                                        <div>Gaeilge</div>
+                                        <div class="_a7a5sx">Éire</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=hr&amp;country_override=HR"
+                                        data-no-client-routing="true" lang="hr-HR">
+                                        <div>Hrvatski</div>
+                                        <div class="_a7a5sx">Hrvatska</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=xh&amp;country_override=ZA"
+                                        data-no-client-routing="true" lang="xh-ZA">
+                                        <div>isiXhosa</div>
+                                        <div class="_a7a5sx">eMzantsi Afrika</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zu&amp;country_override=ZA"
+                                        data-no-client-routing="true" lang="zu-ZA">
+                                        <div>isiZulu</div>
+                                        <div class="_a7a5sx">iNingizimu Afrika</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=is&amp;country_override=IS"
+                                        data-no-client-routing="true" lang="is-IS">
+                                        <div>Íslenska</div>
+                                        <div class="_a7a5sx">Ísland</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=it&amp;country_override=IT"
+                                        data-no-client-routing="true" lang="it-IT">
+                                        <div>Italiano</div>
+                                        <div class="_a7a5sx">Italia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=it-CH&amp;country_override=CH"
+                                        data-no-client-routing="true" lang="it-CH">
+                                        <div>Italiano</div>
+                                        <div class="_a7a5sx">Svizzera</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sw&amp;country_override=US"
+                                        data-no-client-routing="true" lang="sw-XX">
+                                        <div>Kiswahili</div>
+                                        <div class="_a7a5sx">Āfrika</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=lv&amp;country_override=LV"
+                                        data-no-client-routing="true" lang="lv-LV">
+                                        <div>Latviešu</div>
+                                        <div class="_a7a5sx">Latvija</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=lt&amp;country_override=LT"
+                                        data-no-client-routing="true" lang="lt-LT">
+                                        <div>Lietuvių</div>
+                                        <div class="_a7a5sx">Lietuva</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=hu&amp;country_override=HU"
+                                        data-no-client-routing="true" lang="hu-HU">
+                                        <div>Magyar</div>
+                                        <div class="_a7a5sx">Magyarország</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=mt&amp;country_override=MT"
+                                        data-no-client-routing="true" lang="mt-MT">
+                                        <div>Malti</div>
+                                        <div class="_a7a5sx">Malta</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ms&amp;country_override=MY"
+                                        data-no-client-routing="true" lang="ms-MY">
+                                        <div>Melayu</div>
+                                        <div class="_a7a5sx">Malaysia</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=nl-BE&amp;country_override=BE"
+                                        data-no-client-routing="true" lang="nl-BE">
+                                        <div>Nederlands</div>
+                                        <div class="_a7a5sx">België</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=nl&amp;country_override=NL"
+                                        data-no-client-routing="true" lang="nl-NL">
+                                        <div>Nederlands</div>
+                                        <div class="_a7a5sx">Nederland</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=no&amp;country_override=NO"
+                                        data-no-client-routing="true" lang="no-NO">
+                                        <div>Norsk</div>
+                                        <div class="_a7a5sx">Norge</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=pl&amp;country_override=PL"
+                                        data-no-client-routing="true" lang="pl-PL">
+                                        <div>Polski</div>
+                                        <div class="_a7a5sx">Polska</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=pt&amp;country_override=BR"
+                                        data-no-client-routing="true" lang="pt-BR">
+                                        <div>Português</div>
+                                        <div class="_a7a5sx">Brasil</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=pt-PT&amp;country_override=PT"
+                                        data-no-client-routing="true" lang="pt-PT">
+                                        <div>Português</div>
+                                        <div class="_a7a5sx">Portugal</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ro&amp;country_override=RO"
+                                        data-no-client-routing="true" lang="ro-RO">
+                                        <div>Română</div>
+                                        <div class="_a7a5sx">România</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sq&amp;country_override=AL"
+                                        data-no-client-routing="true" lang="sq-AL">
+                                        <div>Shqip</div>
+                                        <div class="_a7a5sx">Shqipëri</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sk&amp;country_override=SK"
+                                        data-no-client-routing="true" lang="sk-SK">
+                                        <div>Slovenčina</div>
+                                        <div class="_a7a5sx">Slovensko</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sl&amp;country_override=SI"
+                                        data-no-client-routing="true" lang="sl-SI">
+                                        <div>Slovenščina</div>
+                                        <div class="_a7a5sx">Slovenija</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sr&amp;country_override=RS"
+                                        data-no-client-routing="true" lang="sr-RS">
+                                        <div>Srpski</div>
+                                        <div class="_a7a5sx">Srbija</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=fi&amp;country_override=FI"
+                                        data-no-client-routing="true" lang="fi-FI">
+                                        <div>Suomi</div>
+                                        <div class="_a7a5sx">Suomi</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=sv&amp;country_override=SE"
+                                        data-no-client-routing="true" lang="sv-SE">
+                                        <div>Svenska</div>
+                                        <div class="_a7a5sx">Sverige</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=tl&amp;country_override=PH"
+                                        data-no-client-routing="true" lang="tl-PH">
+                                        <div>Tagalog</div>
+                                        <div class="_a7a5sx">Pilipinas</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=vi&amp;country_override=VN"
+                                        data-no-client-routing="true" lang="vi-VN">
+                                        <div>Tiếng Việt</div>
+                                        <div class="_a7a5sx">Việt Nam</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=tr&amp;country_override=TR"
+                                        data-no-client-routing="true" lang="tr-TR">
+                                        <div>Türkçe</div>
+                                        <div class="_a7a5sx">Türkiye</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=el&amp;country_override=GR"
+                                        data-no-client-routing="true" lang="el-GR">
+                                        <div>Ελληνικά</div>
+                                        <div class="_a7a5sx">Ελλάδα</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=bg&amp;country_override=BG"
+                                        data-no-client-routing="true" lang="bg-BG">
+                                        <div>Български</div>
+                                        <div class="_a7a5sx">България</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=mk&amp;country_override=MK"
+                                        data-no-client-routing="true" lang="mk-MK">
+                                        <div>Македонски</div>
+                                        <div class="_a7a5sx">Северна Македонија</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ru&amp;country_override=RU"
+                                        data-no-client-routing="true" lang="ru-RU">
+                                        <div>Русский</div>
+                                        <div class="_a7a5sx">Россия</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=uk&amp;country_override=UA"
+                                        data-no-client-routing="true" lang="uk-UA">
+                                        <div>Українська</div>
+                                        <div class="_a7a5sx">Україна</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ka&amp;country_override=GE"
+                                        data-no-client-routing="true" lang="ka-GE">
+                                        <div>ქართული</div>
+                                        <div class="_a7a5sx">საქართველო</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=hy&amp;country_override=AM"
+                                        data-no-client-routing="true" lang="hy-AM">
+                                        <div>Հայերեն</div>
+                                        <div class="_a7a5sx">Հայաստան</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=he&amp;country_override=IL"
+                                        data-no-client-routing="true" lang="he-IL">
+                                        <div>עברית</div>
+                                        <div class="_a7a5sx">ישראל</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ar&amp;country_override=US"
+                                        data-no-client-routing="true" lang="ar-XX">
+                                        <div>العربية</div>
+                                        <div class="_a7a5sx">العالم</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=hi&amp;country_override=IN"
+                                        data-no-client-routing="true" lang="hi-IN">
+                                        <div>हिन्दी</div>
+                                        <div class="_a7a5sx">भारत</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=th&amp;country_override=TH"
+                                        data-no-client-routing="true" lang="th-TH">
+                                        <div>ไทย</div>
+                                        <div class="_a7a5sx">ประเทศไทย</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ko&amp;country_override=KR"
+                                        data-no-client-routing="true" lang="ko-KR">
+                                        <div>한국어</div>
+                                        <div class="_a7a5sx">대한민국</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=ja&amp;country_override=JP"
+                                        data-no-client-routing="true" lang="ja-JP">
+                                        <div>日本語</div>
+                                        <div class="_a7a5sx">日本</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zh&amp;country_override=US"
+                                        data-no-client-routing="true" lang="zh-US">
+                                        <div>简体中文</div>
+                                        <div class="_a7a5sx">美国</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zh-TW&amp;country_override=US"
+                                        data-no-client-routing="true" lang="zh-TW-US">
+                                        <div>繁體中文</div>
+                                        <div class="_a7a5sx">美國</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zh&amp;country_override=CN"
+                                        data-no-client-routing="true" lang="zh-CN">
+                                        <div>简体中文</div>
+                                        <div class="_a7a5sx">中国</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zh-HK&amp;country_override=HK"
+                                        data-no-client-routing="true" lang="zh-HK">
+                                        <div>繁體中文</div>
+                                        <div class="_a7a5sx">香港</div>
+                                        </a></li>
+                                <li class="cites"><button class="_lwi6c1u" href="/?locale=zh-TW&amp;country_override=TW"
+                                        data-no-client-routing="true" lang="zh-TW">
+                                        <div>繁體中文</div>
+                                        <div class="_a7a5sx">台灣</div>
+                                        </a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal money -->
+    <div id="modal__container-money">
+        <div id="overlay" class="modal-money ">
+            <div class="modal-content">
+                <div class="close__container">
+                    <button type="button" id="close-money" class="close">
+                        <span class=""><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                <path d="m6 6 20 20"></path>
+                                <path d="m26 6-20 20"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content">
+                    <section>
+                        <div class="currency">
+                            <div class="title">
+                                <h2 class="">Choose a currency</h2>
+                            </div>
+                            <ul class="">
+                                <li class="cites"><button class="" aria-current="true" type="button"
+                                        data-no-client-routing="true">
+                                        <div>United States dollar</div>
+                                        <div class="">USD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Australian dollar</div>
+                                        <div class="_a7a5sx">AUD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Brazilian real</div>
+                                        <div class="_a7a5sx">BRL - R$</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Bulgarian lev</div>
+                                        <div class="_a7a5sx">BGN - лв.</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Canadian dollar</div>
+                                        <div class="_a7a5sx">CAD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Chilean peso</div>
+                                        <div class="_a7a5sx">CLP - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Chinese yuan</div>
+                                        <div class="_a7a5sx">CNY - ￥</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Colombian peso</div>
+                                        <div class="_a7a5sx">COP - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Costa Rican colon</div>
+                                        <div class="_a7a5sx">CRC - ₡</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Croatian kuna</div>
+                                        <div class="_a7a5sx">HRK - kn</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Czech koruna</div>
+                                        <div class="_a7a5sx">CZK - Kč</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Danish krone</div>
+                                        <div class="_a7a5sx">DKK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Emirati dirham</div>
+                                        <div class="_a7a5sx">AED - ﺩ.ﺇ</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Euro</div>
+                                        <div class="_a7a5sx">EUR - €</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Hong Kong dollar</div>
+                                        <div class="_a7a5sx">HKD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Hungarian forint</div>
+                                        <div class="_a7a5sx">HUF - Ft</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Indian rupee</div>
+                                        <div class="_a7a5sx">INR - ₹</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Israeli new shekel</div>
+                                        <div class="_a7a5sx">ILS - ₪</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Japanese yen</div>
+                                        <div class="_a7a5sx">JPY - ¥</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Malaysian ringgit</div>
+                                        <div class="_a7a5sx">MYR - RM</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Mexican peso</div>
+                                        <div class="_a7a5sx">MXN - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Moroccan dirham</div>
+                                        <div class="_a7a5sx">MAD</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>New Taiwan dollar</div>
+                                        <div class="_a7a5sx">TWD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>New Zealand dollar</div>
+                                        <div class="_a7a5sx">NZD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Norwegian krone</div>
+                                        <div class="_a7a5sx">NOK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Peruvian sol</div>
+                                        <div class="_a7a5sx">PEN - S/</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Philippine peso</div>
+                                        <div class="_a7a5sx">PHP - ₱</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Polish zloty</div>
+                                        <div class="_a7a5sx">PLN - zł</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Pound sterling</div>
+                                        <div class="_a7a5sx">GBP - £</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Romanian leu</div>
+                                        <div class="_a7a5sx">RON - lei</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Russian ruble</div>
+                                        <div class="_a7a5sx">RUB - ₽</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Saudi Arabian riyal</div>
+                                        <div class="_a7a5sx">SAR - SR</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Singapore dollar</div>
+                                        <div class="_a7a5sx">SGD - $</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>South African rand</div>
+                                        <div class="_a7a5sx">ZAR - R</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>South Korean won</div>
+                                        <div class="_a7a5sx">KRW - ₩</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Swedish krona</div>
+                                        <div class="_a7a5sx">SEK - kr</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Swiss franc</div>
+                                        <div class="_a7a5sx">CHF</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Thai baht</div>
+                                        <div class="_a7a5sx">THB - ฿</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Turkish lira</div>
+                                        <div class="_a7a5sx">TRY - ₺</div>
+                                    </button></li>
+                                <li class="cites"><button class="_lwi6c1u" type="button" data-no-client-routing="true">
+                                        <div>Uruguayan peso</div>
+                                        <div class="_a7a5sx">UYU - $U</div>
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="" id="navbar">
+        <div class="fixed-nav-footer">
+            <a class="" type="button" aria-label="Explore" href="/">
+
+                <div class="explore">
+                    <div class="_jgit7bg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                            <g fill="none">
+                                <path
+                                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="_no3jwgi">Explore</div>
+
+            </a>
+            
+            <a class="" type="button" aria-current="false" aria-disabled="false" aria-label="Wishlists" href="/wishlists">
+
+
+                <div class="wishlist-svg">
+                    <div class=""><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;">
+                            <path
+                                d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="">Wishlists</div>
+            </a>
+
+            <a class="" type="button" aria-current="false" aria-disabled="false" aria-label="Log in"
+                href="/login" data-veloute="pwa-tab-bar-item-login">
+
+                <div class="login-svg">
+                    <div class=""><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="height: 24px; width: 24px; fill: currentcolor;">
+                            <path
+                                d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="_1bntpbx">Log in</div>
+            </a>
+
+
+        </div>
+    </nav>
 </body>
 
 
