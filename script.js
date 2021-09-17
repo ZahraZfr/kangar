@@ -29,6 +29,19 @@ function openNavS() {
     smallNav.classList.toggle("showSmallNavDD");
     smallHeader.classList.toggle("showSmallHeaderDD");
 }
+// function for clode dropdown in small nav
+// closeIcon = document.querySelector('.close-icon');
+// closeIcon.addEventListener('click', CloseIt());
+// function CloseIt(){
+//     smallHeader.classList.remove("showSmallHeaderDD");
+//     smallNav.classList.remove("showSmallNavDD");
+// }
+// function closeIconNav (){
+//     smallHeader.classList.remove("showSmallHeaderDD");
+//     smallNav.classList.remove("showSmallNavDD");
+// }
+
+
 // back to place to stay
 const placesToStay = document.querySelector(".nav-list1");
 let scrollyNPlaces = document.getElementsByClassName('scrolly-nav')[0];

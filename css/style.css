@@ -455,6 +455,7 @@ header .container .nav-right .show {
   border-radius: 30px !important;
   -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
           box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+  background-color: #fff;
   z-index: 15 !important;
   -webkit-margin-end: auto;
           margin-inline-end: auto;
@@ -475,12 +476,6 @@ header .container .nav-right .show {
 .scrolly-nav .checkin .scrolly-sec {
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
-}
-
-.scrolly-nav .guestsSEC .guests-appear,
-.scrolly-nav .checkinSEC,
-.scrolly-nav .checkoutSEC {
-  margin-right: 30px;
 }
 
 .scrolly-nav .checkinSEC .scrolly-sec {
@@ -594,16 +589,19 @@ header .container .nav-right .show {
 
 .scrolly-nav .showGuestBTN {
   border-radius: 30px !important;
-  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
-          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+  background-color: #fff;
   z-index: 15 !important;
   -webkit-margin-end: auto;
           margin-inline-end: auto;
   cursor: pointer;
+  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
 }
 
 .scrolly-nav .showGuestBTN:hover {
   background-color: #ffffff !important;
+  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
 }
 
 .scrolly-nav .guests:hover {
@@ -1652,7 +1650,7 @@ header .container .nav-right .show {
   .scrolly-short-click {
     right: 5% !important;
     left: 5% !important;
-    max-width: 800px;
+    max-width: 700px;
   }
   .airbnbIcon-tablet {
     display: block !important;
