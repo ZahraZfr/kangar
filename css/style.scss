@@ -1,9 +1,9 @@
-$superLargeDevice:1845px;
-$extraLargDevice:1440px;
-$mediumLargeDevice:1128px;
-$largDevice:950px;
-$minimumDevice:744px;
-$smallDevice:320px;
+$superLargeDevice: 1845px;
+$extraLargDevice: 1440px;
+$mediumLargeDevice: 1128px;
+$largDevice: 950px;
+$minimumDevice: 744px;
+$smallDevice: 320px;
 
 $superLargeDevice: 1845px;
 $extraLargDevice: 1440px;
@@ -171,7 +171,7 @@ header {
     }
 
     .ShowUnderline::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 55px;
       margin-left: -50px !important;
@@ -183,7 +183,7 @@ header {
     }
 
     .nav-list-i:hover ::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 55px;
       margin-left: -50px !important;
@@ -502,7 +502,6 @@ header {
       overflow: hidden;
       text-overflow: ellipsis;
 
-
       .guests-appear {
         display: none;
       }
@@ -549,13 +548,15 @@ header {
     border-radius: 25px !important;
     padding: 0 20px !important;
     margin-right: 10px !important;
-    background-image: radial-gradient(circle at center center,
-        rgb(255, 56, 92) 0%,
-        rgb(230, 30, 77) 27.5%,
-        rgb(227, 28, 95) 40%,
-        rgb(215, 4, 102) 57.5%,
-        rgb(189, 30, 89) 75%,
-        rgb(189, 30, 89) 100%) !important;
+    background-image: radial-gradient(
+      circle at center center,
+      rgb(255, 56, 92) 0%,
+      rgb(230, 30, 77) 27.5%,
+      rgb(227, 28, 95) 40%,
+      rgb(215, 4, 102) 57.5%,
+      rgb(189, 30, 89) 75%,
+      rgb(189, 30, 89) 100%
+    ) !important;
 
     .disapear {
       display: block;
@@ -747,9 +748,11 @@ header {
         display: -webkit-box !important;
         -webkit-line-clamp: 6 !important;
         -webkit-text-fill-color: transparent !important;
-        background: linear-gradient(90deg,
-            #6f019c 0%,
-            #c6017e 135.12%) !important;
+        background: linear-gradient(
+          90deg,
+          #6f019c 0%,
+          #c6017e 135.12%
+        ) !important;
         -webkit-background-clip: text !important;
       }
 
@@ -793,21 +796,18 @@ header {
       width: 48px !important;
       height: 48px !important;
       margin: 0 20px;
-
     }
 
     .nearby {
       justify-self: start;
       width: 55px;
       height: 20px;
-
     }
   }
 
   .DateHolder:hover {
     background-color: #f7f7f7;
   }
-
 }
 
 .search-DD {
@@ -827,13 +827,15 @@ header {
   transition: opacity 1.25s ease 0s !important;
   border-radius: 25px !important;
   padding: 0 20px !important;
-  background-image: radial-gradient(circle at center center,
-      rgb(255, 56, 92) 0%,
-      rgb(230, 30, 77) 27.5%,
-      rgb(227, 28, 95) 40%,
-      rgb(215, 4, 102) 57.5%,
-      rgb(189, 30, 89) 75%,
-      rgb(189, 30, 89) 100%) !important;
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(255, 56, 92) 0%,
+    rgb(230, 30, 77) 27.5%,
+    rgb(227, 28, 95) 40%,
+    rgb(215, 4, 102) 57.5%,
+    rgb(189, 30, 89) 75%,
+    rgb(189, 30, 89) 100%
+  ) !important;
 
   .disapearDD {
     display: block;
@@ -842,7 +844,6 @@ header {
     line-height: 48px;
   }
 }
-
 
 .showExperience {
   display: flex;
@@ -878,8 +879,6 @@ header {
     justify-content: center;
     padding-left: 25px;
     position: relative;
-
-
   }
 
   .ExperienceTab2 {
@@ -896,7 +895,6 @@ header {
       max-width: 300px;
       border-left: 1px solid #d8d8d8;
       padding-left: 25px;
-
     }
 
     .search-icon {
@@ -904,9 +902,7 @@ header {
       height: 48px !important;
       background-color: #ff385c !important;
       border-radius: 50% !important;
-
     }
-
   }
 
   .showDateBTN {
@@ -919,11 +915,9 @@ header {
 
   .ExperienceTab1:hover,
   .ExperienceTab2:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     border: none;
   }
-
-
 
   // end of experience tab class
   .location,
@@ -1007,7 +1001,7 @@ header {
   height: 170px !important;
 
   .nav-list {
-    display: flex !important
+    display: flex !important;
   }
 
   .nav-list-i {
@@ -1019,18 +1013,16 @@ header {
   .scrolly-short {
     margin-top: 70px !important;
     width: 700px !important;
-
   }
 }
 
-// class for click on nav in scrolly style for scrolly nav 
+// class for click on nav in scrolly style for scrolly nav
 .scrolly-short-click {
   margin: 60px auto 0 !important;
   width: 848px !important;
   height: 66px !important;
   right: 20% !important;
   left: 20% !important;
-
 
   .location,
   .checkin,
@@ -1079,7 +1071,6 @@ header {
     margin-top: -66px;
     overflow-x: hidden;
 
-
     .hero-txt {
       margin-top: 10vh;
       max-width: 500px;
@@ -1116,9 +1107,11 @@ header {
           font-size: 18px;
           font-weight: 600;
           -webkit-text-fill-color: transparent !important;
-          background: linear-gradient(90deg,
-              #6f019c 0%,
-              #c6017e 135.12%) !important;
+          background: linear-gradient(
+            90deg,
+            #6f019c 0%,
+            #c6017e 135.12%
+          ) !important;
           -webkit-background-clip: text !important;
         }
       }
@@ -1208,10 +1201,9 @@ header {
 
 // navbar responsive
 @media only screen and (max-width: 744px) {
-
   .scrolly-short,
   .scrolly-nav .showExperience {
-    display: none ;
+    display: none;
   }
 
   .showSmallHeaderDD {
@@ -1254,8 +1246,6 @@ header {
           padding-left: 8px !important;
           height: 100% !important;
           text-overflow: ellipsis !important;
-
-
         }
       }
 
@@ -1285,8 +1275,18 @@ header {
 
           .LDD-F-txt {
             -webkit-text-fill-color: transparent !important;
-            background: -webkit-gradient(linear, left top, right top, from(#6f019c), color-stop(135.12%, #c6017e)) !important;
-            background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#6f019c),
+              color-stop(135.12%, #c6017e)
+            ) !important;
+            background: linear-gradient(
+              90deg,
+              #6f019c 0%,
+              #c6017e 135.12%
+            ) !important;
             -webkit-background-clip: text !important;
             font-size: 18px !important;
             line-height: 20px !important;
@@ -1295,7 +1295,6 @@ header {
             max-height: 120px !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
-
           }
         }
       }
@@ -1352,11 +1351,9 @@ header {
             margin-right: 15px;
           }
         }
-
       }
     }
   }
-
 
   .airbnbIcon-tablet,
   .airbnbIcon,
@@ -1453,12 +1450,12 @@ header {
 @media only screen and (min-width: 744px) and (max-width: 950px) {
   .scrollyClick {
     height: 180px;
-    .nav-list{
-      margin-top: -40px ;
+    .nav-list {
+      margin-top: -40px;
       color: #000;
     }
   }
-  .scrolly-nav{
+  .scrolly-nav {
     margin-top: 150px;
   }
   .nav-list {
@@ -1466,8 +1463,8 @@ header {
     right: 26%;
     top: 99px;
     margin-left: 0 !important;
-    .nav-list-i::after{
-      top:25px !important;
+    .nav-list-i::after {
+      top: 25px !important;
     }
   }
 
@@ -1484,7 +1481,7 @@ header {
 
 @media only screen and (min-width: 744px) and (max-width: 1127px) {
   // when click in scrolly nav in scroll style
-  .scrolly-short-click{
+  .scrolly-short-click {
     right: 5% !important;
     left: 5% !important;
     max-width: 700px;
@@ -1563,7 +1560,7 @@ header {
   justify-content: space-between;
 }
 
-.slider__container>div {
+.slider__container > div {
   /* make sure the width is honored */
   flex-shrink: 0;
   width: 300px;
@@ -1590,7 +1587,7 @@ header {
     padding-right: 10px;
   }
 
-  .slider__container>div {
+  .slider__container > div {
     margin-right: 14px;
   }
 
@@ -1740,7 +1737,7 @@ header {
 }
 
 @media (min-width: 1128px) {
-  .live-anywhere .slider__3>div {
+  .live-anywhere .slider__3 > div {
     flex-basis: 24%;
   }
 }
@@ -1756,7 +1753,6 @@ header {
 }
 
 @media screen and (min-width: $minimumDevice) and (max-width: 1128px) {
-
   .tablet {
     display: block !important;
   }
@@ -1765,8 +1761,7 @@ header {
     display: none;
   }
 
-  .live-anywhere .slider__3>div {
-
+  .live-anywhere .slider__3 > div {
     width: 100% !important;
   }
 }
@@ -1777,19 +1772,15 @@ header {
     display: none !important;
   }
 
+  .slider__3-mobile {
+    display: none !important;
+  }
 
   .slider__3-mobile {
     display: none !important;
   }
 
-
-
-  .slider__3-mobile {
-    display: none !important;
-  }
-
-  .slider__3>div {
-
+  .slider__3 > div {
     flex-basis: 32%;
   }
 
@@ -1819,7 +1810,7 @@ header {
     display: none;
   }
 
-  .slider__3>div {
+  .slider__3 > div {
     width: 272px;
     margin-right: 12px;
   }
@@ -1998,31 +1989,32 @@ header {
     margin: 0 auto;
     padding: 0 40px;
   }
-
 }
 
 .line {
   height: 1px !important;
   background-color: rgb(221, 221, 221) !important;
   content: "";
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .active {
-  background: rgb(247, 247, 247) !important;
   color: black !important;
 }
-
+.active:hover {
+  background: rgb(247, 247, 247) !important;
+}
 .active::after {
-  margin-top: 6px;
+  // margin-top: 6px;
   position: absolute;
   content: "" !important;
   background: rgb(34, 34, 34) !important;
-  bottom: -6px !important;
+  bottom: -11px !important;
   left: 10px !important;
   width: calc(100% - 20px) !important;
   height: 2px !important;
 }
+
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -2045,10 +2037,12 @@ header {
   background-color: transparent !important;
   align-items: center !important;
 
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0),
-      white,
-      white) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    white,
+    white
+  ) !important;
   justify-content: flex-end !important;
 }
 
@@ -2063,10 +2057,12 @@ header {
   background-color: transparent !important;
   align-items: center !important;
 
-  background-image: linear-gradient(to left,
-      rgba(255, 255, 255, 0),
-      white,
-      white) !important;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    white,
+    white
+  ) !important;
   justify-content: flex-start !important;
 }
 
@@ -2121,22 +2117,6 @@ header {
   cursor: pointer;
 }
 
-.active {
-  color: black !important;
-}
-.active:hover {
-  background: rgb(247, 247, 247) !important;
-}
-.active::after {
-  margin-top: 6px;
-  position: absolute;
-  content: "" !important;
-  background: rgb(34, 34, 34) !important;
-  bottom: -6px !important;
-  left: 10px !important;
-  width: calc(100% - 20px) !important;
-  height: 2px !important;
-}
 
 .df {
   display: flex;
@@ -2159,7 +2139,10 @@ header {
   color: rgb(113, 113, 113) !important;
   padding-top: 2px !important;
 }
-
+.tab-content-1 {
+  display: none;
+  flex-wrap: wrap;
+}
 .tab-content {
   display: none;
   flex-wrap: wrap;
@@ -2401,7 +2384,7 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(34, 34, 34) ;
+  background: rgb(34, 34, 34);
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
   // transition: all 400ms ease;
@@ -2409,6 +2392,13 @@ footer {
 .pos-fixed {
   position: fixed;
 }
+// .body::-webkit-scrollbar {
+//   display: none;
+//   overflow-y: hidden;
+// }
+// .hidden{
+//   display: none;
+// }
 #modal__container-money,
 #modal__container-lang {
   display: none;
@@ -2438,7 +2428,24 @@ footer {
   }
 }
 
-.modal-content .content {
+#modal__container-explore{
+  display: none;
+}
+#overlay-explore .content{
+  
+  overflow-y: scroll;
+  max-width: 1032px;
+  margin: 0 auto;
+  height: 85vh;
+
+  position: relative;
+  background-color: #fefefe;
+  border-end-start-radius: 12px;
+
+  width: 100%;
+
+}
+.modal-style .content {
   border-top: 1px solid rgb(235, 235, 235);
   overflow-y: scroll;
   max-width: 1032px;
@@ -2453,6 +2460,24 @@ footer {
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.ul-flex {
+  font-size: 1rem;
+  padding: 10px;
+  // margin: 10px 0;
+
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  button{
+    margin-right: 20px;
+    font-size: 1em;
+    color: rgb(72, 72, 72);
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
 .currency ul {
   display: flex;
   overflow: hidden;
@@ -2463,7 +2488,7 @@ footer {
     border: 1px solid;
   }
   li button:active {
-    border: 1px  solid;
+    border: 1px solid;
   }
   li button {
     margin-top: 10px;
@@ -2480,8 +2505,6 @@ footer {
   }
 }
 
-
-
 .close__container {
   button {
     background-color: transparent;
@@ -2492,52 +2515,46 @@ footer {
 
 //model
 //fixed-nav-footer
-#navbar{
- position: fixed;
- bottom: 0;
- width: 100vw;
- background-color: white;
- transition: 0.2s;
-
+#navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  transition: 0.2s;
 }
-.fixed-nav-footer{
-  
+.fixed-nav-footer {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
-  margin: 2px auto ;
-  height:70px;
-  max-width: 560px ;
-  a{
+  margin: 2px auto;
+  height: 70px;
+  max-width: 560px;
+  a {
     text-align: center;
     min-width: 20%;
   }
 
-
-  a:first-child div:first-child{ 
-    color: #FF385C; 
+  a:first-child div:first-child {
+    color: #ff385c;
   }
-  a div:first-child{
+  a div:first-child {
     margin-bottom: 2px;
-    
   }
 
-  a div:last-child{
+  a div:last-child {
     font-size: 10px;
     font-weight: 600;
-    color: #717171 ;
+    color: #717171;
   }
-  a div:last-child:hover{
+  a div:last-child:hover {
     font-size: 10px;
     font-weight: 600;
-    color: #222222 ;
+    color: #222222;
   }
 }
 
-
 //fixed-nav-footer
 // --------------/footer----------------------
-
 
 //--------------fonts----------------------------//
 @font-face {
@@ -2547,11 +2564,15 @@ footer {
   font-weight: normal;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2575,8 +2596,10 @@ footer {
     U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
-  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2598,11 +2621,15 @@ footer {
   font-weight: 600;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff")
+      format("woff");
 
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff") format("woff");
+  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2")
+      format("woff2"),
+    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2696,11 +2723,15 @@ footer {
   unicode-range: U+F0000-FFFFD;
   font-weight: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2710,11 +2741,15 @@ footer {
   unicode-range: U+F0000-FFFFD;
   font-weight: 600;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2724,11 +2759,15 @@ footer {
   unicode-range: U+F0000-FFFFD;
   font-weight: 800;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2738,11 +2777,15 @@ footer {
   font-weight: normal;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2752,11 +2795,15 @@ footer {
   font-weight: 600;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2766,11 +2813,15 @@ footer {
   font-weight: 800;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2778,11 +2829,15 @@ footer {
 @font-face {
   font-family: Airmoji_Standalone;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -2791,11 +2846,15 @@ footer {
 @font-face {
   font-family: Airglyphs;
 
-  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff") format("woff"),
-    url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf") format("truetype");
+  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff")
+      format("woff"),
+    url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf")
+      format("truetype");
 
-  src: url("/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff") format("woff"),
-    url("/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf") format("truetype");
+  src: url("/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff")
+      format("woff"),
+    url("/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf")
+      format("truetype");
 
   font-weight: normal;
   font-style: normal;

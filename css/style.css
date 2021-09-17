@@ -112,7 +112,7 @@ header .container .nav .nav-list li:hover a {
 }
 
 header .container .ShowUnderline::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 55px;
   margin-left: -50px !important;
@@ -125,7 +125,7 @@ header .container .ShowUnderline::after {
 }
 
 header .container .nav-list-i:hover ::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 55px;
   margin-left: -50px !important;
@@ -1031,7 +1031,7 @@ header .container .nav-right .show {
 
 .showExperience .ExperienceTab1:hover,
 .showExperience .ExperienceTab2:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: none;
 }
 
@@ -2157,20 +2157,22 @@ header .container .nav-right .show {
   height: 1px !important;
   background-color: #dddddd !important;
   content: "";
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .active {
-  background: #f7f7f7 !important;
   color: black !important;
 }
 
+.active:hover {
+  background: #f7f7f7 !important;
+}
+
 .active::after {
-  margin-top: 6px;
   position: absolute;
   content: "" !important;
   background: #222222 !important;
-  bottom: -6px !important;
+  bottom: -11px !important;
   left: 10px !important;
   width: calc(100% - 20px) !important;
   height: 2px !important;
@@ -2283,25 +2285,6 @@ header .container .nav-right .show {
   cursor: pointer;
 }
 
-.active {
-  color: black !important;
-}
-
-.active:hover {
-  background: #f7f7f7 !important;
-}
-
-.active::after {
-  margin-top: 6px;
-  position: absolute;
-  content: "" !important;
-  background: #222222 !important;
-  bottom: -6px !important;
-  left: 10px !important;
-  width: calc(100% - 20px) !important;
-  height: 2px !important;
-}
-
 .df {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2327,6 +2310,12 @@ header .container .nav-right .show {
   line-height: 18px !important;
   color: #717171 !important;
   padding-top: 2px !important;
+}
+
+.tab-content-1 {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tab-content {
@@ -2665,7 +2654,22 @@ footer .footer ul li {
   }
 }
 
-.modal-content .content {
+#modal__container-explore {
+  display: none;
+}
+
+#overlay-explore .content {
+  overflow-y: scroll;
+  max-width: 1032px;
+  margin: 0 auto;
+  height: 85vh;
+  position: relative;
+  background-color: #fefefe;
+  border-end-start-radius: 12px;
+  width: 100%;
+}
+
+.modal-style .content {
   border-top: 1px solid #ebebeb;
   overflow-y: scroll;
   max-width: 1032px;
@@ -2675,6 +2679,27 @@ footer .footer ul li {
   background-color: #fefefe;
   border-end-start-radius: 12px;
   width: 100%;
+}
+
+.ul-flex {
+  font-size: 1rem;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ul-flex button {
+  margin-right: 20px;
+  font-size: 1em;
+  color: #484848;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 18px;
 }
 
 .currency ul {
@@ -2694,7 +2719,7 @@ footer .footer ul li {
 }
 
 .currency ul li button:active {
-  border: 1px  solid;
+  border: 1px solid;
 }
 
 .currency ul li button {
@@ -2747,7 +2772,7 @@ footer .footer ul li {
 }
 
 .fixed-nav-footer a:first-child div:first-child {
-  color: #FF385C;
+  color: #ff385c;
 }
 
 .fixed-nav-footer a div:first-child {

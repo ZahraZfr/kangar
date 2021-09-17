@@ -281,13 +281,25 @@ var swiper = new Swiper(".my2Swiper", {
 //modal
 var modalMoneyContent = document.getElementById("modal__container-money")
 var modalLangContent = document.getElementById("modal__container-lang")
+var modalExploreContent = document.getElementById("modal__container-explore")
+
 var overlayclose= document.getElementById('overlay')
 var overlaycloseLan= document.getElementById('overlay-lang')
+var overlaycloseExplore= document.getElementById('overlay-explore')
+
+
 var modalMoneyBtn = document.getElementById("modal-money-btn")
+
+const body = document.querySelector("body")
 
 modalMoneyBtn.addEventListener("click", () => {
   modalMoneyContent.style.display = "block";
+  
 })
+
+$('#modal-explore-btn').click(function(){
+    modalExploreContent.style.display = "block";
+  })
 
 $("#close-money").click(function(){
   modalMoneyContent.style.display = "none";
@@ -295,17 +307,22 @@ $("#close-money").click(function(){
 $("#close-lang").click(function(){
   modalLangContent.style.display = "none";
 })
+
+$("#close-explore").click(function(){
+    modalExploreContent.style.display = "none";
+  })
+
 $('#modal-lang-btn').click(function(){
   modalLangContent.style.display = "block";
-
 })
 
 // When the user clicks anywhere outside of the modal, close it
 $(document).click(function (event) {
   
-  if (event.target == overlayclose || event.target == overlaycloseLan) {
+  if (event.target == overlayclose || event.target == overlaycloseLan || event.target == overlaycloseExplore ) {
     modalMoneyContent.style.display = "none"; 
     modalLangContent.style.display = "none"; 
+    modalExploreContent.style.display="none";
   }
 })
 
@@ -340,3 +357,19 @@ function openCity(evt, Cityname) {
   evt.currentTarget.className += " active";
   document.getElementById(Cityname).style.display = "flex";
 }
+
+//explore btn
+function openOption(evt,Optionname) {
+    var i, tabcontent, tablinks;
+    tablinks = document.getElementsByClassName("tab-btn");
+    tabcontent = document.getElementsByClassName("tab-content-1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active";
+    document.getElementById(Optionname).style.display = "flex";
+} 
