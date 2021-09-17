@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
     pinkSearch.classList.remove("searchShowG", windowPosition);
     pinkSearch.classList.remove("searchShow", windowPosition);
     guedtsDD.classList.remove("guedtsDDshow", windowPosition);
-    scrollExp.classList.remove("showExperience");
+    scrollExp.classList.remove("showExperience" , windowPosition);
 
     guestss.addEventListener('click', function () {
         header.classList.add('scrollyClick');

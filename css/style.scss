@@ -1207,7 +1207,7 @@ header {
 
   .scrolly-short,
   .scrolly-nav .showExperience {
-    display: none;
+    display: none ;
   }
 
   .showSmallHeaderDD {
@@ -1447,11 +1447,24 @@ header {
 
 // navbar tablet
 @media only screen and (min-width: 744px) and (max-width: 950px) {
+  .scrollyClick {
+    height: 180px;
+    .nav-list{
+      margin-top: -40px ;
+      color: #000;
+    }
+  }
+  .scrolly-nav{
+    margin-top: 150px;
+  }
   .nav-list {
     position: absolute;
     right: 26%;
     top: 99px;
     margin-left: 0 !important;
+    .nav-list-i::after{
+      top:25px !important;
+    }
   }
 
   .scrolly-nav {
