@@ -1018,18 +1018,32 @@ header {
 
 // class for click on nav in scrolly style for scrolly nav 
 .scrolly-short-click {
-  // display: none !important;
   margin: 60px auto 0 !important;
-  width: 500px !important;
-  height: 56px !important;
-  right: 29vw !important;
-  position: relative;
+  width: 848px !important;
+  height: 66px !important;
+  right: 20% !important;
+  left: 20% !important;
+
 
   .location,
   .checkin,
   .checkout,
   .guests-txt {
     display: flex !important;
+    margin: 0 !important;
+  }
+
+  .location,
+  .guests {
+    width: 27% !important;
+  }
+
+  .checkin {
+    width: 23% !important;
+  }
+
+  .search-icon {
+    margin-left: 2%;
   }
 
   .disapear,
@@ -1449,7 +1463,12 @@ header {
 }
 
 @media only screen and (min-width: 744px) and (max-width: 1127px) {
-
+  // when click in scrolly nav in scroll style
+  .scrolly-short-click{
+    right: 5% !important;
+    left: 5% !important;
+    max-width: 700px;
+  }
   // for navbar airbnb icon
   .airbnbIcon-tablet {
     display: block !important;
