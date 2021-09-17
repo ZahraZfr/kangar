@@ -224,22 +224,53 @@ function openCity(evt, Cityname) {
   document.getElementById(Cityname).style.display = "flex";
 }
 //modal
-var modalMoneyContent = document.getElementById("modal__container")
+var modalMoneyContent = document.getElementById("modal__container-money")
+var modalLangContent = document.getElementById("modal__container-lang")
+
+
+
+var overlayclose= document.getElementById('overlay')
+var overlaycloseLan= document.getElementById('overlay-lang')
 var modalMoneyBtn = document.getElementById("modal-money-btn")
+
 modalMoneyBtn.addEventListener("click", () => {
   modalMoneyContent.style.display = "block";
-  // const body = document.querySelector(".body");
-  // body.classList.toggle("pos-fixed");
-})
-$("#close").click(function(){
-  modalMoneyContent.style.display = "none";
-
 })
 
-// When the user clicks anywhere outside of the modal, close it
 $(document).click(function (event) {
-  if (event.target == modalMoneyContent) {
-    modalMoneyContent.style.display = "none";
+  
+  if (event.target == overlayclose || event.target == overlaycloseLan) {
+    modalMoneyContent.style.display = "none"; 
+    modalLangContent.style.display = "none"; 
   }
 })
+
+$("#close-money").click(function(){
+  modalMoneyContent.style.display = "none";
+})
+$("#close-lang").click(function(){
+  modalLangContent.style.display = "none";
+})
+$('#modal-lang-btn').click(function(){
+  modalLangContent.style.display = "block";
+
+})
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+
+
+//hide nav footer
+
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  if(window.pageYOffset > 3000){
+    document.getElementById("navbar").style.bottom = "-100px";
+  }
+  else{
+        document.getElementById("navbar").style.bottom = "0";
+  }
+}
 
