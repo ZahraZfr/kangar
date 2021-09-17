@@ -1,9 +1,9 @@
-$superLargeDevice:1845px;
-$extraLargDevice:1440px;
-$mediumLargeDevice:1128px;
-$largDevice:950px;
-$minimumDevice:744px;
-$smallDevice:320px;
+$superLargeDevice: 1845px;
+$extraLargDevice: 1440px;
+$mediumLargeDevice: 1128px;
+$largDevice: 950px;
+$minimumDevice: 744px;
+$smallDevice: 320px;
 
 $superLargeDevice: 1845px;
 $extraLargDevice: 1440px;
@@ -11,12 +11,6 @@ $mediumLargeDevice: 1127px;
 $largDevice: 950px;
 $minimumDevice: 744px;
 $smallDevice: 320px;
-
-button {
-  outline: none;
-  border: none;
-}
-
 
 // upper than 320px
 @mixin smallDevice {
@@ -74,7 +68,7 @@ button {
 }
 
 html {
-  font-size: 15px;
+  font-size: 14px;
   min-width: 320px !important;
   overflow-x: hidden !important;
 }
@@ -86,14 +80,24 @@ body {
   width: 100%;
   min-width: 320px !important;
   line-height: 1.43;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
-  font-family: inherit;
+  // font-family: inherit;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -167,7 +171,7 @@ header {
     }
 
     .ShowUnderline::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 55px;
       margin-left: -50px !important;
@@ -179,7 +183,7 @@ header {
     }
 
     .nav-list-i:hover ::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 55px;
       margin-left: -50px !important;
@@ -336,16 +340,7 @@ header {
 }
 
 // -------------scrolly nav-------
-// when click places to stay link
-// .placesNav{
-//   .ExperienceTab1 , .ExperienceTab2{
-//     background-color: #6f019c !important;
-//   }
-//   // .location , .checkin , .checkout , .guests{
-//   //   display: flex;
-//   // }
-// }
-// end code for places to stay 
+
 .showExperience {
   display: flex;
 }
@@ -368,7 +363,6 @@ header {
   background-color: #f7f7f7;
   margin: 0 auto;
   transition: all 0.2s ease;
-  // overflow: hidden;
 
   .ExperienceTab1,
   .ExperienceTab2,
@@ -442,6 +436,7 @@ header {
   .showLocationBTN {
     border-radius: 30px !important;
     box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+    background-color: #fff;
     z-index: 15 !important;
     margin-inline-end: auto;
 
@@ -467,7 +462,7 @@ header {
   .guestsSEC .guests-appear,
   .checkinSEC,
   .checkoutSEC {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
 
   .checkinSEC .scrolly-sec {
@@ -506,7 +501,6 @@ header {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-
 
       .guests-appear {
         display: none;
@@ -554,13 +548,15 @@ header {
     border-radius: 25px !important;
     padding: 0 20px !important;
     margin-right: 10px !important;
-    background-image: radial-gradient(circle at center center,
-        rgb(255, 56, 92) 0%,
-        rgb(230, 30, 77) 27.5%,
-        rgb(227, 28, 95) 40%,
-        rgb(215, 4, 102) 57.5%,
-        rgb(189, 30, 89) 75%,
-        rgb(189, 30, 89) 100%) !important;
+    background-image: radial-gradient(
+      circle at center center,
+      rgb(255, 56, 92) 0%,
+      rgb(230, 30, 77) 27.5%,
+      rgb(227, 28, 95) 40%,
+      rgb(215, 4, 102) 57.5%,
+      rgb(189, 30, 89) 75%,
+      rgb(189, 30, 89) 100%
+    ) !important;
 
     .disapear {
       display: block;
@@ -573,14 +569,16 @@ header {
   // **guests open script
   .showGuestBTN {
     border-radius: 30px !important;
-    box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+    background-color: #fff;
     z-index: 15 !important;
     margin-inline-end: auto;
     cursor: pointer;
+    box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
   }
 
   .showGuestBTN:hover {
     background-color: #ffffff !important;
+    box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
   }
 
   .guests:hover {
@@ -750,9 +748,11 @@ header {
         display: -webkit-box !important;
         -webkit-line-clamp: 6 !important;
         -webkit-text-fill-color: transparent !important;
-        background: linear-gradient(90deg,
-            #6f019c 0%,
-            #c6017e 135.12%) !important;
+        background: linear-gradient(
+          90deg,
+          #6f019c 0%,
+          #c6017e 135.12%
+        ) !important;
         -webkit-background-clip: text !important;
       }
 
@@ -796,21 +796,18 @@ header {
       width: 48px !important;
       height: 48px !important;
       margin: 0 20px;
-
     }
 
     .nearby {
       justify-self: start;
       width: 55px;
       height: 20px;
-
     }
   }
 
   .DateHolder:hover {
     background-color: #f7f7f7;
   }
-
 }
 
 .search-DD {
@@ -830,13 +827,15 @@ header {
   transition: opacity 1.25s ease 0s !important;
   border-radius: 25px !important;
   padding: 0 20px !important;
-  background-image: radial-gradient(circle at center center,
-      rgb(255, 56, 92) 0%,
-      rgb(230, 30, 77) 27.5%,
-      rgb(227, 28, 95) 40%,
-      rgb(215, 4, 102) 57.5%,
-      rgb(189, 30, 89) 75%,
-      rgb(189, 30, 89) 100%) !important;
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(255, 56, 92) 0%,
+    rgb(230, 30, 77) 27.5%,
+    rgb(227, 28, 95) 40%,
+    rgb(215, 4, 102) 57.5%,
+    rgb(189, 30, 89) 75%,
+    rgb(189, 30, 89) 100%
+  ) !important;
 
   .disapearDD {
     display: block;
@@ -845,7 +844,6 @@ header {
     line-height: 48px;
   }
 }
-
 
 .showExperience {
   display: flex;
@@ -881,8 +879,6 @@ header {
     justify-content: center;
     padding-left: 25px;
     position: relative;
-
-
   }
 
   .ExperienceTab2 {
@@ -899,7 +895,6 @@ header {
       max-width: 300px;
       border-left: 1px solid #d8d8d8;
       padding-left: 25px;
-
     }
 
     .search-icon {
@@ -907,9 +902,7 @@ header {
       height: 48px !important;
       background-color: #ff385c !important;
       border-radius: 50% !important;
-
     }
-
   }
 
   .showDateBTN {
@@ -922,13 +915,11 @@ header {
 
   .ExperienceTab1:hover,
   .ExperienceTab2:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     border: none;
   }
 
-
-
-  // enf of experience tab class
+  // end of experience tab class
   .location,
   .checkin,
   .checkout,
@@ -939,7 +930,7 @@ header {
 
 // ***for script
 .scrolly-short {
-  width: 300px !important;
+  width: 300px;
   height: 48px;
   z-index: 12 !important;
   position: fixed !important;
@@ -988,10 +979,6 @@ header {
   height: 32px !important;
 }
 
-.scrolly-short .guests-txt {
-  display: none !important;
-}
-
 .scrolly-short .guests-appear {
   display: flex !important;
   justify-content: start;
@@ -1003,6 +990,69 @@ header {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   overflow: hidden !important;
+}
+
+.scrolly-short .guests-txt {
+  display: none !important;
+}
+
+// class for click on nav in scrolly style for header
+.scrollyClick {
+  height: 170px !important;
+
+  .nav-list {
+    display: flex !important;
+  }
+
+  .nav-list-i {
+    a {
+      color: #000 !important;
+    }
+  }
+
+  .scrolly-short {
+    margin-top: 70px !important;
+    width: 700px !important;
+  }
+}
+
+// class for click on nav in scrolly style for scrolly nav
+.scrolly-short-click {
+  margin: 60px auto 0 !important;
+  width: 848px !important;
+  height: 66px !important;
+  right: 20% !important;
+  left: 20% !important;
+
+  .location,
+  .checkin,
+  .checkout,
+  .guests-txt {
+    display: flex !important;
+    margin: 0 !important;
+  }
+
+  .location,
+  .guests {
+    width: 27% !important;
+  }
+
+  .checkin {
+    width: 23% !important;
+  }
+
+  .search-icon {
+    margin-left: 2%;
+  }
+
+  .disapear,
+  .guests-appear {
+    display: none !important;
+  }
+
+  .hero-txt {
+    display: flex !important;
+  }
 }
 
 // -------------------hero img --------------------------
@@ -1020,7 +1070,6 @@ header {
     align-items: center;
     margin-top: -66px;
     overflow-x: hidden;
-
 
     .hero-txt {
       margin-top: 10vh;
@@ -1058,9 +1107,11 @@ header {
           font-size: 18px;
           font-weight: 600;
           -webkit-text-fill-color: transparent !important;
-          background: linear-gradient(90deg,
-              #6f019c 0%,
-              #c6017e 135.12%) !important;
+          background: linear-gradient(
+            90deg,
+            #6f019c 0%,
+            #c6017e 135.12%
+          ) !important;
           -webkit-background-clip: text !important;
         }
       }
@@ -1070,6 +1121,7 @@ header {
       }
     }
 
+    // ------------responsive hero img
     @include smallDevice() {
       background-image: url(../img/hero-max744.webp);
       background-repeat: no-repeat;
@@ -1143,8 +1195,165 @@ header {
   }
 }
 
+.scrollyssss {
+  display: none;
+}
+
 // navbar responsive
 @media only screen and (max-width: 744px) {
+  .scrolly-short,
+  .scrolly-nav .showExperience {
+    display: none;
+  }
+
+  .showSmallHeaderDD {
+    overflow-wrap: normal;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 0 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff;
+    z-index: 20;
+
+    .scrollyssss {
+      position: fixed;
+      top: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 500px;
+
+      // first
+      .first-small-sec {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80px !important;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        input {
+          margin-left: 20px;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          font-family: inherit !important;
+          font-size: 16px !important;
+          font-weight: 400 !important;
+          line-height: 20px !important;
+          padding-left: 8px !important;
+          height: 100% !important;
+          text-overflow: ellipsis !important;
+        }
+      }
+
+      // second
+      .second-small-sec {
+        display: flex;
+        flex-direction: column;
+
+        .Second-small-txt {
+          display: flex;
+          font-size: 12px !important;
+          line-height: 12px !important;
+          font-weight: 800 !important;
+        }
+
+        .Second-small-flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+          height: 55px;
+          padding: 0 15px;
+          margin: 15px auto 0 !important;
+          border: 20px;
+          box-shadow: 0 1px 14px -2px #c2c2c2 !important;
+          border-radius: 25px;
+
+          .LDD-F-txt {
+            -webkit-text-fill-color: transparent !important;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#6f019c),
+              color-stop(135.12%, #c6017e)
+            ) !important;
+            background: linear-gradient(
+              90deg,
+              #6f019c 0%,
+              #c6017e 135.12%
+            ) !important;
+            -webkit-background-clip: text !important;
+            font-size: 18px !important;
+            line-height: 20px !important;
+            font-weight: 800 !important;
+            color: rgb(34, 34, 34) !important;
+            max-height: 120px !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+          }
+        }
+      }
+
+      // third
+      .third-small-sec {
+        margin-top: 20px;
+
+        h1 {
+          font-size: 12px !important;
+          line-height: 12px !important;
+          font-weight: 800 !important;
+        }
+
+        .explore-content-small {
+          scroll-behavior: smooth;
+          margin-top: 12px;
+        }
+
+        .explor-item {
+          display: flex;
+          width: 100%;
+          margin: 10px 0;
+
+          .explore-txt {
+            width: 60%;
+
+            h3 {
+              font-size: 16px !important;
+              line-height: 20px !important;
+              font-weight: 400 !important;
+              color: rgb(34, 34, 34) !important;
+              max-height: 120px !important;
+              overflow: hidden !important;
+              text-overflow: ellipsis !important;
+              display: -webkit-box !important;
+              -webkit-line-clamp: 6 !important;
+              -webkit-box-orient: vertical !important;
+            }
+
+            p {
+              width: 200px;
+              font-size: 12px !important;
+              line-height: 16px !important;
+              font-weight: 400 !important;
+              color: rgb(113, 113, 113) !important;
+            }
+          }
+
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
 
   .airbnbIcon-tablet,
   .airbnbIcon,
@@ -1239,11 +1448,24 @@ header {
 
 // navbar tablet
 @media only screen and (min-width: 744px) and (max-width: 950px) {
+  .scrollyClick {
+    height: 180px;
+    .nav-list {
+      margin-top: -40px;
+      color: #000;
+    }
+  }
+  .scrolly-nav {
+    margin-top: 150px;
+  }
   .nav-list {
     position: absolute;
     right: 26%;
     top: 99px;
     margin-left: 0 !important;
+    .nav-list-i::after {
+      top: 25px !important;
+    }
   }
 
   .scrolly-nav {
@@ -1258,7 +1480,12 @@ header {
 }
 
 @media only screen and (min-width: 744px) and (max-width: 1127px) {
-
+  // when click in scrolly nav in scroll style
+  .scrolly-short-click {
+    right: 5% !important;
+    left: 5% !important;
+    max-width: 700px;
+  }
   // for navbar airbnb icon
   .airbnbIcon-tablet {
     display: block !important;
@@ -1333,7 +1560,7 @@ header {
   justify-content: space-between;
 }
 
-.slider__container>div {
+.slider__container > div {
   /* make sure the width is honored */
   flex-shrink: 0;
   width: 300px;
@@ -1360,7 +1587,7 @@ header {
     padding-right: 10px;
   }
 
-  .slider__container>div {
+  .slider__container > div {
     margin-right: 14px;
   }
 
@@ -1510,7 +1737,7 @@ header {
 }
 
 @media (min-width: 1128px) {
-  .live-anywhere .slider__3>div {
+  .live-anywhere .slider__3 > div {
     flex-basis: 24%;
   }
 }
@@ -1526,7 +1753,6 @@ header {
 }
 
 @media screen and (min-width: $minimumDevice) and (max-width: 1128px) {
-
   .tablet {
     display: block !important;
   }
@@ -1535,8 +1761,7 @@ header {
     display: none;
   }
 
-  .live-anywhere .slider__3>div {
-
+  .live-anywhere .slider__3 > div {
     width: 100% !important;
   }
 }
@@ -1547,19 +1772,15 @@ header {
     display: none !important;
   }
 
+  .slider__3-mobile {
+    display: none !important;
+  }
 
   .slider__3-mobile {
     display: none !important;
   }
 
-
-
-  .slider__3-mobile {
-    display: none !important;
-  }
-
-  .slider__3>div {
-
+  .slider__3 > div {
     flex-basis: 32%;
   }
 
@@ -1589,7 +1810,7 @@ header {
     display: none;
   }
 
-  .slider__3>div {
+  .slider__3 > div {
     width: 272px;
     margin-right: 12px;
   }
@@ -1755,7 +1976,7 @@ header {
 
 // --------------/main-----------------------------
 
-// --------------top of footer----------------------
+// --------------inspiration----------------------
 
 .container__2 {
   padding: 4px 24px 8px;
@@ -1765,44 +1986,35 @@ header {
 @media (min-width: $minimumDevice) {
   .container__2_desktop {
     max-width: 1360px;
-    margin-top: 2rem !important;
     margin: 0 auto;
     padding: 0 40px;
   }
-
-  // .scrollRight{
-  //   top: 48px !important;
-  //   right: 27px !important;
-
-  // }
-  // .scrollLeft{
-  //   top: 48px !important;
-  //   left:30px !important;
-  // }
 }
 
 .line {
   height: 1px !important;
   background-color: rgb(221, 221, 221) !important;
   content: "";
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .active {
-  background: rgb(247, 247, 247) !important;
   color: black !important;
 }
-
+.active:hover {
+  background: rgb(247, 247, 247) !important;
+}
 .active::after {
-  margin-top: 6px;
+  // margin-top: 6px;
   position: absolute;
   content: "" !important;
   background: rgb(34, 34, 34) !important;
-  bottom: -6px !important;
+  bottom: -11px !important;
   left: 10px !important;
   width: calc(100% - 20px) !important;
   height: 2px !important;
 }
+
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -1825,10 +2037,12 @@ header {
   background-color: transparent !important;
   align-items: center !important;
 
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0),
-      white,
-      white) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    white,
+    white
+  ) !important;
   justify-content: flex-end !important;
 }
 
@@ -1843,10 +2057,12 @@ header {
   background-color: transparent !important;
   align-items: center !important;
 
-  background-image: linear-gradient(to left,
-      rgba(255, 255, 255, 0),
-      white,
-      white) !important;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    white,
+    white
+  ) !important;
   justify-content: flex-start !important;
 }
 
@@ -1868,20 +2084,39 @@ header {
 
 .my2Swiper .swiper-slide {
   width: unset !important;
-  padding: 13px !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
+
   font-weight: 600 !important;
   border-radius: 8px !important;
   background: none;
   color: rgb(113, 113, 113);
-  padding: 13px !important;
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
-  margin-right: 6px !important;
-  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
-    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
 }
+.my2Swiper .swiper-wrapper {
+  ul {
+    display: flex;
+  }
+  ul li {
+    padding: 10px;
+    transition: 0.2s;
+    transform: scale(0.96) !important;
+
+    button {
+      font-size: 14px;
+      line-height: 20px !important ;
+      div {
+        margin: 10px;
+        transition: 0.5s;
+      }
+      div:active {
+        transform: scale(0.96);
+      }
+    }
+  }
+}
+.my2Swiper .swiper-slide:hover {
+  background: rgb(247, 247, 247) !important;
+  cursor: pointer;
+}
+
 
 .df {
   display: flex;
@@ -1904,42 +2139,422 @@ header {
   color: rgb(113, 113, 113) !important;
   padding-top: 2px !important;
 }
-
+.tab-content-1 {
+  display: none;
+  flex-wrap: wrap;
+}
 .tab-content {
   display: none;
   flex-wrap: wrap;
 }
-
+//1col
 @media (max-width: 375px) {
   .cites {
     flex-basis: 100%;
   }
 }
-
+//2col
 @media screen and (min-width: 375px) and (max-width: $minimumDevice) {
   .cites {
     flex-basis: 50% !important;
   }
+  .f-cites {
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: $minimumDevice) {
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .social-icon {
+    display: none;
+  }
 }
 
+//3col
 @media screen and (min-width: $minimumDevice) and (max-width: $mediumLargeDevice) {
   .cites {
     flex-basis: 32% !important;
   }
+  .footer {
+    flex-direction: column;
+  }
+  .f-cites ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex-basis: 32%;
+    }
+  }
+  .f-cites {
+    padding: 24px 0;
+  }
+  .f-cites {
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom {
+    text-align: center !important;
+  }
+  .footer-right {
+    justify-content: center;
+  }
+  .social-icon {
+    margin-left: 40px;
+  }
+  .footer-left div {
+    margin-top: 5px;
+  }
+}
+.currency {
+  padding: 0 3rem 3rem 3rem;
+  .title {
+    font-size: 1em;
+    color: rgb(72, 72, 72);
+    padding: 2rem 0;
+  }
+
+  ul li button div {
+    font-size: 14px;
+    font-family: inherit;
+  }
+  ul li button div:last-child {
+    color: rgb(113, 113, 113);
+  }
 }
 
+//4col
 @media (min-width: $mediumLargeDevice) {
+  .currency .cites {
+    flex-basis: 19%;
+  }
   .cites {
     flex-basis: 25%;
+  }
+  .f-cites {
+    flex-basis: 25%;
+    padding: 48px 0;
+    border-bottom: 1px solid #dddddd !important;
+  }
+  .footer-buttom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .footer-left {
+    display: flex !important;
+  }
+  .footer-left div {
+    margin-left: 20px;
+  }
+  .footer-left div a:hover {
+    text-decoration: underline;
+    color: gray;
+  }
+  .social-icon {
+    margin-left: 40px;
   }
 }
 
 .tab-list-wrapper:after {
   margin-left: 5rem;
 }
+// --------------inspiration----------------------
 
-// --------------/top of footer----------------------
+// --------------footer----------------------
+footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 32%;
 
+    h3 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase !important;
+    }
+    ul li a {
+      text-decoration: none !important;
+      color: #222222 !important;
+      font-size: 14px !important;
+      line-height: 18px !important;
+    }
+    ul li {
+      margin-top: 16px;
+    }
+  }
+}
+//footer on buttom
+.footer-buttom {
+  padding: 24px 0;
+}
+.footer-right button {
+  display: inline-flex;
+  background-color: inherit;
+}
+.footer-right {
+  display: flex;
+}
+.lang {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.money span:last-child {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.money span:first-child {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  margin-right: 8px;
+  font-size: 14px;
+}
+.money:hover {
+  color: gray;
+  cursor: pointer;
+}
+.lang:hover {
+  color: gray;
+  cursor: pointer;
+}
+.lang {
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  .icon {
+    margin-right: 8px;
+  }
+}
+.footer-links,
+.footer-links a {
+  font-size: 100%;
+  line-height: 18px;
+  color: #222222;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+.footer-links span {
+  width: 19px;
+  display: inline-block;
+  text-align: center;
+}
+.footer-links {
+  a {
+    color: #000;
+  }
+}
+
+.social-icon ul {
+  display: flex;
+
+  li {
+    margin-right: 24px;
+    a {
+      color: #000;
+    }
+    a:hover {
+      cursor: pointer;
+      color: gray;
+    }
+  }
+}
+//model
+.modal-money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(34, 34, 34);
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  // transition: all 400ms ease;
+}
+.pos-fixed {
+  position: fixed;
+}
+// .body::-webkit-scrollbar {
+//   display: none;
+//   overflow-y: hidden;
+// }
+// .hidden{
+//   display: none;
+// }
+#modal__container-money,
+#modal__container-lang {
+  display: none;
+}
+.modal-content {
+  margin: 40px;
+  background-color: #fefefe;
+  border-radius: 12px;
+
+  animation-duration: 0.3s;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  top: 0;
+  position: relative;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: 100vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#modal__container-explore{
+  display: none;
+}
+#overlay-explore .content{
+  
+  overflow-y: scroll;
+  max-width: 1032px;
+  margin: 0 auto;
+  height: 85vh;
+
+  position: relative;
+  background-color: #fefefe;
+  border-end-start-radius: 12px;
+
+  width: 100%;
+
+}
+.modal-style .content {
+  border-top: 1px solid rgb(235, 235, 235);
+  overflow-y: scroll;
+  max-width: 1032px;
+  margin: 0 auto;
+  height: 85vh;
+
+  position: relative;
+  background-color: #fefefe;
+  border-end-start-radius: 12px;
+
+  width: 100%;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ul-flex {
+  font-size: 1rem;
+  padding: 10px;
+  // margin: 10px 0;
+
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  button{
+    margin-right: 20px;
+    font-size: 1em;
+    color: rgb(72, 72, 72);
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
+.currency ul {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li:first-child button {
+    border: 1px solid;
+  }
+  li button:active {
+    border: 1px solid;
+  }
+  li button {
+    margin-top: 10px;
+    background: transparent;
+
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  li button:hover {
+    background: revert !important;
+    cursor: pointer !important;
+  }
+}
+
+.close__container {
+  button {
+    background-color: transparent;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+//model
+//fixed-nav-footer
+#navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  transition: 0.2s;
+}
+.fixed-nav-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px auto;
+  height: 70px;
+  max-width: 560px;
+  a {
+    text-align: center;
+    min-width: 20%;
+  }
+
+  a:first-child div:first-child {
+    color: #ff385c;
+  }
+  a div:first-child {
+    margin-bottom: 2px;
+  }
+
+  a div:last-child {
+    font-size: 10px;
+    font-weight: 600;
+    color: #717171;
+  }
+  a div:last-child:hover {
+    font-size: 10px;
+    font-weight: 600;
+    color: #222222;
+  }
+}
+
+//fixed-nav-footer
+// --------------/footer----------------------
 
 //--------------fonts----------------------------//
 @font-face {
@@ -1949,27 +2564,15 @@ header {
   font-weight: normal;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
-    U+FF00-EFFFF, U+FFFFE-10FFFF;
-  font-weight: 600;
-  font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
-
-  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -1978,10 +2581,25 @@ header {
   font-family: Circular;
   unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
     U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
-  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -1990,8 +2608,10 @@ header {
   unicode-range: U+0400-04FF;
   font-weight: normal;
   font-style: normal;
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2001,11 +2621,15 @@ header {
   font-weight: 600;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff")
+      format("woff");
 
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff") format("woff");
+  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2")
+      format("woff2"),
+    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2015,13 +2639,10 @@ header {
   unicode-range: U+0400-04FF;
   font-weight: 800;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff") format("woff");
-
-  src: url("fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2") format("woff2"),
-    url("fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2030,13 +2651,10 @@ header {
   unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: normal;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff") format("woff");
-
-  src: url("fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2045,13 +2663,10 @@ header {
   unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: 600;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff") format("woff");
-
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2") format("woff2"),
-    url("fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2060,13 +2675,10 @@ header {
   unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: 800;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff") format("woff");
-
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2075,8 +2687,10 @@ header {
   unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: normal;
   font-style: normal;
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2085,13 +2699,10 @@ header {
   unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: 600;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff") format("woff");
-
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2100,13 +2711,10 @@ header {
   unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: 800;
   font-style: normal;
-
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff") format("woff");
-
-  src: url("/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2") format("woff2"),
-    url("/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff") format("woff");
-
+  src: url("/fonts/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff")
+      format("woff");
   font-display: swap;
 }
 
@@ -2115,11 +2723,15 @@ header {
   unicode-range: U+F0000-FFFFD;
   font-weight: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2129,11 +2741,15 @@ header {
   unicode-range: U+F0000-FFFFD;
   font-weight: 600;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2143,11 +2759,15 @@ header {
   unicode-range: U+F0000-FFFFD;
   font-weight: 800;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2157,11 +2777,15 @@ header {
   font-weight: normal;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2171,11 +2795,15 @@ header {
   font-weight: 600;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2185,11 +2813,15 @@ header {
   font-weight: 800;
   font-style: normal;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
 
-  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),
-    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2")
+      format("woff2"),
+    url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff")
+      format("woff");
 
   font-display: swap;
 }
@@ -2197,11 +2829,15 @@ header {
 @font-face {
   font-family: Airmoji_Standalone;
 
-  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
-  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2") format("woff2"),
-    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff") format("woff");
+  src: url("/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2")
+      format("woff2"),
+    url("/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff")
+      format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -2210,11 +2846,15 @@ header {
 @font-face {
   font-family: Airglyphs;
 
-  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff") format("woff"),
-    url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf") format("truetype");
+  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff")
+      format("woff"),
+    url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf")
+      format("truetype");
 
-  src: url("/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff") format("woff"),
-    url("/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf") format("truetype");
+  src: url("/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff")
+      format("woff"),
+    url("/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf")
+      format("truetype");
 
   font-weight: normal;
   font-style: normal;
