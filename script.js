@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
     pinkSearch.classList.remove("searchShowG", windowPosition);
     pinkSearch.classList.remove("searchShow", windowPosition);
     guedtsDD.classList.remove("guedtsDDshow", windowPosition);
-    scrollExp.classList.remove("showExperience" , windowPosition);
+    scrollExp.classList.remove("showExperience", windowPosition);
 
     guestss.addEventListener('click', function () {
         header.classList.add('scrollyClick');
@@ -86,7 +86,7 @@ function openItem(event) {
 
 }
 
-// ----------------for opening dropdowns
+// ----------------for opening signin dropdowns
 const userdd = document.querySelector("#userDropDown");
 const userddBTN = document.querySelector("#user-menu-right");
 
@@ -104,6 +104,13 @@ const guestss = document.querySelector(".guests");
 const guestsBTN = document.querySelector(".guests");
 const guedtsDD = document.querySelector(".guestsDD");
 const pinkSearch = document.querySelector(".search-icon");
+const checkDD = document.querySelector(".check-container");
+const flexibleBTN = document.querySelector(".c-TAB2");
+const CalendarBTN = document.querySelector(".c-TAB1");
+// const checkContent = document.querySelector("check-main");
+const calContent = document.querySelector("calendar-content");
+const flexContent = document.querySelector("flexible-content")
+
 // --------------------location dropdown
 function showLocationF() {
     locationn.classList.add("showLocation");
@@ -112,6 +119,34 @@ function showLocationF() {
     checkoutt.classList.add("checkoutSEC");
     guestss.classList.add("guestsSEC");
     pinkSearch.classList.add("searchShow");
+}
+// ---------------------checkin dropdown
+function showCheckinF() {
+    pinkSearch.classList.add("searchShowIN");
+    checkinn.classList.add("ShowCheckinBTN");
+    checkDD.classList.add("activeFlex-Check");
+}
+// ---------------------checkout dropdown
+function showCheckoutF() {
+    pinkSearch.classList.add("searchShowOUT");
+    checkoutt.classList.add("ShowCheckoutBTN");
+    checkDD.classList.add("activeFlex-Check");
+}
+// fuction for open I'm flexible tab
+function showTABF(){
+    flexibleBTN.classList.add("showFlexibleBTN");
+    calContent.classList.add("closeTabc");
+    flexContent.classList.add("showTabF")
+    CalendarBTN.classList.remove("showCalendarBTN");
+    console.log("fhxdfh")
+}
+// fuction for close I'm flexible tab
+function showTABC(){
+    CalendarBTN.classList.add("showCalendarBTN");
+    flexibleBTN.classList.remove("showFlexibleBTN");
+    calContent.classList.remove("closeTabc");
+    flexContent.classList.remove("showTabF")
+    console.log("55555555555")
 }
 // ---------------------guests dropdown
 function showGuestsF() {
@@ -139,7 +174,7 @@ $(document).click(function (event) {
     }
     // for signin
     if ((!$(event.target).closest(userdd).length) && (!$(event.target).closest(userddBTN).length)) {
-        userdd.classList.remove("show")
+        userdd.classList.remove("show");
     }
     // for location
     if ((!$(event.target).closest(locationn).length) && (!$(event.target).closest(locationBTN).length)) {
@@ -159,7 +194,18 @@ $(document).click(function (event) {
         checkoutt.classList.remove("checkoutG");
         locationBTN.classList.remove("locationG");
     }
-
+    // for checkin and checkout
+    if ((!$(event.target).closest(checkoutt).length) && (!$(event.target).closest(checkinn).length)) {
+        pinkSearch.classList.remove("searchShowOUT");
+        pinkSearch.classList.remove("searchShowIN");
+        checkDD.classList.remove("activeFlex-Check");
+    }
+    if(!$(event.target).closest(checkoutt).length){
+        checkoutt.classList.remove("ShowCheckoutBTN");
+    }
+    if(!$(event.target).closest(checkinn).length){
+        checkinn.classList.remove("ShowCheckinBTN");
+    }
 });
 
 
@@ -283,9 +329,9 @@ var modalMoneyContent = document.getElementById("modal__container-money")
 var modalLangContent = document.getElementById("modal__container-lang")
 var modalExploreContent = document.getElementById("modal__container-explore")
 
-var overlayclose= document.getElementById('overlay')
-var overlaycloseLan= document.getElementById('overlay-lang')
-var overlaycloseExplore= document.getElementById('overlay-explore')
+var overlayclose = document.getElementById('overlay')
+var overlaycloseLan = document.getElementById('overlay-lang')
+var overlaycloseExplore = document.getElementById('overlay-explore')
 
 
 var modalMoneyBtn = document.getElementById("modal-money-btn")
@@ -293,37 +339,37 @@ var modalMoneyBtn = document.getElementById("modal-money-btn")
 const body = document.querySelector("body")
 
 modalMoneyBtn.addEventListener("click", () => {
-  modalMoneyContent.style.display = "block";
-  
+    modalMoneyContent.style.display = "block";
+
 })
 
-$('#modal-explore-btn').click(function(){
+$('#modal-explore-btn').click(function () {
     modalExploreContent.style.display = "block";
-  })
-
-$("#close-money").click(function(){
-  modalMoneyContent.style.display = "none";
-})
-$("#close-lang").click(function(){
-  modalLangContent.style.display = "none";
 })
 
-$("#close-explore").click(function(){
+$("#close-money").click(function () {
+    modalMoneyContent.style.display = "none";
+})
+$("#close-lang").click(function () {
+    modalLangContent.style.display = "none";
+})
+
+$("#close-explore").click(function () {
     modalExploreContent.style.display = "none";
-  })
+})
 
-$('#modal-lang-btn').click(function(){
-  modalLangContent.style.display = "block";
+$('#modal-lang-btn').click(function () {
+    modalLangContent.style.display = "block";
 })
 
 // When the user clicks anywhere outside of the modal, close it
 $(document).click(function (event) {
-  
-  if (event.target == overlayclose || event.target == overlaycloseLan || event.target == overlaycloseExplore ) {
-    modalMoneyContent.style.display = "none"; 
-    modalLangContent.style.display = "none"; 
-    modalExploreContent.style.display="none";
-  }
+
+    if (event.target == overlayclose || event.target == overlaycloseLan || event.target == overlaycloseExplore) {
+        modalMoneyContent.style.display = "none";
+        modalLangContent.style.display = "none";
+        modalExploreContent.style.display = "none";
+    }
 })
 
 
@@ -343,60 +389,37 @@ window.onscroll = function() {
     }
 }
 
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//   navbar.classList.add("sticky")
-//   } else {
-//   navbar.classList.remove("sticky");
-//   }
-// }
-
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   // console.log(currentScrollPos )
-//   console.log(prevScrollpos )
-//   if (prevScrollpos > currentScrollPos) {
-//     console.log("-100")
-//     document.getElementById("navbar").style.bottom = "-10";
-//   } else {
-//     console.log("0")
-//     document.getElementById("navbar").style.bottom = "0";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
 
 
 //top of footer
 btnTab = document.getElementsByClassName("tab-btn")
 
 function openCity(evt, Cityname) {
-  var i, tabcontent, tablinks;
-  tablinks = document.getElementsByClassName("tab-btn");
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+    var i, tabcontent, tablinks;
+    tablinks = document.getElementsByClassName("tab-btn");
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  evt.currentTarget.className += " active";
-  document.getElementById(Cityname).style.display = "flex";
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active";
+    document.getElementById(Cityname).style.display = "flex";
 }
 
 //explore btn
-function openOption(evt,Optionname) {
+function openOption(evt, Optionname) {
     var i, tabcontent, tablinks;
     tablinks = document.getElementsByClassName("tab-btn");
     tabcontent = document.getElementsByClassName("tab-content-1");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
+
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     evt.currentTarget.className += " active";
     document.getElementById(Optionname).style.display = "flex";

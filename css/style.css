@@ -481,6 +481,140 @@ header .container .nav-right .show {
   border-right: 1px solid #e2e2e2;
 }
 
+.scrolly-nav .ShowCheckinBTN {
+  border-radius: 30px !important;
+  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+  background-color: #fff !important;
+  z-index: 15 !important;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+
+.scrolly-nav .ShowCheckoutBTN {
+  border-radius: 30px !important;
+  -webkit-box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+          box-shadow: 1px 1px 18px 1px #0d0d0d66 !important;
+  background-color: #fff !important;
+  z-index: 15 !important;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+
+.scrolly-nav .check-container {
+  display: none;
+  position: absolute !important;
+  left: 0px !important;
+  top: 100% !important;
+  z-index: 15 !important;
+  background: white !important;
+  border-radius: 32px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.199) 0px 6px 20px !important;
+          box-shadow: rgba(0, 0, 0, 0.199) 0px 6px 20px !important;
+  margin-top: 12px !important;
+  height: 511px;
+  overflow: hidden auto !important;
+  padding: 16px 32px !important;
+  right: 0px !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scrolly-nav .check-container .chooseTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  height: 36px;
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.scrolly-nav .check-container .chooseTab .c-TAB1,
+.scrolly-nav .check-container .chooseTab .c-TAB2 {
+  border-radius: 20px;
+  height: 28px;
+  border-radius: 100px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  border: none !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  position: relative !important;
+  outline: none !important;
+  cursor: default !important;
+}
+
+.scrolly-nav .check-container .chooseTab .c-TAB2:hover,
+.scrolly-nav .check-container .chooseTab .c-TAB1:hover {
+  background-color: #f5f4f4;
+}
+
+.scrolly-nav .check-container .chooseTab .c-TAB1 {
+  width: 88px;
+  margin-right: 6px !important;
+  background-color: #fff;
+}
+
+.scrolly-nav .check-container .chooseTab .c-TAB2 {
+  width: 99px;
+}
+
+.scrolly-nav .check-container .check-main {
+  width: 90%;
+  height: 400px;
+}
+
+.scrolly-nav .check-container .check-main .calendar-content {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.scrolly-nav .check-container .check-main .flexible-content {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: turquoise;
+}
+
+.scrolly-nav .showFlexibleBTN {
+  background-color: #fff !important;
+}
+
+.scrolly-nav .showCalendarBTN {
+  background-color: #fff !important;
+}
+
+.scrolly-nav .closeTabc {
+  display: none !important;
+}
+
+.scrolly-nav .showTabF {
+  display: block !important;
+  background-color: #c6017e !important;
+}
+
+.scrolly-nav .activeFlex-Check {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .scrolly-nav .checkinSEC .scrolly-sec {
   border-left: none !important;
 }
@@ -572,7 +706,9 @@ header .container .nav-right .show {
 }
 
 .scrolly-nav .searchShow,
-.scrolly-nav .searchShowG {
+.scrolly-nav .searchShowG,
+.scrolly-nav .searchShowIN,
+.scrolly-nav .searchShowOUT {
   width: 111.75px !important;
   -webkit-transition: opacity 1.25s ease 0s !important;
   transition: opacity 1.25s ease 0s !important;
@@ -583,7 +719,9 @@ header .container .nav-right .show {
 }
 
 .scrolly-nav .searchShow .disapear,
-.scrolly-nav .searchShowG .disapear {
+.scrolly-nav .searchShowG .disapear,
+.scrolly-nav .searchShowIN .disapear,
+.scrolly-nav .searchShowOUT .disapear {
   display: block;
   color: #fff;
   padding-left: 10px;
@@ -1359,6 +1497,9 @@ header .container .nav-right .show {
 }
 
 @media only screen and (max-width: 744px) {
+  .check-container {
+    display: none !important;
+  }
   .scrolly-short,
   .scrolly-nav .showExperience {
     display: none;
