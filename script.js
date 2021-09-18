@@ -328,39 +328,19 @@ $(document).click(function (event) {
 
 
 // hide nav footer
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   if(window.pageYOffset > 10){
-//     document.getElementById("navbar").style.bottom = "-100px";
-//   }
-//   else{
-//         document.getElementById("navbar").style.bottom = "0";
-//   }
-// }
-
-var navbar = document.getElementById("footer-offset");
-var sticky = navbar.offsetTop;
-
-// var prevScrollpos = window.pageYOffset;
+let pointFooter = document.getElementById("point-offset");
+let pointOffset = pointFooter.offsetTop;
 window.onscroll = function() {
   console.log(window.pageYOffset)
-  console.log(sticky)
-  // if(window.pageYOffset > 10){
-  //   document.getElementById("navbar").style.bottom = "-100px";
-  // }
-  // else{
-  //       document.getElementById("navbar").style.bottom = "0";
-  // }
-
-  if (window.pageYOffset < sticky) {
+  console.log(pointOffset)
+  if (window.pageYOffset < pointOffset) {
    
     document.getElementById("navbar").style.bottom = "0";
-    
+ 
     } else {
-      // 
+      //if windows offset greater than distance of that specific elment to top ,hide navbar in bottom
       document.getElementById("navbar").style.bottom = "-100px";
     }
-
 }
 
 // function myFunction() {
