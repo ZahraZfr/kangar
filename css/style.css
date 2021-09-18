@@ -2354,7 +2354,7 @@ header .container .nav-right .show {
   }
 }
 
-@media screen and (min-width: 744px) and (max-width: 1127px) {
+@media screen and (min-width: 744px) and (max-width: 1128px) {
   .cites {
     -ms-flex-preferred-size: 32% !important;
         flex-basis: 32% !important;
@@ -2417,7 +2417,7 @@ header .container .nav-right .show {
   color: #717171;
 }
 
-@media (min-width: 1127px) {
+@media (min-width: 1128px) {
   .currency .cites {
     -ms-flex-preferred-size: 19%;
         flex-basis: 19%;
@@ -2499,6 +2499,10 @@ footer .footer ul li a {
   color: #222222 !important;
   font-size: 14px !important;
   line-height: 18px !important;
+}
+
+footer .footer ul li a:hover {
+  text-decoration: underline !important;
 }
 
 footer .footer ul li {
@@ -2740,6 +2744,12 @@ footer .footer ul li {
   background-color: transparent;
   padding: 20px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 744px) {
+  #navbar {
+    display: none;
+  }
 }
 
 #navbar {

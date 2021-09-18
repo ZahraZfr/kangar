@@ -5,13 +5,6 @@ $largDevice: 950px;
 $minimumDevice: 744px;
 $smallDevice: 320px;
 
-$superLargeDevice: 1845px;
-$extraLargDevice: 1440px;
-$mediumLargeDevice: 1127px;
-$largDevice: 950px;
-$minimumDevice: 744px;
-$smallDevice: 320px;
-
 // upper than 320px
 @mixin smallDevice {
   @media (min-width: #{$smallDevice}) {
@@ -2015,7 +2008,6 @@ header {
   height: 2px !important;
 }
 
-
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 0 !important;
@@ -2116,7 +2108,6 @@ header {
   background: rgb(247, 247, 247) !important;
   cursor: pointer;
 }
-
 
 .df {
   display: flex;
@@ -2286,6 +2277,9 @@ footer {
       font-size: 14px !important;
       line-height: 18px !important;
     }
+    ul li a:hover {
+      text-decoration: underline !important;
+    }
     ul li {
       margin-top: 16px;
     }
@@ -2392,13 +2386,7 @@ footer {
 .pos-fixed {
   position: fixed;
 }
-// .body::-webkit-scrollbar {
-//   display: none;
-//   overflow-y: hidden;
-// }
-// .hidden{
-//   display: none;
-// }
+
 #modal__container-money,
 #modal__container-lang {
   display: none;
@@ -2428,11 +2416,10 @@ footer {
   }
 }
 
-#modal__container-explore{
+#modal__container-explore {
   display: none;
 }
-#overlay-explore .content{
-  
+#overlay-explore .content {
   overflow-y: scroll;
   max-width: 1032px;
   margin: 0 auto;
@@ -2443,7 +2430,6 @@ footer {
   border-end-start-radius: 12px;
 
   width: 100%;
-
 }
 .modal-style .content {
   border-top: 1px solid rgb(235, 235, 235);
@@ -2463,12 +2449,10 @@ footer {
 .ul-flex {
   font-size: 1rem;
   padding: 10px;
-  // margin: 10px 0;
-
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  button{
+  button {
     margin-right: 20px;
     font-size: 1em;
     color: rgb(72, 72, 72);
@@ -2512,9 +2496,13 @@ footer {
     cursor: pointer;
   }
 }
-
 //model
-//fixed-nav-footer
+@media screen and (min-width: $minimumDevice) {
+  #navbar {
+  display: none;
+  }
+}
+
 #navbar {
   position: fixed;
   bottom: 0;

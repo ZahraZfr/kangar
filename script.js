@@ -327,16 +327,64 @@ $(document).click(function (event) {
 })
 
 
-//hide nav footer
-var prevScrollpos = window.pageYOffset;
+// hide nav footer
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   if(window.pageYOffset > 10){
+//     document.getElementById("navbar").style.bottom = "-100px";
+//   }
+//   else{
+//         document.getElementById("navbar").style.bottom = "0";
+//   }
+// }
+
+var navbar = document.getElementById("footer-offset");
+var sticky = navbar.offsetTop;
+
+// var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  if(window.pageYOffset > 3000){
-    document.getElementById("navbar").style.bottom = "-100px";
-  }
-  else{
-        document.getElementById("navbar").style.bottom = "0";
-  }
+  console.log(window.pageYOffset)
+  console.log(sticky)
+  // if(window.pageYOffset > 10){
+  //   document.getElementById("navbar").style.bottom = "-100px";
+  // }
+  // else{
+  //       document.getElementById("navbar").style.bottom = "0";
+  // }
+
+  if (window.pageYOffset < sticky) {
+   
+    document.getElementById("navbar").style.bottom = "0";
+    
+    } else {
+      // 
+      document.getElementById("navbar").style.bottom = "-100px";
+    }
+
 }
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//   navbar.classList.add("sticky")
+//   } else {
+//   navbar.classList.remove("sticky");
+//   }
+// }
+
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   // console.log(currentScrollPos )
+//   console.log(prevScrollpos )
+//   if (prevScrollpos > currentScrollPos) {
+//     console.log("-100")
+//     document.getElementById("navbar").style.bottom = "-10";
+//   } else {
+//     console.log("0")
+//     document.getElementById("navbar").style.bottom = "0";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 
 
@@ -375,64 +423,64 @@ function openOption(evt,Optionname) {
 } 
 
 //calendar  configuration
-configObject = {
-  autoClose: false,
-  format: 'YYYY-MM-DD',
-  separator: ' to ',
-  language: 'auto',
-  startOfWeek: 'sunday',// or monday
-  getValue: function () {
-    return $(this).val();
-  },
-  setValue: function (s) {
-    if (!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
-      $(this).val(s);
-    }
-  },
-  startDate: false,
-  endDate: false,
-  time: {
-    enabled: false
-  },
-  minDays: 0,
-  maxDays: 0,
-  showShortcuts: false,
-  shortcuts:
-  {
-    //'prev-days': [1,3,5,7],
-    //'next-days': [3,5,7],
-    //'prev' : ['week','month','year'],
-    //'next' : ['week','month','year']
-  },
-  customShortcuts: [],
-  inline: false,
-  container: 'body',
-  alwaysOpen: false,
-  singleDate: false,
-  lookBehind: false,
-  batchMode: false,
-  duration: 200,
-  stickyMonths: false,
-  dayDivAttrs: [],
-  dayTdAttrs: [],
-  applyBtnClass: '',
-  singleMonth: 'auto',
-  hoveringTooltip: function (days, startTime, hoveringTime) {
-    return days > 1 ? days + ' ' + lang('days') : '';
-  },
-  showTopbar: true,
-  swapTime: false,
-  selectForward: false,
-  selectBackward: false,
-  showWeekNumbers: false,
-  getWeekNumber: function (date) //date will be the first day of a week
-  {
-    return moment(date).format('w');
-  },
-  monthSelect: false,
-  yearSelect: false
-}
+// configObject = {
+//   autoClose: false,
+//   format: 'YYYY-MM-DD',
+//   separator: ' to ',
+//   language: 'auto',
+//   startOfWeek: 'sunday',// or monday
+//   getValue: function () {
+//     return $(this).val();
+//   },
+//   setValue: function (s) {
+//     if (!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
+//       $(this).val(s);
+//     }
+//   },
+//   startDate: false,
+//   endDate: false,
+//   time: {
+//     enabled: false
+//   },
+//   minDays: 0,
+//   maxDays: 0,
+//   showShortcuts: false,
+//   shortcuts:
+//   {
+//     //'prev-days': [1,3,5,7],
+//     //'next-days': [3,5,7],
+//     //'prev' : ['week','month','year'],
+//     //'next' : ['week','month','year']
+//   },
+//   customShortcuts: [],
+//   inline: false,
+//   container: 'body',
+//   alwaysOpen: false,
+//   singleDate: false,
+//   lookBehind: false,
+//   batchMode: false,
+//   duration: 200,
+//   stickyMonths: false,
+//   dayDivAttrs: [],
+//   dayTdAttrs: [],
+//   applyBtnClass: '',
+//   singleMonth: 'auto',
+//   hoveringTooltip: function (days, startTime, hoveringTime) {
+//     return days > 1 ? days + ' ' + lang('days') : '';
+//   },
+//   showTopbar: true,
+//   swapTime: false,
+//   selectForward: false,
+//   selectBackward: false,
+//   showWeekNumbers: false,
+//   getWeekNumber: function (date) //date will be the first day of a week
+//   {
+//     return moment(date).format('w');
+//   },
+//   monthSelect: false,
+//   yearSelect: false
+// }
 
-//calendar js
-$('#dom-id').dateRangePicker(configObject);
+// //calendar js
+// $('#dom-id').dateRangePicker(configObject);
 
