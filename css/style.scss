@@ -2680,7 +2680,6 @@ footer {
 
 //model
 //fixed-nav-footer
-@media only screen and (max-width:744px) {
   #navbar {
     position: fixed;
     bottom: 0;
@@ -2688,7 +2687,7 @@ footer {
     background-color: white;
     transition: 0.2s;
   }
-}
+
 
 .fixed-nav-footer {
   display: flex;

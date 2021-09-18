@@ -2883,15 +2883,13 @@ footer .footer ul li {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 744px) {
-  #navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: white;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
+#navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .fixed-nav-footer {
