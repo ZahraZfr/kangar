@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   width: 100%;
   min-width: 320px !important;
   line-height: 1.43;
@@ -20,13 +20,13 @@ body {
 
 a {
   text-decoration: none;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 button {
   outline: none;
   border: none;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 ul {
@@ -2170,7 +2170,7 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -2206,7 +2206,7 @@ header .container .nav-right .show {
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     font-weight: 500;
     padding: 9px 16px !important;
     border-radius: 10px;
@@ -2273,7 +2273,7 @@ header .container .nav-right .show {
   font-size: 16px !important;
   line-height: 18px !important;
   letter-spacing: normal !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 400;
   padding: 14px 24px !important;
   border-radius: 10px;
@@ -2642,6 +2642,10 @@ footer .footer ul li a {
   line-height: 18px !important;
 }
 
+footer .footer ul li a:hover {
+  text-decoration: underline !important;
+}
+
 footer .footer ul li {
   margin-top: 16px;
 }
@@ -2664,21 +2668,21 @@ footer .footer ul li {
 }
 
 .lang {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-decoration: underline;
 }
 
 .money span:last-child {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-decoration: underline;
 }
 
 .money span:first-child {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   margin-right: 8px;
   font-size: 14px;
 }
@@ -2708,7 +2712,7 @@ footer .footer ul li {
   line-height: 18px;
   color: #222222;
   display: inline-block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 .footer-links span {
@@ -2774,13 +2778,12 @@ footer .footer ul li {
   margin: 40px;
   background-color: #fefefe;
   border-radius: 12px;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
   top: 0;
   position: relative;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-name: animatetop;
+  animation-name: animatetop;
 }
 
 /* Add Animation */
@@ -2883,6 +2886,12 @@ footer .footer ul li {
   cursor: pointer;
 }
 
+@media screen and (min-width: 744px) {
+  #navbar {
+    display: none;
+  }
+}
+
 #navbar {
   position: fixed;
   bottom: 0;
@@ -2932,9 +2941,13 @@ footer .footer ul li {
   color: #222222;
 }
 
+.date-picker-wrapper {
+  z-index: 25 !important;
+}
+
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: normal;
   font-style: normal;
   src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"), url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
@@ -2944,7 +2957,7 @@ footer .footer ul li {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 600;
   font-style: normal;
   src: url("/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2") format("woff2"), url("/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff") format("woff");
@@ -2953,7 +2966,7 @@ footer .footer ul li {
 
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
   src: url("/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");

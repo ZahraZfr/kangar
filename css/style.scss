@@ -2121,7 +2121,6 @@ header {
   height: 2px !important;
 }
 
-
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 0 !important;
@@ -2223,7 +2222,6 @@ header {
   background: rgb(247, 247, 247) !important;
   cursor: pointer;
 }
-
 
 .df {
   display: flex;
@@ -2423,7 +2421,9 @@ footer {
       font-size: 14px !important;
       line-height: 18px !important;
     }
-
+    ul li a:hover {
+      text-decoration: underline !important;
+    }
     ul li {
       margin-top: 16px;
     }
@@ -2548,13 +2548,7 @@ footer {
   position: fixed;
 }
 
-// .body::-webkit-scrollbar {
-//   display: none;
-//   overflow-y: hidden;
-// }
-// .hidden{
-//   display: none;
-// }
+
 #modal__container-money,
 #modal__container-lang {
   display: none;
@@ -2564,13 +2558,17 @@ footer {
   margin: 40px;
   background-color: #fefefe;
   border-radius: 12px;
-
-  animation-duration: 0.3s;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
   top: 0;
   position: relative;
+
+  
+
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-name: animatetop;
+  animation-name: animatetop;
+  
+  
 }
 
 /* Add Animation */
@@ -2602,7 +2600,6 @@ footer {
   border-end-start-radius: 12px;
 
   width: 100%;
-
 }
 
 .modal-style .content {
@@ -2623,12 +2620,10 @@ footer {
 .ul-flex {
   font-size: 1rem;
   padding: 10px;
-  // margin: 10px 0;
-
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-
+  
   button {
     margin-right: 20px;
     font-size: 1em;
@@ -2677,18 +2672,20 @@ footer {
     cursor: pointer;
   }
 }
-
 //model
-//fixed-nav-footer
+@media screen and (min-width: $minimumDevice) {
   #navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: white;
-    transition: 0.2s;
+  display: none;
   }
+}
 
-
+#navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  transition: 0.2s;
+}
 .fixed-nav-footer {
   display: flex;
   justify-content: center;
@@ -2725,7 +2722,11 @@ footer {
 
 //fixed-nav-footer
 // --------------/footer----------------------
-
+//calendar
+.date-picker-wrapper {
+z-index: 25 !important;
+}
+//calendar
 //--------------fonts----------------------------//
 @font-face {
   font-family: Circular;
