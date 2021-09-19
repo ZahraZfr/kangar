@@ -15,8 +15,9 @@ window.addEventListener('scroll', function () {
         header.classList.add('scrollyClick');
         scrollSec.classList.add('scrolly-short-click');
     });
-    header.classList.remove('scrollyClick');
-    scrollSec.classList.remove('scrolly-short-click');
+    let windowPositionClose = window.scrollY == 0;
+    header.classList.remove('scrollyClick' , windowPositionClose);
+    scrollSec.classList.remove('scrolly-short-click' , windowPositionClose);
 });
 // close small nav
 
@@ -104,7 +105,7 @@ const guestss = document.querySelector(".guests");
 const guestsBTN = document.querySelector(".guests");
 const guedtsDD = document.querySelector(".guestsDD");
 const pinkSearch = document.querySelector(".search-icon");
-const checkDD = document.querySelector(".check-container");
+// const checkDD = document.querySelector(".check-container");
 const flexibleBTN = document.querySelector(".c-TAB2");
 const CalendarBTN = document.querySelector(".c-TAB1");
 // const checkContent = document.querySelector("check-main");
@@ -124,13 +125,13 @@ function showLocationF() {
 function showCheckinF() {
     pinkSearch.classList.add("searchShowIN");
     checkinn.classList.add("ShowCheckinBTN");
-    checkDD.classList.add("activeFlex-Check");
+    // checkDD.classList.add("activeFlex-Check");
 }
 // ---------------------checkout dropdown
 function showCheckoutF() {
     pinkSearch.classList.add("searchShowOUT");
     checkoutt.classList.add("ShowCheckoutBTN");
-    checkDD.classList.add("activeFlex-Check");
+    // checkDD.classList.add("activeFlex-Check");
 }
 // fuction for open I'm flexible tab
 function showTABF(){
@@ -138,7 +139,6 @@ function showTABF(){
     calContent.classList.add("closeTabc");
     flexContent.classList.add("showTabF")
     CalendarBTN.classList.remove("showCalendarBTN");
-    console.log("fhxdfh")
 }
 // fuction for close I'm flexible tab
 function showTABC(){
@@ -146,7 +146,6 @@ function showTABC(){
     flexibleBTN.classList.remove("showFlexibleBTN");
     calContent.classList.remove("closeTabc");
     flexContent.classList.remove("showTabF")
-    console.log("55555555555")
 }
 // ---------------------guests dropdown
 function showGuestsF() {
@@ -198,7 +197,7 @@ $(document).click(function (event) {
     if ((!$(event.target).closest(checkoutt).length) && (!$(event.target).closest(checkinn).length)) {
         pinkSearch.classList.remove("searchShowOUT");
         pinkSearch.classList.remove("searchShowIN");
-        checkDD.classList.remove("activeFlex-Check");
+        // checkDD.classList.remove("activeFlex-Check");
     }
     if(!$(event.target).closest(checkoutt).length){
         checkoutt.classList.remove("ShowCheckoutBTN");
@@ -245,7 +244,6 @@ const incInfants = document.querySelector(".IncBtnInfants");
 let countervalueI = 0;
 // ----for increase
 incInfants.addEventListener('click', function (event) {
-    console.log("------------------------------")
     if (countervalueI < 5) {
         countervalueI += 1;
         InfantsNum.innerHTML = countervalueI;
@@ -296,7 +294,6 @@ decAdualt.addEventListener('click', function (event) {
 
 //swiper slider
 var swiper = new Swiper(".mySwiper", {
-
     slidesPerView: 3,
     spaceBetween: 10,
     freeMode: true,
@@ -306,8 +303,6 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: '.swiper-button-prev',
     }
 });
-
-
 
 var swiper = new Swiper(".my2Swiper", {
 
@@ -321,9 +316,6 @@ var swiper = new Swiper(".my2Swiper", {
     }
 });
 
-
-
-
 //modal
 var modalMoneyContent = document.getElementById("modal__container-money")
 var modalLangContent = document.getElementById("modal__container-lang")
@@ -336,11 +328,8 @@ var overlaycloseExplore = document.getElementById('overlay-explore')
 
 var modalMoneyBtn = document.getElementById("modal-money-btn")
 
-const body = document.querySelector("body")
-
 modalMoneyBtn.addEventListener("click", () => {
     modalMoneyContent.style.display = "block";
-
 })
 
 $('#modal-explore-btn').click(function () {
@@ -364,7 +353,6 @@ $('#modal-lang-btn').click(function () {
 
 // When the user clicks anywhere outside of the modal, close it
 $(document).click(function (event) {
-
     if (event.target == overlayclose || event.target == overlaycloseLan || event.target == overlaycloseExplore) {
         modalMoneyContent.style.display = "none";
         modalLangContent.style.display = "none";
@@ -377,12 +365,8 @@ $(document).click(function (event) {
 let pointFooter = document.getElementById("point-offset");
 let pointOffset = pointFooter.offsetTop;
 window.onscroll = function() {
-  console.log(window.pageYOffset)
-  console.log(pointOffset)
   if (window.pageYOffset < pointOffset) {
-   
     document.getElementById("navbar").style.bottom = "0";
- 
     } else {
       //if windows offset greater than distance of that specific elment to top ,hide navbar in bottom
       document.getElementById("navbar").style.bottom = "-100px";
@@ -417,7 +401,6 @@ function openOption(evt, Optionname) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -425,7 +408,7 @@ function openOption(evt, Optionname) {
     document.getElementById(Optionname).style.display = "flex";
 } 
 
-//calendar  configuration
+// // calendar  configuration
 // configObject = {
 //   autoClose: false,
 //   format: 'YYYY-MM-DD',
